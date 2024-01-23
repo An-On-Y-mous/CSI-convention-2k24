@@ -136,7 +136,7 @@ const Navbar = () => {
 
           <ul>
             <li>
-              <p onClick={() => window.open("/", "_self")}>Home</p>
+              <p onClick={() => window.open("/about", "_self")}>About</p>
             </li>
             <li>
               <p onClick={() => handleScroll("#agenda")}>Agenda</p>
