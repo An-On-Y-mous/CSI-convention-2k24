@@ -17,7 +17,6 @@ const Navbar = () => {
       label: "Instagram",
     });
     window.open("https://www.instagram.com/srmveccsisb");
-    window.open("https://www.instagram.com/whitehatians");
   };
   const handleFb = () => {
     ReactGA.event({
@@ -26,7 +25,6 @@ const Navbar = () => {
       label: "Facebook",
     });
     window.open("https://www.facebook.com/srmveccsisb");
-    window.open("https://www.facebook.com/@whitehatians");
   };
   const handleYt = () => {
     ReactGA.event({
@@ -35,7 +33,6 @@ const Navbar = () => {
       label: "Youtube",
     });
     window.open("https://www.youtube.com/@SRMVECCSIAN");
-    window.open("https://www.youtube.com/@whitehatians");
   };
 
   const handleDiscord = () => {
@@ -121,7 +118,7 @@ const Navbar = () => {
                   }}
                 />
               </div>
-              <div className="discord-icon">
+              {/* <div className="discord-icon">
                 <SocialIcon
                   onClick={handleDiscord}
                   network="discord"
@@ -130,7 +127,7 @@ const Navbar = () => {
                     width: "3vw",
                   }}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
 

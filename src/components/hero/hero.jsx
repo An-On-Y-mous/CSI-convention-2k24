@@ -121,17 +121,22 @@ const hero = () => {
 
             <div className="title1">
               <div className="title_head">
-              <img className="" src="/images/csi1.webp" alt="" style={{width: '90px'}}/>
+              <div className="prt_title">
+            <img className="" src="/images/KPM.png" alt="" style={{width: '95px'}}/>
+              <div className="des">
               <span className="hackathon"> {"Convention-"}<span className="hackathon1">2024</span></span>
-            
-              </div>
+              
+              
               {/* <br /> */}
               {/* <p className="tag1"> A National Level 24 Hour Hackathon</p> */}
               {/* <span className="hackathon">Hackathon</span> */}
               <p className="description">
-                <span> A Multiverse of Brilliance, Where Countless Events</span>
-                <br /> <span>Converge for Innovation and Inspiration!</span>
+                <span>"A Multiverse of Brilliance, Where Events</span>
+                 <span> Converge for Innovation and Inspiration!"</span>
               </p>
+              </div>
+              </div>
+              </div>
             </div>
 
             <div className="register_now" onClick={handleRegisterClick}>
@@ -269,6 +274,7 @@ const hero = () => {
         </section>
         {/* -------------------------- Page 2 -------------------------- */}
       </div>
+      <div className="bg-sep"></div>
       <Agenda />
       <div className="bg-sep"></div>
       <Schedule />
