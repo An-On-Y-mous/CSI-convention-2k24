@@ -51,7 +51,7 @@ const events = () => {
   };
   return (
     <React.Fragment>
-      <div className="parent-events">
+      {/* <div className="parent-events">
         <div className="events-progress-bar">
           <ul>
             <li onClick={() => handleStage("1")}>Stage 1</li>
@@ -164,7 +164,7 @@ const events = () => {
             </div>{" "}
           </div>
         </div>
-      </div>
+      </div> */}
     </React.Fragment>
   );
 };

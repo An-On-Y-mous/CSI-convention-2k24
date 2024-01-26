@@ -3,7 +3,7 @@ import "./convener.css";
 const coordinators = () => {
   return (
     <React.Fragment>
-      <div className="parent-convener">
+      {/* <div className="parent-convener">
         <div className="convener-title">
           <img src="/images/rrr.webp" alt="" className="convener-logo" />
           <h1 className="convener-title-name">Coordinators</h1>
@@ -33,7 +33,7 @@ const coordinators = () => {
             </h1>
           </div>
         </div>
-      </div>
+      </div> */}
     </React.Fragment>
   );
 };

@@ -20,7 +20,7 @@ const hero = () => {
       action: "click",
       label: "register",
     });
-    window.open("https://forms.gle/mqHSf1kpoTUiMURH6");
+    window.open("https://forms.gle/ETnuCdbYnkBzaBUD8");
   };
   const handleCardClicks = (card) => {
     ReactGA.event({
@@ -94,9 +94,9 @@ const hero = () => {
         {/* <div className="progress_bar"></div> */}
         <div className=" tag-hero-mobile">
           <img
-            src="/images/srm.webp"
+            src="/images/SRMLogo.png"
             alt="srm logo"
-            width="40vw"
+            width="60vw"
             className="hero-srm-logo"
           />
           <div className="tag">
@@ -107,7 +107,7 @@ const hero = () => {
             of CSI at SRMVEC
           </div>
           <img
-            src="/images/srmvec.webp"
+            src="/images/VecLogo.png"
             alt="srmvec logo"
             width="60vw"
             className="hero-srmvec-logo"
@@ -122,7 +122,7 @@ const hero = () => {
             <div className="title1">
               <div className="title_head">
               <div className="prt_title">
-            <img className="" src="/images/KPM.png" alt="" style={{width: '95px'}}/>
+            <img className="" src="/images/KPM.png" alt="" style={{width: '150px'}}/>
               <div className="des">
               <span className="hackathon"> {"Convention-"}<span className="hackathon1">2024</span></span>
               
@@ -141,11 +141,11 @@ const hero = () => {
 
             <div className="register_now" onClick={handleRegisterClick}>
               <div>
-                <a>REGISTER NOW </a>
+                <a>REGISTER &nbsp; NOW</a>
               </div>
               <div>
                 {" "}
-                <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 35 }} />
+                <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 40,marginBottom: '1vh' }} />
               </div>
             </div>
             <div className="countdown-main">
@@ -193,7 +193,7 @@ const hero = () => {
               >
                 Guidelines <ArrowRightWhite className="arrow-right-icon" />
               </p>
-              <p className="text3" onClick={() => handleCardClicks("/events")}>
+              <p className="text3" onClick={() => handleCardClicks("/#")}>
                 How to Register <ArrowRightWhite className="arrow-right-icon" />
               </p>
             </div>
@@ -224,17 +224,17 @@ const hero = () => {
               </h3>
               <div className="flex flex-col ">
                 <p className="text-black pt-[2vh] text-[0.8vw] venue-text-mobile font-bold">
-                Srm Valliammai Engineering College, SRM Nagar, Kattankulathur
+                SRM Valliammai Engineering College, SRM Nagar, Kattankulathur
                 </p>
                 <p
                 className="text_venue1"
-                onClick={() => handleCardClicks("/guidelines")}
+                onClick={() => handleCardClicks("/#")}
               >
                 Geographical Ping <ArrowRightBlack className="arrow-right-icon" />
               </p>
               <p
                 className="text_venue2"
-                onClick={() => handleCardClicks("/guidelines")}
+                onClick={() => handleCardClicks("/#")}
               >
                 How to reach? <ArrowRightBlack className="arrow-right-icon" />
               </p>

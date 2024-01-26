@@ -94,7 +94,7 @@ const contact = () => {
                         onClick={() => {
                           handleLaunch("contact-card-launch2");
                           setTimeout(() => {
-                            window.open("mailto:shree@hackatank.tech");
+                            window.open("mailto:shree@csiconvention.tech");
                           }, 2000);
                         }}
                       >
@@ -189,7 +189,7 @@ const contact = () => {
             </div>
           </div>
           {/* -----------------------------------------Contact 2 ------------------------------------------- */}
-          <div>
+          {/* <div>
             <div className="contact-container">
               <div className="contact-card1">
                 <div className="contact-card-front">
@@ -349,7 +349,7 @@ const contact = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </React.Fragment>

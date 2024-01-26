@@ -56,12 +56,13 @@ const section2 = () => {
               />
             </div>
             <div className="agenda-des">
-              A hackathon is an event where individuals or teams come together
-              to collaboratively work on solving specific problems or challenges
-              within a limited timeframe, usually ranging from a few hours to a
-              couple of days. It is a great platform for programmers, designers,
-              entrepreneurs, and other creative minds to showcase their skills,
-              creativity, and problem-solving abilities.
+              In its triumphant 5th year, our SRM VEC CSI - Student Branch has
+              evolved into a pinnacle of innovation and collaboration. Gathering
+              tech luminaries, industry leaders, and passionate enthusiasts, the
+              event continues to push boundaries. A celebration of knowledge
+              exchange, CSI has become a beacon for the tech community,
+              fostering connections, and inspiring attendees to navigate the
+              ever-changing technological landscape with confidence.
             </div>
           </div>
         </div>
@@ -77,13 +78,13 @@ const section2 = () => {
               Vision
             </div>
             <div className="about-vision-description" id="agenda-right">
-              Empowering Innovators to Transform Tomorrow. Our hackathon
-              envisions a world where creative minds converge to tackle pressing
-              challenges, forging solutions that redefine possibilities. Through
-              dynamic collaboration, cutting-edge technology, and unwavering
-              determination, we ignite a spark that sparks real change. Join us
-              to hack a brighter future and leave an indelible mark on the
-              landscape of innovation.
+              Our vision is to create a dynamic platform that fosters
+              innovation, collaboration, and continuous learning within the tech
+              community. We envision a future where our technical symposium
+              serves as a catalyst for pushing the boundaries of knowledge,
+              providing a space where professionals, enthusiasts, and experts
+              converge to explore, discuss, and shape the cutting edge of
+              technological advancements.
             </div>
           </div>
           <div className="mission">
@@ -97,13 +98,12 @@ const section2 = () => {
               Mission
             </div>
             <div className="about-mission-description" id="agenda-left">
-              Fueling innovation, our hackathon is a nexus of minds reimagining
-              solutions for a dynamic world. Through tech-driven teamwork, we
-              catalyze change, pushing boundaries and shaping the future. Join
-              us to ideate, collaborate, and leave an indelible mark on the
-              tapestry of progress.we ignite a spark that sparks real change.
-              Join us to hack a brighter future and leave an indelible mark on
-              the landscape of innovation
+              Our mission is to organize an annual technical symposium that
+              brings together thought leaders, industry experts, and passionate
+              individuals to share insights, exchange ideas, and showcase the
+              latest developments in the world of technology. We aim to empower
+              participants to thrive in the ever-evolving landscape of the tech
+              industry. Our commitment is to inspire, educate, and propel.
             </div>
           </div>
         </div>

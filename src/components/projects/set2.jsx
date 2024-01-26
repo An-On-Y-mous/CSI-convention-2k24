@@ -22,52 +22,39 @@ const set2 = () => {
   return (
     <React.Fragment>
       <div className="parent-software">
-        <h1 className="parent-software-title">Projects - Set 2</h1>
+        <h1 className="parent-software-title">Non-Technical Events</h1>
         <p className="projects-disclaimer">
-          OWN/UNIQUE PROBLEM STATEMENTS ARE ALSO WELCOMED - Kindly intimate when
-          speaking with registration team
+          
         </p>
         <div className="software-container">
           <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">
-              Sustainable Solutions for Urban Mobility
+              Event-1
             </h1>
             <p className="software-content-description projects-close projects-close">
-              {" "}
-              Develop an application or system that addresses the challenges of
-              urban transportation, promoting sustainable alternatives such as
-              cycling, walking, or public transport. Consider factors like
-              traffic congestion, air pollution, and ease of access for all
-              citizens.
+              
             </p>
           </div>
 
           <div className="software-content" onClick={() => handleSoftwareView}>
             <h1 className="software-content-title">
-              AI-powered Healthcare Triage
+              Event-2
             </h1>
             <p className="software-content-description projects-close">
-              Create an AI-powered platform that can assess and prioritize
-              patient symptoms to help healthcare professionals manage the
-              patient load efficiently during emergencies or outbreaks. The
-              system should be able to recognize critical cases that need
-              immediate attention.
+             
             </p>
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">
-              Education Accessibility for All
+              Event-3
             </h1>
             <p className="software-content-description projects-close">
-              Design an educational tool or application that makes learning more
-              accessible to differently-abled individuals or those with learning
-              difficulties. Consider inclusivity, interactivity, and adaptable
-              content to cater to a diverse audience
+              
             </p>
           </div>
 
-          <div className="software-content" onClick={handleSoftwareView}>
+          {/* <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">
               Waste Management and Recycling Optimization
             </h1>
@@ -217,7 +204,7 @@ const set2 = () => {
               learning experiences, interactive content, and tools for teachers
               to engage students in virtual or hybrid classrooms{" "}
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </React.Fragment>

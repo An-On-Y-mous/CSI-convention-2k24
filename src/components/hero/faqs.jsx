@@ -47,34 +47,30 @@ const faqs = () => {
         <div className="faqs-section">
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              What is a hackathon?
+              What is Csi?
               <ChevronRightIcon
                 style={styles.container}
                 className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
-              A hackathon is a social coding event that brings computer
-              programmers and other interested people together to improve upon
-              or build a new software program or a hardware solution for the
-              provided problem statements.
+              Csi is Computer Society of India, Which is a nation wide technical
+              association for students studying computer and its related
+              branches
             </p>
           </div>
 
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              What is “Hack-A-Tank”?
+              what is a "convention"?
               <ChevronRightIcon
                 style={styles.container}
                 className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
-              Hack-A-Tank is the first 24-hour national-level hackathon
-              organized by the SRM Valliammai engineering college in
-              collaboration with Whitehatians – Club of the Department of Cyber
-              Security and the Student Branch of Computer Society of India (CSI-
-              SB).
+              its a symposium like day celebrated by the SRMVEC CSI student
+              Branch on the even semester every year
             </p>
           </div>
 
@@ -87,8 +83,8 @@ const faqs = () => {
               />
             </h1>
             <p className="faqs-content-description">
-              Hack-A-Tank is open to all undergraduate students from all
-              colleges across India.
+              it is open for all under/post graduate students from all over the
+              nation
             </p>
           </div>
 
@@ -101,37 +97,26 @@ const faqs = () => {
               />
             </h1>
             <p className="faqs-content-description">
-              After the scrutiny process, the organizing committee will release
-              the shortlisted teams for the finale. The selected team must pay a
-              registration fee of Rs. 1000/- per team, which includes GST. It
-              contributes to goodie bags, food, and refreshments served during
-              the event. The registration fee is non-refundable and
-              non-transferable. Teams are advised to complete the registration
-              process as soon as possible to secure their participation in the
-              event. Upon successful completion of the registration, teams will
-              receive further instructions from the organizing committee.
+              CSI Members: Rs. 200 Non-CSI Members: Rs. 300
             </p>
           </div>
 
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              Is the hackathon online or offline?
+              Is the convention online or offline?
               <ChevronRightIcon
                 style={styles.container}
                 className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
-              The first round will be abstract submission which is completely
-              done in virtual mode. Further upon registration, you will be
-              contacted by our team and given a brief on the process of abstract
-              submission. The shortlisted team should appear physically for the
-              final.
+              it is a complete physical mode of event and the participants need
+              to come to SRM VEC to participate on the day of the event
             </p>
           </div>
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              How to register for the hackathon?
+              How to register for the convention?
               <ChevronRightIcon
                 style={styles.container}
                 className="faqs-arrow"
@@ -146,43 +131,55 @@ const faqs = () => {
           </div>
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              What is the prize money of the winning team?
+              What will be awarded to the winners?
               <ChevronRightIcon
                 style={styles.container}
                 className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
-              The event has a prize pool of Rs 25,000 for the winners.
+              A cash prize along with certificate will awarded to all the top 3
+              contestents of every event
             </p>
           </div>
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              What is the team size to participate in the Hack-A-Tank?
+              How many events can i participate?
               <ChevronRightIcon
                 style={styles.container}
                 className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
-              The teams must have a minimum of 2 members and a maximum of 3
-              members.
+              you can participate upto 4 events in the CSI Conventiom
             </p>
           </div>
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              What are the prerequisites considered for registering?
+              Can we participate as a team?
               <ChevronRightIcon
                 style={styles.container}
                 className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
-              Participants may need to have knowledge and skills in areas such
-              as electronics, programming, data analytics, and IoT technologies,
-              depending on the theme of the hackathon. Participants must need to
-              bring their own laptops, sensors, microcontrollers, and other
-              necessary tools and equipment.
+              it is based on the event. if it is a team event, you can
+              participate as a team. but you have to register as solo for the
+              cause of smooth registration and payment features
+            </p>
+          </div>
+
+          <div className="faqs-content" onClick={handleArrow}>
+            <h1 className="faqs-content-title">
+              will refreshments be provided?
+              <ChevronRightIcon
+                style={styles.container}
+                className="faqs-arrow"
+              />
+            </h1>
+            <p className="faqs-content-description">
+              yes, for the participants lunch and refreshments will be provided
+              for the day
             </p>
           </div>
         </div>

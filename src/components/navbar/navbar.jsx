@@ -50,7 +50,7 @@ const Navbar = () => {
       action: "click",
       label: "register",
     });
-    window.open("https://forms.gle/mqHSf1kpoTUiMURH6");
+    window.open("https://forms.gle/ETnuCdbYnkBzaBUD8");
   };
   const handleScroll = (id) => {
     ReactGA.event({

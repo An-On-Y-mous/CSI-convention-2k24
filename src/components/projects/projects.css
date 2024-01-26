@@ -4,10 +4,11 @@
   align-items: center;
   width: 100%;
   color: white;
-  padding-bottom: 10vh;
+  padding-bottom: 50vh;
 }
 .parent-software-title {
-  padding-top: 2vh;
+  padding-top: 6vh;
+  padding-bottom: 5vh;
   font-size: 3.5vw;
   color: rgb(188, 219, 244);
   font-family: audiowide;
@@ -35,6 +36,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-items: center;
+  justify-content: center;
   align-items: flex-start;
   width: 100%;
   padding: 2vh 5vw;
@@ -69,6 +71,27 @@
     width: 100%;
   }
 }
+
+.software-content-1{
+  flex-basis: 45%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dotted white;
+  padding: 2vh 0vw;
+  border-radius: 1vw;
+  gap: 2vh;
+  transition: all 0.3s linear;
+  overflow-y: hidden;
+  background-color: rgb(188, 219, 244, 0.1);
+  backdrop-filter: blur(1vw);
+  cursor: pointer;
+  text-align: center;
+
+}
+
+
 .projects-view {
   display: block;
 }

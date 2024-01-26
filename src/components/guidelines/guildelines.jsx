@@ -12,55 +12,84 @@ const guildelines = () => {
         <div className="guidelines-container">
           <div className="guidelines-content">
             <div className="guidelines-1">
-              1. The teams can have a minimum of 2 members and a maximum of 3
-              members. 🤝👥
+              1. Most importantly, have fun, enjoy the experience, and make the
+              most of the valuable opportunities the event offers.
               <br /> <br />
-              2. The last date for team registration is 25th August 2023. ⏰🗓️{" "}
+              2. Maintain professional conduct throughout the event, both
+              in-person and online.
               <br />
               <br />
-              3. The last date for abstract submission is 28th August 2023. 📝🗓️{" "}
+              3. Embrace the diversity of the tech community and engage with
+              participants from various backgrounds.
               <br />
               <br />
-              4. The project should be unique and shouldn't have ever been
-              published in any other journals or competitions. 🚀🔍 <br />
+              4. Share constructive feedback to help organizers improve future
+              events and enhance participant experience. <br />
               <br />
-              5. The event will have three phases of judge review. Projects will
-              be evaluated every 8 hours from the beginning of the finale. 👁️‍🗨️🕒{" "}
-              <br />
-              <br />
-              6. The project's work should sustain the whole 24 hours; if it
-              fails to do so, the team will be disqualified immediately. 🏆🕒❌{" "}
+              5. Capture memorable moments, share your experiences, and
+              celebrate the event's highlights.
               <br />
               <br />
-              7. Code of conduct is strictly monitored, and any case of
-              uncivilized behavior will result in the whole team's
-              disqualification. 🚫👮‍♂️❌ <br />
+              6. Adhere to event rules and guidelines to ensure a smooth and
+              respectful environment for all.
               <br />
+              <br />
+              7. Take advantage of networking opportunities to connect with
+              fellow attendees.
+              <br />
+              <br />
+              8.Adhere to the event's code of conduct to ensure a safe and
+              inclusive environment for everyone.
+              <br />
+              <br />
+              9.Explore connections between different tech disciplines,
+              promoting a holistic understanding of the industry.
+              <br />
+              <br />
+              10.Take breaks, stay hydrated, and ensure you have the energy to
+              fully participate in the event.
+              <br />
+              <br/>
             </div>
             <div className="guidelines-2">
-              8. The abstract submission round is completely free for all teams
-              that have registered on or before the 25th of August 2023. 🆓📅{" "}
+              11. Don't hesitate to seek assistance from event staff if you have
+              questions or need support.
               <br />
               <br />
-              9. The shortlisted/scrutinized teams for the finale of
-              "HACK-A-TANK" will be announced by 4:00 pm on the 29th of August
-              2023. 📣🏁 10. The Finale round begins at 10:00 am on 8th
-              September 2023 and concludes at 5:00 pm on the 9th September 2023.
-              🏁🕙🏁
+              12.Dress professionally to make a positive impression and create a
+              conducive atmosphere.
               <br />
-              <br /> 11. The finale round will be offline and held at our SRM
-              VALLIAMMAI ENGINEERING COLLEGE, Potheri, Chennai. 🏛️📍 <br />
               <br />
-              12. Power outlets and worksheets will be provided to all teams
-              prior to the commencement of the event. 🔌📑 <br />
+              13. Silence or turn off electronic devices during sessions to
+              minimize distractions and disruptions.
               <br />
-              13. All technical and physical requirements for the projects
-              should be brought by the team only, and no assistance will be
-              provided in this case. ⚙️🛠️🚫
+              <br />
+              14.Treat fellow participants, speakers, and event staff with
+              courtesy
+              <br />
+              <br />
+              15. Respect the time allocated for each session and adhere to
+              schedules to ensure a smooth flow of events.
               <br /> <br />
-              14. Teams must present their projects in a clear and organized
-              manner during the finale, ensuring effective communication of
-              their ideas. 🗣️📊
+              16. Be mindful of privacy concerns; seek permission before sharing
+              photos or information about others.
+              <br />
+              <br />
+              17.Embrace unexpected changes or adaptations in the schedule with
+              flexibility and a positive mindset.
+              <br />
+              <br />
+              18.Contribute to a positive and supportive atmosphere, creating an
+              environment conducive to learning and collaboration.
+              <br />
+              <br />
+              19.Uphold ethical standards in technology usage, emphasizing
+              responsibility and accountability.
+              <br />
+              <br />
+              20. Arrive on time to make the most of your experience.
+              <br />
+              <br />
             </div>
           </div>
         </div>

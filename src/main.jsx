@@ -86,7 +86,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </div>
           }
         />
-        <Route
+        {/* <Route
           path="/judges"
           element={
             <div>
@@ -94,7 +94,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               <Judges />
             </div>
           }
-        />
+        /> */}
         <Route path="/qr/verify/:id" element={<Verify />} />
         <Route path="/login" element={<Login />} />
       </Routes>

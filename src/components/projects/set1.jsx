@@ -21,40 +21,34 @@ const set1 = () => {
   return (
     <React.Fragment>
       <div className="parent-software">
-        <h1 className="parent-software-title">Projects - Set 1</h1>
-        <p className="projects-disclaimer">
+        <h1 className="parent-software-title">Technical Events</h1>
+        {/* <p className="projects-disclaimer">
           OWN/UNIQUE PROBLEM STATEMENTS ARE ALSO WELCOMED - Kindly intimate when
           speaking with registration team
-        </p>
+        </p> */}
         <div className="software-container">
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Elderly Care</h1>
+            <h1 className="software-content-title">Event-1</h1>
             <p className="software-content-description projects-close">
-              Develop a user-friendly device or system that helps elderly
-              individuals with medication reminders, fall detection, activity
-              tracking, and social interaction
+             <img src="public/images/bg6.webp" alt="" />
             </p>
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Energy Conservation</h1>
+            <h1 className="software-content-title">Event-2</h1>
             <p className="software-content-description projects-close">
-              Develop a smart energy monitoring and management system for homes
-              or businesses that optimizes power consumption, identifies
-              wastage, and encourages energy-saving behaviour
+              
             </p>
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Traffic Management</h1>
+            <h1 className="software-content-title">Event-3</h1>
             <p className="software-content-description projects-close">
-              Design a smart traffic management system that uses real-time data
-              from cameras, sensors, and vehicle-to-vehicle communication to
-              optimize traffic flow and reduce congestion
+              
             </p>
           </div>
 
-          <div className="software-content" onClick={handleSoftwareView}>
+          {/* <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">
               Waste Management and Recycling Optimization
             </h1>
@@ -199,7 +193,7 @@ const set1 = () => {
               system, like a solar-powered electric vehicle charging station or
               an electric bike charge sharing technique
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </React.Fragment>

@@ -9,7 +9,7 @@ const sponsors = () => {
   return (
     <React.Fragment>
       <div className="parent-sponsors">
-        <h1 className="sponsors-title">
+        {/* <h1 className="sponsors-title">
           Sponsor
           <img src="/images/rrr.webp" alt="arrow-logo" />
         </h1>
@@ -28,7 +28,7 @@ const sponsors = () => {
             </div>{" "}
             <LaunchLink className="link-launch-icon" />
           </div>
-        </div>
+        </div> */}
         <Faqs />
         <Contact />
         <Convener />
