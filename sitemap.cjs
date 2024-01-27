@@ -11,17 +11,16 @@ const renderToString = (element) =>
 async function generateSitemap() {
   const staticRoutes = [
     "/",
-    "about",
-    "guidelines",
-    "events",
-    "/set1",
-    "/set2",
-    "/judges",
-    "/#contact",
+    "/about",
+    "/guidelines",
+    "/events",
+    "/technical",
+    "/nontechnical",
+    "/venue",
   ];
 
   const smStream = new SitemapStream({
-    hostname: "https://www.hackatank.tech",
+    hostname: "https://www.csiconvention.site",
   });
 
   staticRoutes.forEach((route) => {
