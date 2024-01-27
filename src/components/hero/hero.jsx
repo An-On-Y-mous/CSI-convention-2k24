@@ -118,24 +118,32 @@ const hero = () => {
         <section className="column">
           <div className="left_side">
             <div className="curve"></div>
-
             <div className="title1">
               <div className="title_head">
-              <div className="prt_title">
-            <img className="" src="/images/KPM.png" alt="" style={{width: '150px'}}/>
-              <div className="des">
-              <span className="hackathon"> {"Convention-"}<span className="hackathon1">2024</span></span>
-              
-              
-              {/* <br /> */}
-              {/* <p className="tag1"> A National Level 24 Hour Hackathon</p> */}
-              {/* <span className="hackathon">Hackathon</span> */}
-              <p className="description">
-                <span>"A Multiverse of Brilliance, Where Events</span>
-                 <span> Converge for Innovation and Inspiration!"</span>
-              </p>
-              </div>
-              </div>
+                <div className="prt_title">
+                  <div className="kpm_img_mobile">
+                    <img
+                      src="/images/KPM.png"
+                      alt=""
+                      style={{ width: "150px" }}
+                    />
+                  </div>
+                  <div className="des">
+                    <span className="hackathon">
+                      {" "}
+                      {"Convention-"}
+                      <span className="hackathon1">2024</span>
+                    </span>
+
+                    {/* <br /> */}
+                    {/* <p className="tag1"> A National Level 24 Hour Hackathon</p> */}
+                    {/* <span className="hackathon">Hackathon</span> */}
+                    <p className="description">
+                      <span>"A Multiverse of Brilliance, Where Events</span>
+                      <span> Converge for Innovation and Inspiration!"</span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -145,7 +153,9 @@ const hero = () => {
               </div>
               <div>
                 {" "}
-                <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 40,marginBottom: '1vh' }} />
+                <KeyboardDoubleArrowRightSharpIcon
+                  style={{ fontSize: 40, marginBottom: "1vh" }}
+                />
               </div>
             </div>
             <div className="countdown-main">
@@ -185,7 +195,7 @@ const hero = () => {
                     <div className="text_quint"> Quintessentials</div>
                   </div>{" "}
                 </div>
-                <Calender className="calender-icon" /> 
+                <Calender className="calender-icon" />
               </h3>
               <p
                 className="text2"
@@ -193,7 +203,10 @@ const hero = () => {
               >
                 Guidelines <ArrowRightWhite className="arrow-right-icon" />
               </p>
-              <p className="text3" onClick={() => handleCardClicks("/register")}>
+              <p
+                className="text3"
+                onClick={() => handleCardClicks("/register")}
+              >
                 How to Register <ArrowRightWhite className="arrow-right-icon" />
               </p>
             </div>
@@ -211,7 +224,7 @@ const hero = () => {
                 <ArrowRightWhite className="arrow-right-icon" />
               </p>
             </div> */}
-            
+
             {/* -------------------------- Column 4  ---------------------------------- */}
             <div
               className="col4 animated-div"
@@ -220,24 +233,26 @@ const hero = () => {
               }
             >
               <h3 className="text10">
-             Venue<Location className="location-icon" />
+                Venue
+                <Location className="location-icon" />
               </h3>
               <div className="flex flex-col ">
                 <p className="text-black pt-[2vh] text-[0.8vw] venue-text-mobile font-bold">
-                SRM Valliammai Engineering College, SRM Nagar, Kattankulathur
+                  SRM Valliammai Engineering College, SRM Nagar, Kattankulathur
                 </p>
                 <p
-                className="text_venue1"
-                onClick={() => handleCardClicks("/#")}
-              >
-                Geographical Ping <ArrowRightBlack className="arrow-right-icon" />
-              </p>
-              <p
-                className="text_venue2"
-                onClick={() => handleCardClicks("/#")}
-              >
-                How to reach? <ArrowRightBlack className="arrow-right-icon" />
-              </p>
+                  className="text_venue1"
+                  onClick={() => handleCardClicks("/#")}
+                >
+                  Geographical Ping{" "}
+                  <ArrowRightBlack className="arrow-right-icon" />
+                </p>
+                <p
+                  className="text_venue2"
+                  onClick={() => handleCardClicks("/#")}
+                >
+                  How to reach? <ArrowRightBlack className="arrow-right-icon" />
+                </p>
                 {/* <p className="text-white  text-[0.8vw] ">
                   National Highway 45, Potheri, SRM Nagar, Kattankulathur, Tamil
                   Nadu - 603203
@@ -251,14 +266,20 @@ const hero = () => {
               <div className="flex justify-items-start">
                 <h3 className="text7">Events</h3>
               </div>
-              <p className="text8" onClick={() => handleCardClicks("/technical")}>
+              <p
+                className="text8"
+                onClick={() => handleCardClicks("/technical")}
+              >
                 Technical <ArrowRightBlack className="arrow-right-icon" />
               </p>
-              <p className="text9" onClick={() => handleCardClicks("/nontechnical")}>
+              <p
+                className="text9"
+                onClick={() => handleCardClicks("/nontechnical")}
+              >
                 Non-Technical <ArrowRightBlack className="arrow-right-icon" />
               </p>
             </div>
-           
+
             {/* -------------------------- Column 6  ---------------------------------- */}
             <div className="col6 animated-div">
               <h3 className="text13">
@@ -266,7 +287,10 @@ const hero = () => {
                 <div className="flex justify-center items-center gap-1"></div>
               </h3>
               <div className="flex items-start justify-between flex-col">
-                <p className="text14"><span> CSI Kancheepuram Chapter</span> <span > SRMVEC CSI Student Branch </span></p>
+                <p className="text14">
+                  <span> CSI Kancheepuram Chapter</span>{" "}
+                  <span> SRMVEC CSI Student Branch </span>
+                </p>
                 <div className="round2"></div>
               </div>
             </div>

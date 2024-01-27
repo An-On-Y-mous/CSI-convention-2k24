@@ -163,7 +163,7 @@ const Navbar = () => {
               onClick={() => window.open("/", "_self")}
             >
               <img src="/images/diamond.webp" width="30vw" alt="logo" />
-              Hackathon
+              CSI-Conclave
             </div>
             <div className="last-mobile">
               <h2 className="register-mobile">
@@ -180,7 +180,7 @@ const Navbar = () => {
           <div className="navbar-open navbar-close-mobile">
             <ul>
               <li>
-                <p onClick={() => window.open("/", "_self")}>Home</p>
+                <p onClick={() => window.open("/about",)}>About</p>
               </li>
               <li>
                 <p onClick={() => handleScroll("#agenda")}>Agenda</p>

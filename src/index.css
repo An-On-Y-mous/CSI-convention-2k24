@@ -184,6 +184,10 @@ p {
 .bg-sep {
   position: relative;
   height: 0.2vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait){
+    display: none;
+  }
+  
 }
 .bg-sep::after {
   content: "";
