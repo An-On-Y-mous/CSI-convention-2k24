@@ -12,7 +12,7 @@ const events = () => {
     window.open("/how-to-reach");
   };
   useEffect(() => {
-    document.title = "Stages";
+    document.title = "Register";
   });
   const handleStage = (stage) => {
     ReactGA.event({

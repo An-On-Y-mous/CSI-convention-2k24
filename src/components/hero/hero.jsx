@@ -193,7 +193,7 @@ const hero = () => {
               >
                 Guidelines <ArrowRightWhite className="arrow-right-icon" />
               </p>
-              <p className="text3" onClick={() => handleCardClicks("/events")}>
+              <p className="text3" onClick={() => handleCardClicks("/register")}>
                 How to Register <ArrowRightWhite className="arrow-right-icon" />
               </p>
             </div>
@@ -251,10 +251,10 @@ const hero = () => {
               <div className="flex justify-items-start">
                 <h3 className="text7">Events</h3>
               </div>
-              <p className="text8" onClick={() => handleCardClicks("/set1")}>
+              <p className="text8" onClick={() => handleCardClicks("/technical")}>
                 Technical <ArrowRightBlack className="arrow-right-icon" />
               </p>
-              <p className="text9" onClick={() => handleCardClicks("/set2")}>
+              <p className="text9" onClick={() => handleCardClicks("/nontechnical")}>
                 Non-Technical <ArrowRightBlack className="arrow-right-icon" />
               </p>
             </div>

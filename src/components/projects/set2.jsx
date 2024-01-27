@@ -4,7 +4,7 @@ import ReactGA from "react-ga";
 
 const set2 = () => {
   useEffect(() => {
-    document.title = "Projects - Set 2";
+    document.title = "Non-Technical Events";
   });
   const handleSoftwareView = (Element) => {
     ReactGA.event({

@@ -42,7 +42,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           }
         />
         <Route
-          path="/events"
+          path="/register"
           element={
             <div className="events-bg">
               <Navbar />
@@ -60,7 +60,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           }
         />
         <Route
-          path="/set2"
+          path="/nontechnical"
           element={
             <div className="set2-bg">
               <Navbar />
@@ -69,7 +69,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           }
         />
         <Route
-          path="/set1"
+          path="/technical"
           element={
             <div className="set1-bg">
               <Navbar />

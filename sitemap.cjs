@@ -13,10 +13,9 @@ async function generateSitemap() {
     "/",
     "/about",
     "/guidelines",
-    "/events",
+    "/register",
     "/technical",
     "/nontechnical",
-    "/venue",
   ];
 
   const smStream = new SitemapStream({
