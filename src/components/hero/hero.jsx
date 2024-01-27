@@ -193,7 +193,7 @@ const hero = () => {
               >
                 Guidelines <ArrowRightWhite className="arrow-right-icon" />
               </p>
-              <p className="text3" onClick={() => handleCardClicks("/#")}>
+              <p className="text3" onClick={() => handleCardClicks("/events")}>
                 How to Register <ArrowRightWhite className="arrow-right-icon" />
               </p>
             </div>

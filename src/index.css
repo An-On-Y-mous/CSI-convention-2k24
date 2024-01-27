@@ -133,7 +133,7 @@
 }
 @font-face {
   font-family: dashhorizon;
-  src: url(fonts/Dashhorizon.otf);
+  src: url(/fonts/Dashhorizon.otf);
 }
 html,
 body {
