@@ -41,28 +41,25 @@ const about = () => {
         <div className="foundation">
           <div className="foundation-title " id="about-right">
             <img
-              src="/images/srm.webp"
+              src="/images/KPM.png"
               alt="srm logo"
               className="about-srm-logo"
             />
             CSI Convention 2024
-            <img
+            {/* <img
               src="/images/srmvec.webp"
               alt="srmvec logo"
               className="about-srmvec-logo"
-            />
+            /> */}
           </div>
           <div className="foundation-description" id="about-left">
-            SRM Valliammai Engineering college (An Autonomous Institution) was
-            established on 9th September, 1999. The SRM Valliammai Engineering
-            College is a part of the SRM Group of Educational Institutions,
-            sponsored by the Valliammai Society. The Valliammai Society was
-            founded by Dr.T.R.Paarivendhar , a well-known educationist, in the
-            name of his mother Tmt. R.Valliammai, under whose care and guidance
-            he attained greater heights in his personal development and whose
-            ideals continue to inspire him. On this auspicious moment we
-            celebrate the 25th Foundation Day of SRM Valliammai Engineering
-            college by organising Hackathon on 8th September, 2023.
+            Entering its triumphant fifth year, our annual technical Convention
+            has blossomed into a pinnacle of inventive synergy. Attracting tech
+            luminaries, industry trailblazers, and fervent enthusiasts, the
+            event consistently pushes the envelope of possibilities. A festivity
+            of knowledge sharing, CSI stands tall as a guiding force for the
+            tech community, nurturing bonds, and motivating participants to
+            confidently navigate the perpetually evolving technological terrain.
           </div>
         </div>
 

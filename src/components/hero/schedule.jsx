@@ -43,11 +43,11 @@ const schedule = () => {
               </h2>
               <h2 className="container-title">Registration begins</h2>
               <p className="container-description">
-                {/* Registration is open for tech enthusiasts, developers, and
-                problem solvers from all backgrounds. Join us for an
-                exhilarating 24 hours of coding, collaboration, and competition
-                as we tackle real-world challenges and develop cutting-edge
-                solutions */}
+                As we unveil the doors to an exciting event, registration
+                opening initiates a meticulous process. Be part of the
+                anticipation as we verify details, ensuring a smooth and
+                seamless experience for your participation in this upcoming
+                event
               </p>
               <span className="circle"></span>
             </div>
@@ -66,10 +66,11 @@ const schedule = () => {
                 </div>
               </h1> */}
               <p className="container-description">
-                {/* Submit your abstracts and be a part of the forefront of
-                innovation! We invite you to share your groundbreaking ideas and
-                research at our esteemed hackathon event. This is your
-                opportunity to present your unique insights and solutions 🚀👩‍💻 */}
+                As part of our meticulous event preparation, we ensure thorough
+                details verification. Your information undergoes a comprehensive
+                review to guarantee accuracy, streamline logistics, and create a
+                seamless experience at our upcoming event. Rest assured, your
+                participation is our priority
               </p>
               <span className="circle"></span>
             </div>
@@ -84,11 +85,11 @@ const schedule = () => {
               </h1> */}
               <h2 className="container-title">Payment Confirmation</h2>
               <p className="container-description">
-                {/* Last call for registration! Time is running out to be a part of
-                our extraordinary hackathon event. Don't miss this incredible
-                opportunity to join a community of tech enthusiasts, developers,
-                and innovators from around the world. Registration will close
-                soon, so act fast and secure your spot */}
+                In our commitment to a flawless event experience, payment
+                confirmation undergoes rigorous scrutiny. Our meticulous process
+                ensures financial transactions are accurate, providing you peace
+                of mind and a seamless journey to secure your participation in
+                the upcoming event
               </p>
 
               <span className="circle"></span>
@@ -104,11 +105,10 @@ const schedule = () => {
                 </div>
               </h1>
               <p className="container-description">
-                {/* Step into the limelight – the moment we've all been waiting for
-                is here! We're thrilled to announce the finalists of our highly
-                competitive hackathon event. After meticulous evaluation and
-                deliberation, we've handpicked the most promising and innovative
-                teams to move forward to the final round */}
+                As we approach the culmination of registrations, our meticulous
+                process intensifies. Act swiftly before registration closing to
+                ensure your participation. Secure your spot now, as this journey
+                towards excellence nears its final destination
               </p>
               <span className="circle"></span>
             </div>
@@ -124,10 +124,10 @@ const schedule = () => {
                 </div>
               </h1>
               <p className="container-description">
-                {/* Get ready for the moment of triumph – the Hackathon Finale is
-                just around the corner! After an intense and exhilarating
-                journey, we've arrived at the grand finale, where the most
-                ingenious minds will showcase their remarkable solutions. */}
+                As the much-anticipated event day dawns, our meticulous planning
+                unfolds. Every detail is examined to guarantee a seamless
+                experience. Join us as we embark on a journey of innovation and
+                excellence on this remarkable day!"
               </p>
               <span className="circle"></span>
             </div>
@@ -142,11 +142,10 @@ const schedule = () => {
                 </div>
               </h1>
               <p className="container-description">
-                {/* The judges deliberate, and winners are announced in various
-                categories, celebrating outstanding projects, creativity, and
-                teamwork. The successful conclusion of the hackathon is
-                commemorated with an awards ceremony and well-deserved
-                celebrations. */}
+                As the pinnacle of our event, the award ceremony marks the
+                culmination of meticulous planning. Every detail is scrutinized
+                to ensure a flawless celebration of excellence. Join us in
+                honoring outstanding achievements on this grand occasion!
               </p>
               <span className="circle"></span>
             </div>
