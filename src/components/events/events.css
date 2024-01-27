@@ -147,5 +147,7 @@
   font-weight: 750;
   padding-left: 3vw;
   padding-top: 1vh;
-
+}
+.stage2-reference{
+  cursor: pointer;
 }

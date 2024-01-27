@@ -119,8 +119,8 @@ const events = () => {
                 requirement.
                 <br />
                 <br />
-                5️⃣ Feel free to communicate with the registration team for further
-                query.
+                6️⃣ Feel free to communicate with the registration team for
+                further query.
                 <br />
                 <br />
               </p>
@@ -130,24 +130,24 @@ const events = () => {
             <div className="section-format">
               <h1>Payment Confirmation</h1>
               <p>
-                Further upon completion of detail verification procedure, you
+                1️⃣ Further upon completion of detail verification procedure, you
                 will be forwarded to payment verification for the event.
                 <br />
                 <br />
-                Please note that you will be asked to pay only via call through
-                the registration team.
+                2️⃣ Please note that you will be asked to pay only via call
+                through the registration team.
                 <br />
                 <br />
-                You will be offered multiple payment gateways to complete the
+                3️⃣ You will be offered multiple payment gateways to complete the
                 transaction.
                 <br />
                 <br />
-                After the payment is successful, kindly send the screenshot of
-                the payment via whatsapp to the registration team.
+                4️⃣ After the payment is successful, kindly send the screenshot
+                of the payment via whatsapp to the registration team.
                 <br />
                 <br />
-                Kindly check your mail for payment confirmation receipt and your
-                ID number.
+                5️⃣ Kindly check your mail for payment confirmation receipt and
+                your ID number.
                 <br />
                 <br />
                 <span className="font-bold">NOTE:</span> Don't misplace your Id
@@ -157,12 +157,11 @@ const events = () => {
                 Hence without the confirmation mail and Id number you will
                 unable to attend the event.
                 <br />
-                <br />
                 <h1 className="fee">Registration Fee</h1>
                 <p className="amount">
-                  For CSI-Members = 200/person
+                  💵 For CSI-Members = 200/person
                   <br />
-                  For Non CSI-Members = 300/person
+                  💵 For Non CSI-Members = 300/person
                   <br />
                   <br />
                 </p>
@@ -173,35 +172,37 @@ const events = () => {
             <div className="section-format">
               <h1>The Convention</h1>
               <p>
-                Arrive at the destination (SRM VEC) on or before 8:30 AM on the
-                day of the event.
+                1️⃣ Arrive at the destination (SRM VEC) on or before 8:30 AM on
+                the day of the event.
                 <br />
                 <br />
-                Please make sure that you have your college ID card and a
+                2️⃣ Please make sure that you have your college ID card and a
                 Government ID for proof.
                 <br />
                 <br />
-                Lunch & Refreshments will be provided by the event organization
-                for all participants.
+                3️⃣ Lunch & Refreshments will be provided by the event
+                organization for all participants.
                 <br />
                 <br />
-                The First round will be conducted in the morning session.
+                4️⃣ The First round will be conducted in the morning session.
                 <br />
                 <br />
-                The final round will be conducted in the afternoon session.
+                5️⃣ The final round will be conducted in the afternoon session.
                 <br />
                 <br />
-                The winners will receive cash prizes in the evening session.
+                6️⃣ The winners will receive cash prizes in the evening session.
                 <br />
                 <br />
-                The Certificates will be sent via courier within a month.
+                7️⃣ The Certificates will be sent via courier within a month.
                 <br />
                 <br />
-                Dress Code - Formals is only allowed for the events.
+                <span className="text-3xl">🚧</span> Dress Code - Formals is
+                only allowed for the events.
                 <br />
                 <br />
-                Transportation services will not be provided by the college.
-                Public Transportation is advised.
+                <span className="text-4xl">🚁</span>Transportation services will
+                not be provided by the college. Public Transportation is
+                advised.
                 <span className="stage2-reference" onClick={handleAbstract}>
                   <span>
                     {" "}
