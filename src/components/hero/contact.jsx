@@ -27,7 +27,7 @@ const contact = () => {
     <React.Fragment>
       <div id="contact" className="parent-contact">
         <div className="contact-title">
-          <img src="/images/rrr.webp" alt="arrow-logo" />
+          <img src="/assets/rrr.webp" alt="arrow-logo" />
           Contacts
         </div>
         <div className="parent-container">

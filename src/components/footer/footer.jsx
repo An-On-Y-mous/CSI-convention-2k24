@@ -8,7 +8,7 @@ const footer = () => {
         <p className="copyright">
           Copyrights
           <Copyright className="copyright-icon" />
-          2023 - {"All Rights Reserved."}
+          2024 - {"All Rights Reserved."}
         </p>
       </div>
     </React.Fragment>

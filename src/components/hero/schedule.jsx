@@ -28,7 +28,7 @@ const schedule = () => {
       <div className="mainSchedule" id="schedule">
         <div className="parent-schedule">
           <div className="schedule-title">
-            <img src="/images/rrr.webp" alt="arrow-logo" />
+            <img src="/assets/rrr.webp" alt="arrow-logo" />
             Schedule
           </div>
           <div className="timeline" id="timeline">
@@ -155,7 +155,7 @@ const schedule = () => {
       <div className="mainSchedule" id="schedule">
         <div className="parent-schedule-mobile">
           <div className="schedule-title-mobile">
-            <img src="/images/rrr.webp" alt="arrow-logo" />
+            <img src="/assets/rrr.webp" alt="arrow-logo" />
             Schedule
           </div>
           <div className="timeline-mobile" id="timeline">
