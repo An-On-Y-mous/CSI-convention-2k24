@@ -107,7 +107,7 @@ const hero = () => {
             of CSI at SRMVEC
           </div>
           <img
-            src="/images/VecLogo.png"
+            src="/images/SRMVEC-logo.png"
             alt="srmvec logo"
             width="60vw"
             className="hero-srmvec-logo"
@@ -123,7 +123,7 @@ const hero = () => {
                 <div className="prt_title">
                   <div className="kpm_img_mobile">
                     <img
-                      src="/images/KPM.png"
+                      src="/images/csi-kpm.png"
                       alt=""
                       style={{ width: "150px" }}
                     />
