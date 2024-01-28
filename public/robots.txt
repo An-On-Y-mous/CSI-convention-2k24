@@ -1,7 +1,4 @@
 User-agent: *
-<<<<<<< HEAD
 Disallow: /assets/
-=======
->>>>>>> 097ca9ff2b423ca7140067ad6fcc58ddaada9f2d
 Disallow: /fonts/
 Sitemap: https://csiconvention.site/sitemap.xml
