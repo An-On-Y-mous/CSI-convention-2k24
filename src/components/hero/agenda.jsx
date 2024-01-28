@@ -55,7 +55,7 @@ const section2 = () => {
                 onMouseLeave={() => ref.current.goToAndStop(1000)}
               />
             </div>
-            <div className="agenda-des">
+            <p className="agenda-des">
               In its triumphant 5th year, our SRM VEC CSI - Student Branch has
               evolved into a pinnacle of innovation and collaboration. Gathering
               tech luminaries, industry leaders, and passionate enthusiasts, the
@@ -63,12 +63,12 @@ const section2 = () => {
               exchange, CSI has become a beacon for the tech community,
               fostering connections, and inspiring attendees to navigate the
               ever-changing technological landscape with confidence.
-            </div>
+            </p>
           </div>
         </div>
         <div className="parent-vision">
           <div className="vision">
-            <div className="about-vision-title " id="agenda-left">
+            <h2 className="about-vision-title " id="agenda-left">
               <img
                 src="/assets/vision.webp"
                 alt="vision-image"
@@ -76,8 +76,8 @@ const section2 = () => {
                 className="about-vision-image"
               />
               Vision
-            </div>
-            <div className="about-vision-description" id="agenda-right">
+            </h2>
+            <p className="about-vision-description" id="agenda-right">
               Our vision is to create a dynamic platform that fosters
               innovation, collaboration, and continuous learning within the tech
               community. We envision a future where our technical symposium
@@ -85,10 +85,10 @@ const section2 = () => {
               providing a space where professionals, enthusiasts, and experts
               converge to explore, discuss, and shape the cutting edge of
               technological advancements.
-            </div>
+            </p>
           </div>
           <div className="mission">
-            <div className="about-mission-title" id="agenda-right">
+            <h2 className="about-mission-title" id="agenda-right">
               <img
                 src="/assets/target.webp"
                 alt="mission-image"
@@ -96,15 +96,15 @@ const section2 = () => {
                 className="about-mission-image"
               />
               Mission
-            </div>
-            <div className="about-mission-description" id="agenda-left">
+            </h2>
+            <p className="about-mission-description" id="agenda-left">
               Our mission is to organize an annual technical symposium that
               brings together thought leaders, industry experts, and passionate
               individuals to share insights, exchange ideas, and showcase the
               latest developments in the world of technology. We aim to empower
               participants to thrive in the ever-evolving landscape of the tech
               industry. Our commitment is to inspire, educate, and propel.
-            </div>
+            </p>
           </div>
         </div>
       </div>

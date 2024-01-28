@@ -27,21 +27,21 @@ const schedule = () => {
     <React.Fragment>
       <div className="mainSchedule" id="schedule">
         <div className="parent-schedule">
-          <div className="schedule-title">
+          <h2 className="schedule-title">
             <img src="/assets/rrr.webp" alt="arrow-logo" />
             Schedule
-          </div>
+          </h2>
           <div className="timeline" id="timeline">
             <div className="container" id="timeline-container">
-              <h2 className="date">
+              <h3 className="date">
                 <div>
                   Feb
                   <div>
                     <div> 02</div> <div>nd</div>
                   </div>
                 </div>
-              </h2>
-              <h2 className="container-title">Registration begins</h2>
+              </h3>
+              <h3 className="container-title">Registration begins</h3>
               <p className="container-description">
                 As we unveil the doors to an exciting event, registration
                 opening initiates a meticulous process. Be part of the
@@ -52,8 +52,8 @@ const schedule = () => {
               <span className="circle"></span>
             </div>
             <div className="container ">
-              <h2 className="container-title">Details verification</h2>
-              {/* <h1 className="date">
+              <h3 className="container-title">Details verification</h3>
+              {/* <h3 className="date">
                 <div>
                   Aug
                   <div>
@@ -64,7 +64,7 @@ const schedule = () => {
                     <div>28</div> <div>th</div>
                   </div>
                 </div>
-              </h1> */}
+              </h3> */}
               <p className="container-description">
                 As part of our meticulous event preparation, we ensure thorough
                 details verification. Your information undergoes a comprehensive
@@ -75,15 +75,15 @@ const schedule = () => {
               <span className="circle"></span>
             </div>
             <div className="container ">
-              {/* <h1 className="date">
+              {/* <h3 className="date">
                 <div>
                   Feb
                   <div>
                     <div>25</div> <div>th</div>
                   </div>
                 </div>
-              </h1> */}
-              <h2 className="container-title">Payment Confirmation</h2>
+              </h3> */}
+              <h3 className="container-title">Payment Confirmation</h3>
               <p className="container-description">
                 In our commitment to a flawless event experience, payment
                 confirmation undergoes rigorous scrutiny. Our meticulous process
@@ -95,15 +95,15 @@ const schedule = () => {
               <span className="circle"></span>
             </div>
             <div className="container ">
-              <h2 className="container-title">Registration Closes</h2>
-              <h1 className="date">
+              <h3 className="container-title">Registration Closes</h3>
+              <h3 className="date">
                 <div>
                   Feb
                   <div>
                     <div>25</div> <div>st</div>
                   </div>
                 </div>
-              </h1>
+              </h3>
               <p className="container-description">
                 As we approach the culmination of registrations, our meticulous
                 process intensifies. Act swiftly before registration closing to
@@ -114,15 +114,15 @@ const schedule = () => {
             </div>
 
             <div className="container ">
-              <h2 className="container-title">The Convention</h2> <br />
-              <h1 className="date">
+              <h3 className="container-title">The Convention</h3> <br />
+              <h3 className="date">
                 <div>
                   Feb
                   <div>
                     <div>28</div> <div>st</div>
                   </div>
                 </div>
-              </h1>
+              </h3>
               <p className="container-description">
                 As the much-anticipated event day dawns, our meticulous planning
                 unfolds. Every detail is examined to guarantee a seamless
@@ -132,15 +132,15 @@ const schedule = () => {
               <span className="circle"></span>
             </div>
             <div className="container ">
-              <h2 className="container-title">Award Ceremony</h2>
-              <h1 className="date">
+              <h3 className="container-title">Award Ceremony</h3>
+              <h3 className="date">
                 <div>
                   Feb
                   <div>
                     <div>28</div> <div>th</div>
                   </div>
                 </div>
-              </h1>
+              </h3>
               <p className="container-description">
                 As the pinnacle of our event, the award ceremony marks the
                 culmination of meticulous planning. Every detail is scrutinized
@@ -154,21 +154,21 @@ const schedule = () => {
       </div>
       <div className="mainSchedule" id="schedule">
         <div className="parent-schedule-mobile">
-          <div className="schedule-title-mobile">
+          <h2 className="schedule-title-mobile">
             <img src="/assets/rrr.webp" alt="arrow-logo" />
             Schedule
-          </div>
+          </h2>
           <div className="timeline-mobile" id="timeline">
             <div className="container-mobile" id="timeline-container">
-              <h2 className="container-title-mobile">Registration opens</h2>{" "}
-              <h2 className="date-mobile">
+              <h3 className="container-title-mobile">Registration opens</h3>{" "}
+              <h3 className="date-mobile">
                 <div>
                   Aug
                   <div>
                     <div>17</div> <div>th</div>
                   </div>
                 </div>
-              </h2>
+              </h3>
               <p className="container-description-mobile">
                 {/* Registration is open for tech enthusiasts, developers, and
                 problem solvers from all backgrounds. Join us for an
@@ -179,8 +179,8 @@ const schedule = () => {
               <span className="circle-mobile"></span>
             </div>
             <div className="container-mobile" id="timeline-container">
-              <h2 className="container-title-mobile">Abstract Submission</h2>
-              <h1 className="date-mobile">
+              <h3 className="container-title-mobile">Abstract Submission</h3>
+              <h3 className="date-mobile">
                 {" "}
                 <div>
                   Aug
@@ -192,7 +192,7 @@ const schedule = () => {
                     <div>28</div> <div>th</div>
                   </div>
                 </div>
-              </h1>
+              </h3>
               <p className="container-description-mobile">
                 {/* Submit your abstracts and be a part of the forefront of
                 innovation! We invite you to share your groundbreaking ideas and
@@ -202,15 +202,15 @@ const schedule = () => {
               <span className="circle-mobile "></span>
             </div>
             <div className="container-mobile ">
-              <h2 className="container-title-mobile">Finalists Annoncements</h2>
-              <h1 className="date-mobile">
+              <h3 className="container-title-mobile">Finalists Annoncements</h3>
+              <h3 className="date-mobile">
                 <div>
                   Sep
                   <div>
                     <div>1</div> <div>st</div>
                   </div>
                 </div>
-              </h1>
+              </h3>
               <p className="container-description-mobile">
                 {/* Step into the limelight – the moment we've all been waiting for
                 is here! We're thrilled to announce the finalists of our highly
@@ -221,15 +221,15 @@ const schedule = () => {
               <span className="circle-mobile"></span>
             </div>
             <div className="container-mobile">
-              <h2 className="container-title-mobile">Registration Closes</h2>
-              <h1 className="date-mobile">
+              <h3 className="container-title-mobile">Registration Closes</h3>
+              <h3 className="date-mobile">
                 <div>
                   Aug
                   <div>
                     <div>28</div> <div>th</div>
                   </div>
                 </div>
-              </h1>
+              </h3>
               <p className="container-description-mobile">
                 {/* Last call for registration! Time is running out to be a part of
                 our extraordinary hackathon event. Don't miss this incredible
@@ -240,9 +240,9 @@ const schedule = () => {
               <span className="circle-mobile"></span>
             </div>
             <div className="container-mobile ">
-              <h2 className="container-title-mobile">Hackathon Finale</h2>{" "}
+              <h3 className="container-title-mobile">Hackathon Finale</h3>{" "}
               <br />
-              <h1 className="date-mobile">
+              <h3 className="date-mobile">
                 <div>
                   sep
                   <div>
@@ -253,7 +253,7 @@ const schedule = () => {
                     <div>9</div> <div>th</div>
                   </div>
                 </div>
-              </h1>
+              </h3>
               <p className="container-description-mobile">
                 {/* Get ready for the moment of triumph – the Hackathon Finale is
                 just around the corner! After an intense and exhilarating
@@ -263,15 +263,15 @@ const schedule = () => {
               <span className="circle-mobile"></span>
             </div>
             <div className="container-mobile ">
-              <h2 className="container-title-mobile">Award Ceremony</h2>
-              <h1 className="date-mobile">
+              <h3 className="container-title-mobile">Award Ceremony</h3>
+              <h3 className="date-mobile">
                 <div>
                   sep
                   <div>
                     <div>9</div> <div>th</div>
                   </div>
                 </div>
-              </h1>
+              </h3>
               <p className="container-description-mobile">
                 {/* The judges deliberate, and winners are announced in various
                 categories, celebrating outstanding projects, creativity, and

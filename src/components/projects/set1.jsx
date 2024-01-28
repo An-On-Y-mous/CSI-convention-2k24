@@ -28,25 +28,25 @@ const set1 = () => {
         </p> */}
         <div className="software-container">
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Event-1</h1>
+            <h2 className="software-content-title">Event-1</h2>
             <p className="software-content-description projects-close">
               <img src="/assets/bg6.webp" alt="" />
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Event-2</h1>
+            <h2 className="software-content-title">Event-2</h2>
             <p className="software-content-description projects-close"></p>
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Event-3</h1>
+            <h2 className="software-content-title">Event-3</h2>
             <p className="software-content-description projects-close"></p>
           </div>
 
           {/* <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Waste Management and Recycling Optimization
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Develop an intelligent system that optimizes waste collection and
               recycling processes in urban areas. The solution could include
@@ -56,9 +56,9 @@ const set1 = () => {
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Cybersecurity for IoT Devices
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Build a security solution to protect Internet of Things (IoT)
               devices from potential threats and vulnerabilities. The solution
@@ -67,7 +67,7 @@ const set1 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Smart Home Innovation</h1>
+            <h2 className="software-content-title">Smart Home Innovation</h2>
             <p className="software-content-description projects-close">
               Develop a cost-effective and energy-efficient smart home system
               that integrates various devices (lights, thermostat, security,
@@ -76,7 +76,7 @@ const set1 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Healthcare Tech</h1>
+            <h2 className="software-content-title">Healthcare Tech</h2>
             <p className="software-content-description projects-close">
               Design a wearable device that monitors vital signs (heart rate,
               blood pressure, oxygen levels) accurately and in real-time,
@@ -84,7 +84,7 @@ const set1 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Agricultural Automation</h1>
+            <h2 className="software-content-title">Agricultural Automation</h2>
             <p className="software-content-description projects-close">
               Build an automated system that optimizes irrigation,
               fertilization, and pest control in a greenhouse or field,
@@ -94,7 +94,7 @@ const set1 = () => {
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Assistive Technology</h1>
+            <h2 className="software-content-title">Assistive Technology</h2>
             <p className="software-content-description projects-close">
               Develop a device or solution that aids individuals with
               disabilities, such as a wearable for visually impaired people that
@@ -104,9 +104,9 @@ const set1 = () => {
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Transportation & Logistics
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Prototype of a Solar Powered IOT Device with the ability to
               connect to a smart network to be used in Geo Tagging of Physical
@@ -114,9 +114,9 @@ const set1 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Mental Health and Wellness Support
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Develop a mental health device that provides users with resources
               for stress management, mindfulness exercises, and access to
@@ -124,7 +124,7 @@ const set1 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Disaster Management:</h1>
+            <h2 className="software-content-title">Disaster Management:</h2>
             <p className="software-content-description projects-close">
               Suggest and develop an innovative approach for redeveloping the
               centralized sewage treatment plants and help the city managers to
@@ -133,7 +133,7 @@ const set1 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Fire suppressant</h1>
+            <h2 className="software-content-title">Fire suppressant</h2>
             <p className="software-content-description projects-close">
               A material which can be installed in the confined spaces of a
               submarine there by suppressing a fire in the initial stages only.
@@ -146,9 +146,9 @@ const set1 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title ">
+            <h2 className="software-content-title ">
               Sustainable Solutions for Urban Mobility
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Develop an application or system that addresses the challenges of
               urban transportation, promoting sustainable alternatives such as
@@ -158,9 +158,9 @@ const set1 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Smart firefighting breathing apparatus
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               It is intend to design add-on smart features to the existing
               Breathing Apparatus (BA) sets. To increase the efficiency and
@@ -172,7 +172,7 @@ const set1 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Wildlife Conservation</h1>
+            <h2 className="software-content-title">Wildlife Conservation</h2>
             <p className="software-content-description projects-close">
               Build a wildlife tracking and monitoring system using GPS,
               sensors, and cameras to gather data on animal behaviour and
@@ -180,9 +180,9 @@ const set1 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Sustainable Transportation
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Make a prototype for an efficient and eco-friendly transportation
               system, like a solar-powered electric vehicle charging station or

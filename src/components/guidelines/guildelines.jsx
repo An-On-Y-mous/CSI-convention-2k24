@@ -8,7 +8,7 @@ const guildelines = () => {
   return (
     <React.Fragment>
       <div className="parent-guidelines">
-        <div className="guidelines-title">Guidelines</div>
+        <h1 className="guidelines-title">Guidelines</h1>
         <div className="guidelines-container">
           <div className="guidelines-content">
             <div className="guidelines-1">

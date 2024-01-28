@@ -26,10 +26,10 @@ const contact = () => {
   return (
     <React.Fragment>
       <div id="contact" className="parent-contact">
-        <div className="contact-title">
+        <h2 className="contact-title">
           <img src="/assets/rrr.webp" alt="arrow-logo" />
           Contacts
-        </div>
+        </h2>
         <div className="parent-container">
           {/* -----------------------------------------Contact 1 ------------------------------------------- */}
           <div>
@@ -39,9 +39,9 @@ const contact = () => {
                   <img src="/images/shree.webp" alt="shree - president CSI" />
                   <div className="contact-card-details">
                     <h1 className="contact-card-name">Shree N</h1>
-                    <h2 className="contact-card-description">
+                    <h3 className="contact-card-description">
                       President - CSI
-                    </h2>
+                    </h3>
                     <h3
                       className="contact-card-options"
                       onClick={() => handlecontactOptions(".contact-card")}

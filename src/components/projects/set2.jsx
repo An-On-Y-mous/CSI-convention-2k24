@@ -28,36 +28,36 @@ const set2 = () => {
         </p>
         <div className="software-container">
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Event-1
-            </h1>
+            </h2>
             <p className="software-content-description projects-close projects-close">
               
             </p>
           </div>
 
           <div className="software-content" onClick={() => handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Event-2
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
              
             </p>
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Event-3
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               
             </p>
           </div>
 
           {/* <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Waste Management and Recycling Optimization
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Develop an intelligent system that optimizes waste collection and
               recycling processes in urban areas. The solution could include
@@ -67,9 +67,9 @@ const set2 = () => {
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Cybersecurity for IoT Devices
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               CBuild a security solution to protect Internet of Things (IoT)
               devices from potential threats and vulnerabilities. The solution
@@ -79,9 +79,9 @@ const set2 = () => {
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Disaster Preparedness and Response
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Create a platform that enhances disaster preparedness and response
               efforts. The system could provide real-time updates, offer
@@ -91,9 +91,9 @@ const set2 = () => {
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Personalized Mental Health Support
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Design an app or service that offers personalized mental health
               support based on an individual's needs and preferences. The
@@ -102,9 +102,9 @@ const set2 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               AI-driven Fake News Detection
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Develop an AI system capable of detecting and classifying fake
               news articles or misinformation spread across various social media
@@ -113,7 +113,7 @@ const set2 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Food Waste Reduction</h1>
+            <h2 className="software-content-title">Food Waste Reduction</h2>
             <p className="software-content-description projects-close">
               Create a solution that helps reduce food waste in households,
               restaurants, or supermarkets. This could include a smart inventory
@@ -122,9 +122,9 @@ const set2 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Eco-friendly Smart Home Automation
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Design a smart home automation system that minimizes energy
               consumption and promotes sustainable practices. The system should
@@ -133,9 +133,9 @@ const set2 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Redefining Education through Technology
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Create an innovative educational platform that offers personalized
               learning experiences, interactive content, and tools for teachers
@@ -143,9 +143,9 @@ const set2 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Mental Health and Wellness Suppor
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Develop a mental health app that provides users with resources for
               stress management, mindfulness exercises, and access to virtual
@@ -153,9 +153,9 @@ const set2 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Cybersecurity and Data Privacy for IoT Devices
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Build a security platform that safeguards Internet of Things (IoT)
               devices from cyber threats, ensuring data privacy and secure
@@ -163,7 +163,7 @@ const set2 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Voice Prescription</h1>
+            <h2 className="software-content-title">Voice Prescription</h2>
             <p className="software-content-description projects-close">
               Design an app to write formatted prescriptions based on dictation
               from doctor. Refer attachment for more detail. The app should
@@ -174,9 +174,9 @@ const set2 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               AI based crop identification mobile app
-            </h1>
+            </h2>
             <p className="software-content-description projects-close h-[35vh]">
               Develop a mobile application that can identify crop using only
               field photo of a crop. The team must target at-least 10 different
@@ -187,18 +187,18 @@ const set2 = () => {
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Portable RCS Measuring Device
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Which is capable of independent operation and deployable from
               multiple platforms (Ship, boat, UAV, etc)
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
+            <h2 className="software-content-title">
               Redefining Education through Technology
-            </h1>
+            </h2>
             <p className="software-content-description projects-close">
               Create an innovative educational platform that offers personalized
               learning experiences, interactive content, and tools for teachers

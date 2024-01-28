@@ -6,7 +6,7 @@ const convener = () => {
       <div className="parent-convener">
         <div className="convener-title">
           <img src="/assets/rrr.webp" alt="" className="convener-logo" />
-          <h1 className="convener-title-name">CSI Coordinator</h1>
+          <h2 className="convener-title-name">CSI Coordinator</h2>
         </div>
 
         <div className="convener-container">
@@ -16,11 +16,11 @@ const convener = () => {
               src="/images/senthilkumar.webp"
               alt="Senthil Kumar - HOD Cyber Security"
             />
-            <h1 className="convener-name"> Dr. M. Senthil Kumar</h1>
+            <h3 className="convener-name"> Dr. M. Senthil Kumar</h3>
 
-            <h1 className="convener-position">
+            <h3 className="convener-position">
               Head Of Department - Cyber Security{" "}
-            </h1>
+            </h3>
           </div>
         </div>
       </div>

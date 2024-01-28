@@ -129,11 +129,11 @@ const hero = () => {
                     />
                   </div>
                   <div className="des">
-                    <span className="hackathon">
+                    <h1 className="hackathon">
                       {" "}
                       {"Convention-"}
                       <span className="hackathon1">2024</span>
-                    </span>
+                    </h1>
 
                     {/* <br /> */}
                     {/* <p className="tag1"> A National Level 24 Hour Hackathon</p> */}
@@ -149,7 +149,7 @@ const hero = () => {
 
             <div className="register_now" onClick={handleRegisterClick}>
               <div>
-                <a>REGISTER &nbsp; NOW</a>
+                <h3>REGISTER &nbsp; NOW</h3>
               </div>
               <div>
                 {" "}
@@ -192,23 +192,23 @@ const hero = () => {
               <h3 className="text">
                 <div>
                   <div>
-                    <div className="text_quint"> Quintessentials</div>
+                    <h2 className="text_quint"> Quintessentials</h2>
                   </div>{" "}
                 </div>
                 <Calender className="calender-icon" />
               </h3>
-              <p
+              <h2
                 className="text2"
                 onClick={() => handleCardClicks("/guidelines")}
               >
                 Guidelines <ArrowRightWhite className="arrow-right-icon" />
-              </p>
-              <p
+              </h2>
+              <h2
                 className="text3"
                 onClick={() => handleCardClicks("/register")}
               >
                 How to Register <ArrowRightWhite className="arrow-right-icon" />
-              </p>
+              </h2>
             </div>
             {/* -------------------------- Column 2 * ---------------------------------- */}
             {/* <div className="col2 animated-div">
@@ -232,27 +232,27 @@ const hero = () => {
                 window.open("https://goo.gl/maps/iaE4Kko8wqqHs4jx9")
               }
             >
-              <h3 className="text10">
+              <h2 className="text10">
                 Venue
                 <Location className="location-icon" />
-              </h3>
+              </h2>
               <div className="flex flex-col ">
-                <p className="text-black pt-[2vh] text-[0.8vw] venue-text-mobile font-bold">
+                <h3 className="text-black pt-[2vh] text-[0.8vw] venue-text-mobile font-bold">
                   SRM Valliammai Engineering College, SRM Nagar, Kattankulathur
-                </p>
-                <p
+                </h3>
+                <h3
                   className="text_venue1"
                   onClick={() => handleCardClicks("/#")}
                 >
                   Geographical Ping{" "}
                   <ArrowRightBlack className="arrow-right-icon" />
-                </p>
-                <p
+                </h3>
+                <h3
                   className="text_venue2"
                   onClick={() => handleCardClicks("/#")}
                 >
                   How to reach? <ArrowRightBlack className="arrow-right-icon" />
-                </p>
+                </h3>
                 {/* <p className="text-white  text-[0.8vw] ">
                   National Highway 45, Potheri, SRM Nagar, Kattankulathur, Tamil
                   Nadu - 603203
@@ -266,31 +266,31 @@ const hero = () => {
               <div className="flex justify-items-start">
                 <h3 className="text7">Events</h3>
               </div>
-              <p
+              <h3
                 className="text8"
                 onClick={() => handleCardClicks("/technical")}
               >
                 Technical <ArrowRightBlack className="arrow-right-icon" />
-              </p>
-              <p
+              </h3>
+              <h3
                 className="text9"
                 onClick={() => handleCardClicks("/nontechnical")}
               >
                 Non-Technical <ArrowRightBlack className="arrow-right-icon" />
-              </p>
+              </h3>
             </div>
 
             {/* -------------------------- Column 6  ---------------------------------- */}
             <div className="col6 animated-div">
-              <h3 className="text13">
+              <h2 className="text13">
                 Organized By
                 <div className="flex justify-center items-center gap-1"></div>
-              </h3>
+              </h2>
               <div className="flex items-start justify-between flex-col">
-                <p className="text14">
+                <h3 className="text14">
                   <span> CSI Kancheepuram Chapter</span>{" "}
                   <span> SRMVEC CSI Student Branch </span>
-                </p>
+                </h3>
                 <div className="round2"></div>
               </div>
             </div>
