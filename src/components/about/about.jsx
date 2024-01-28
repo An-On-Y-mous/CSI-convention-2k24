@@ -41,7 +41,7 @@ const about = () => {
         <div className="foundation">
           <div className="foundation-title " id="about-right">
             <img
-              src="/images/KPM.png"
+              src="/images/csi-kpm.png"
               alt="srm logo"
               className="about-srm-logo"
             />
@@ -71,7 +71,7 @@ const about = () => {
           >
             <img
               className="about-srmvec-logo"
-              src="/images/srmvec.webp"
+              src="./src/assets/images/srmvec.webp"
               alt="srmvec logo"
             />
             About Srmvec
@@ -93,7 +93,7 @@ const about = () => {
           >
             <img
               className="about-csi-logo"
-              src="/images/csi1.webp"
+              src="./src/assets/images/csi1.webp"
               alt="csi logo"
             />
             About csi

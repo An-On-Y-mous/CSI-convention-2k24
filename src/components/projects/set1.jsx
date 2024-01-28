@@ -30,7 +30,7 @@ const set1 = () => {
           <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">Event-1</h1>
             <p className="software-content-description projects-close">
-              <img src="/images/bg6.webp" alt="" />
+              <img src="./src/assets/images/bg6.webp" alt="" />
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>

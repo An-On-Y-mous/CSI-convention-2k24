@@ -84,7 +84,7 @@ const Navbar = () => {
       <div className="parent">
         <div className="components">
           <div className="title" onClick={() => window.open("/", "_self")}>
-            <img src="/images/diamond.webp" className="logo" alt="Logo" />
+            <img src="./src/assets/images/diamond.webp" className="logo" alt="Logo" />
             CSI - CONCLAVE
             <div className="socials">
               <div className="insta">
@@ -162,7 +162,7 @@ const Navbar = () => {
               className="title-mobile"
               onClick={() => window.open("/", "_self")}
             >
-              <img src="/images/diamond.webp" width="30vw" alt="logo" />
+              <img src="./src/assets/images/diamond.webp" width="30vw" alt="logo" />
               CSI-Conclave
             </div>
             <div className="last-mobile">
