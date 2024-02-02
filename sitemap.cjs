@@ -14,6 +14,7 @@ async function generateSitemap() {
     "/about",
     "/guidelines",
     "/register",
+    "/howtoregister",
     "/technical",
     "/nontechnical",
   ];
