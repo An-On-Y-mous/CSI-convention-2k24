@@ -1,8 +1,12 @@
 import React from "react";
 import "./register-form.css";
-import { useState, setState } from "react";
+import { useState, setState, useEffect } from "react";
 
 const Registerform = () => {
+  useEffect(() => {
+    document.title = "Registration";
+  })
+
   const [name, setName] = useState(null);
   const [department, setDepartment] = useState(null);
   const [year, setYear] = useState(null);

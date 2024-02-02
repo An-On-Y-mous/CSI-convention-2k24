@@ -51,7 +51,7 @@ const Navbar = () => {
       action: "click",
       label: "register",
     });
-    window.open({ Registerform });
+    window.open('/register');
   };
   const handleScroll = (id) => {
     ReactGA.event({
@@ -151,7 +151,7 @@ const Navbar = () => {
           </ul>
           <div className="last">
             <h2 className="register">
-              <p onClick={Registerform}> Register</p>
+              <p onClick={handleRegisterClick}> Register</p>
             </h2>
           </div>
         </div>

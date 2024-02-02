@@ -10,14 +10,13 @@ import {
   Guildelines,
   Set1,
   Set2,
-  // Registerform,
+  Registerform,
   About,
   Verify,
   Login,
 } from "./components";
 
 import ReactGA from "react-ga";
-import Registerform from "./components/register-form/register-form.jsx";
 ReactGA.initialize("K6F7N5MR4K");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
@@ -97,7 +96,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           }
         /> */}
         <Route
-          path="/register-form"
+          path="/register"
           element={
             <div>
               <Navbar />
