@@ -1,0 +1,19 @@
+.parent-form {
+  /* height: 100; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      254deg,
+      rgba(232, 87, 237, 0.15) 0%,
+      rgba(109, 137, 69, 0.15) 100%
+    ),
+    linear-gradient(184deg, rgb(33, 138, 184), rgb(0, 241, 181));
+}
+.form-title {
+  font-size: 750%;
+  margin-top: 3vh;
+  font-family: apexnew;
+  text-transform: uppercase;
+  letter-spacing: 12%;
+}

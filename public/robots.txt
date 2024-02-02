@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /fonts/
+Sitemap: https://csiconvention.site/sitemap.xml
