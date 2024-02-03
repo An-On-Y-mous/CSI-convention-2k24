@@ -204,7 +204,7 @@
   align-items: flex-end;
   font-family: mars;
   font-weight: bold;
-  font-size: 3.5vw;
+  font-size: 12px;
   cursor: pointer;
 }
 .navbar-close-mobile {

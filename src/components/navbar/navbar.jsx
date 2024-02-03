@@ -1,6 +1,5 @@
 import React from "react";
 import "./navbar.css";
-import Registerform from "../register-form/register-form";
 import {
   InstagramOutlined,
   InstagramFilled,
@@ -86,7 +85,7 @@ const Navbar = () => {
         <div className="components">
           <div className="title" onClick={() => window.open("/", "_self")}>
             <img src="/assets/diamond.webp" className="logo" alt="Logo" />
-            CSI - CONCLAVE
+            CSI - CONVENTION
             <div className="socials">
               <div className="insta">
                 <SocialIcon
@@ -151,7 +150,7 @@ const Navbar = () => {
           </ul>
           <div className="last">
             <h2 className="register">
-              <p onClick={handleRegisterClick}> Register</p>
+              <h3 onClick={handleRegisterClick}> Register</h3>
             </h2>
           </div>
         </div>
@@ -164,13 +163,13 @@ const Navbar = () => {
               onClick={() => window.open("/", "_self")}
             >
               <img src="/assets/diamond.webp" width="30vw" alt="logo" />
-              CSI-Conclave
+              CSI - CONVENTION
             </div>
             <div className="last-mobile">
               <h2 className="register-mobile">
-                <a href="https://forms.gle/mqHSf1kpoTUiMURH6" target="_blank">
+                <h3 onClick={handleRegisterClick}>
                   Register
-                </a>
+                </h3>
               </h2>
             </div>
             <Grid
