@@ -204,8 +204,9 @@
   align-items: flex-end;
   font-family: mars;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 3.3vw;
   cursor: pointer;
+  letter-spacing: -5px;
 }
 .navbar-close-mobile {
   display: none;

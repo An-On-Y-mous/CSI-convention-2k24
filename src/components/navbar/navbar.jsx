@@ -163,7 +163,7 @@ const Navbar = () => {
               onClick={() => window.open("/", "_self")}
             >
               <img src="/assets/diamond.webp" width="30vw" alt="logo" />
-              CSI - CONVENTION
+              CSI&nbsp; - &nbsp;CONVENTION
             </div>
             <div className="last-mobile">
               <h2 className="register-mobile">
