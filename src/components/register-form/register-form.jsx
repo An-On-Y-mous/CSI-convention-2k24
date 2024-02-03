@@ -43,16 +43,17 @@ const Registerform = () => {
           <div className="form-title">
             <h1>Registration</h1>
           </div>
-          <div className="column">
+          <div className="column-reg">
             {/* <.......column1.....> */}
-            <div className="column1">
+            <div className="column1-reg">
               <h1>ccccc1</h1>
+              <img src="/images/csi-kpm.png" alt="" width={"100px"}/>
             </div>
             {/* <.......Form-Starting------column2.....> */}
-            <div className="column2" label="col2">
+            <div className="column2-reg" label="col2">
               {/* <.......Name.....> */}
-              <div className="form">
-                <div className="name">
+              <div className="form-reg">
+                <div className="name-reg">
                   <label>Name</label>
                   <input
                     type="text"
@@ -63,7 +64,7 @@ const Registerform = () => {
                   />
                 </div>
                 {/* <.......Department.....> */}
-                <div className="department">
+                <div className="department-reg">
                   <label>Department</label>
                   <input
                     type="text"

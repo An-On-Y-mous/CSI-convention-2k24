@@ -40,7 +40,7 @@
   display: swap;
 }
 @font-face {
-  font-family: mars;
+  font-family: mars-bold;
   src: url("/fonts/mars/Mars Bold.ttf");
   font-weight: bold;
   font-style: normal;
@@ -154,6 +154,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: poppins;
+  box-sizing: border-box;
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }

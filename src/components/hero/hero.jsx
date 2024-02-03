@@ -118,32 +118,28 @@ const hero = () => {
         <section className="column">
           <div className="left_side">
             <div className="curve"></div>
-            <div className="title1">
-              <div className="title_head">
-                <div className="prt_title">
-                  <div className="kpm_img_mobile">
-                    <img
-                      src="/images/csi-kpm.png"
-                      alt=""
-                      style={{ width: "150px" }}
-                    />
-                  </div>
-                  <div className="des">
-                    <h1 className="hackathon">
-                      {" "}
-                      {"Convention-"}
-                      <span className="hackathon1">2024</span>
-                    </h1>
+            <div className="prt_title">
+              <div className="kpm_img_mobile">
+                <img
+                  src="/images/csi-kpm.png"
+                  alt=""
+                  style={{ width: "115px" }}
+                />
+              </div>
+              <div className="des">
+                <h1 className="convention">
+                  {" "}
+                  {"Convention-"}
+                  <span className="convention1">2024</span>
+                </h1>
 
-                    {/* <br /> */}
-                    {/* <p className="tag1"> A National Level 24 Hour Hackathon</p> */}
-                    {/* <span className="hackathon">Hackathon</span> */}
-                    <p className="description">
-                      <span>"A Multiverse of Brilliance, Where Events</span>
-                      <span> Converge for Innovation and Inspiration!"</span>
-                    </p>
-                  </div>
-                </div>
+                {/* <br /> */}
+                {/* <p className="tag1"> A National Level 24 Hour Hackathon</p> */}
+                {/* <span className="hackathon">Hackathon</span> */}
+                <p className="description">
+                  <span>"A Multiverse of Brilliance, Where Events</span>
+                  <span> Converge for Innovation and Inspiration!"</span>
+                </p>
               </div>
             </div>
 
@@ -153,9 +149,7 @@ const hero = () => {
               </div>
               <div>
                 {" "}
-                <KeyboardDoubleArrowRightSharpIcon
-                  style={{ fontSize: 40, marginBottom: "1vh" }}
-                />
+                <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 40 }} />
               </div>
             </div>
             <div className="countdown-main">

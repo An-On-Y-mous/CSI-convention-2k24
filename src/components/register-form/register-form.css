@@ -19,20 +19,31 @@
   font-family: apexnew;
   text-transform: uppercase;
   letter-spacing: 12%;
-  background-color: black;
 }
-.column{
+.column-reg{
   display: flex;
   flex-direction: row;
   gap: 10vw ;
+  margin-top: 5vh;
+  /* border-color: black;
+  box-sizing: border-box; */
+  box-shadow: 3px 3px 2px 2px black;
+
 }
-/* .column1{
-  width: 50%;
-  float: left;
+.column1{
+  /* width: 50%;
+  float: left; */
   background-color: white;
 }
 .column2{
-  width: 50%;
-  float: right;
+  /* width: 50%;
+  float: right; */
   background-color: red;
-} */
+  display: flex;
+  flex-direction: column;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
