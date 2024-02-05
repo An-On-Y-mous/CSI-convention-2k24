@@ -1,12 +1,17 @@
 import React, { useEffect } from "react";
+import {Helmet} from 'react-helmet';
 import "./guidelines.css";
 
 const guildelines = () => {
   useEffect(() => {
-    document.title = "Guidelines";
+    document.title = "Guidelines | CSI Convention 2024";
   });
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Guidelines | CSI Convention 2024</title>
+        <meta name="description" content="Explore the comprehensive guidelines for attendees at the CSI convention event. From professionalism and diversity to networking and code of conduct, discover how to maximize your experience while ensuring a safe, respectful, and inclusive environment for all participants."/>
+        </Helmet>
       <div className="parent-guidelines">
         <h1 className="guidelines-title">Guidelines</h1>
         <div className="guidelines-container">
