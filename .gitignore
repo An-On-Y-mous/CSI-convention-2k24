@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 .env
 sheets_creds.json
+sheet_cred.json

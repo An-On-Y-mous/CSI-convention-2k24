@@ -2,10 +2,74 @@ import React from "react";
 import "./register-form.css";
 import { useState, setState, useEffect } from "react";
 
+
 const Registerform = () => {
   useEffect(() => {
     document.title = "Registration";
-  })
+  });
+
+  const handleSubmit = () => {
+    fetch("/api/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        department,
+        year,
+        college,
+        number,
+        email,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data.message);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
+
+  // //<----------------------START Google Sheets API--------------------------->//
+
+  // const SPREADSHEET_ID = "1IJYTaforePk8rYqjLZl2e5IWJzhOA_sG2MYr3aZw09s";
+  // const SHEET_ID = "Sheet1";
+
+  // const { client_email, private_key } = credentials;
+
+  // const handleOAuth = async () => {
+  //   const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
+  //   await doc.useServiceAccountAuth({
+  //     client_email,
+  //     private_key,
+  //   });
+  //   await doc.loadInfo();
+
+  //   const sheet = doc.sheetsById[SHEET_ID];
+  //   const newRow = await sheet.addRow({
+  //     Name: name,
+  //     Department: department,
+  //     Year: year,
+  //     College: college,
+  //     Number: number,
+  //     Email: email,
+  //   });
+
+  //   console.log("Row added:", newRow);
+  // };
+
+  // const handleSubmit = async () => {
+  //   try {
+  //     await handleOAuth();
+  //     console.log("Data submitted successfully to Google Sheets!");
+  //   } catch (error) {
+  //     console.error("Error submitting data:", error);
+  //   }
+  // };
+
+  //<----------------------END Google Sheets API--------------------------->//
 
   const [name, setName] = useState(null);
   const [department, setDepartment] = useState(null);
@@ -31,23 +95,23 @@ const Registerform = () => {
     if (id === "number") {
       setNumber(value);
     }
-    if (id === email) {
+    if (id === "email") {
       setEmail(value);
     }
   };
 
   return (
     <React.Fragment>
-      <div className="parent-form">
-        <div className="parent-child">
-          <div className="form-title">
+      <div className="parent-form-reg">
+        <div className="parent-child-reg">
+          <div className="form-title-reg">
             <h1>Registration</h1>
           </div>
           <div className="column-reg">
             {/* <.......column1.....> */}
             <div className="column1-reg">
-              <h1>ccccc1</h1>
-              <img src="/images/csi-kpm.png" alt="" width={"100px"}/>
+              <img src="/images/csi-kpm.png" alt="" width={"180px"} />
+              <h1>CSI - Convention 2K24</h1>
             </div>
             {/* <.......Form-Starting------column2.....> */}
             <div className="column2-reg" label="col2">
@@ -55,6 +119,7 @@ const Registerform = () => {
               <div className="form-reg">
                 <div className="name-reg">
                   <label>Name</label>
+                  <br />
                   <input
                     type="text"
                     placeholder="Name (Ex: Gopal.L)"
@@ -66,6 +131,7 @@ const Registerform = () => {
                 {/* <.......Department.....> */}
                 <div className="department-reg">
                   <label>Department</label>
+                  <br />
                   <input
                     type="text"
                     placeholder="Department"
@@ -77,6 +143,7 @@ const Registerform = () => {
                 {/* <.......Year.....> */}
                 <div className="year">
                   <label>Year of Study</label>
+                  <br />
                   <input
                     type="text"
                     placeholder="00000"
@@ -88,6 +155,7 @@ const Registerform = () => {
                 {/* <.......College Name.....> */}
                 <div className="college">
                   <label>College Name</label>
+                  <br />
                   <input
                     type="text"
                     placeholder="College Name"
@@ -99,6 +167,7 @@ const Registerform = () => {
                 {/* <.......Mobile Number.....> */}
                 <div className="mbl-number">
                   <label>Mobile Number</label>
+                  <br />
                   <input
                     type="text"
                     placeholder="0123456789"
@@ -106,21 +175,24 @@ const Registerform = () => {
                     value={number}
                     onChange={(e) => handleInputchange(e)}
                   />
-                </div>
-                {/* <.......Email ID.....> */}
-                <div className="Email ID">
-                  <label>Email ID</label>
-                  <input
-                    type="text"
-                    placeholder="Email ID"
-                    id="email"
-                    value={email}
-                    onChange={(e) => handleInputchange(e)}
-                  />
+
+                  {/* <.......Email ID.....> */}
+                  <div className="Email ID">
+                    <label>Email ID</label>
+                    <br />
+                    <input
+                      type="text"
+                      placeholder="Email ID"
+                      id="email"
+                      value={email}
+                      onChange={(e) => handleInputchange(e)}
+                    />
+                  </div>
                 </div>
               </div>
+
               <div className="submit-btn">
-                <button onClick={() => handlesubmit()}>Submit</button>
+                <button onClick={() => handleSubmit()}>Submit</button>
               </div>
             </div>
           </div>
