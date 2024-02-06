@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   color: white;
-  padding-bottom: 50vh;
+  padding-bottom: 2vh;
 }
 .parent-software-title {
   padding-top: 6vh;
@@ -72,7 +72,7 @@
   }
 }
 
-.software-content-1{
+.software-content-1 {
   flex-basis: 45%;
   position: relative;
   display: flex;
@@ -88,9 +88,7 @@
   backdrop-filter: blur(1vw);
   cursor: pointer;
   text-align: center;
-
 }
-
 
 .projects-view {
   display: block;

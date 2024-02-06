@@ -59,17 +59,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </div>
           }
         />
+
         <Route
-          path="/nontechnical"
-          element={
-            <div className="set2-bg">
-              <Navbar />
-              <Set2 />
-            </div>
-          }
-        />
-        <Route
-          path="/technical"
+          path="/events"
           element={
             <div className="set1-bg">
               <Navbar />
