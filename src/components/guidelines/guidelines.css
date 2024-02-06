@@ -11,7 +11,7 @@
   }
 }
 .guidelines-title {
-  padding-bottom: 2vw;
+  padding-bottom: 1vh;
   font-size: 3.5vw;
   color: white;
   font-family: audiowide;
@@ -53,6 +53,7 @@
   font-family: lato;
   font-weight: 400;
   box-shadow: 0vw 0vw 2vw 0vw white;
+
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 4vw;
     padding: 2vh 2vw;
