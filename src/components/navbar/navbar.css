@@ -156,6 +156,7 @@
 }
 .register {
   position: relative;
+  cursor: pointer;
   font-family: poppins;
   font-size: 1.2vw;
   padding: 0.5vh 1vw;

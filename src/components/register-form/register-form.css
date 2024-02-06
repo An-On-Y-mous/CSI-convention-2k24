@@ -1,4 +1,4 @@
-.parent-form {
+.parent-form-reg {
   height: 100vh;
   background-image: linear-gradient(
       254deg,
@@ -7,43 +7,93 @@
     ),
     linear-gradient(184deg, rgb(33, 138, 184), rgb(0, 241, 181));
 }
-.parent-child{
+.parent-child-reg {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.form-title {
-  font-size: 750%;
-  font-family: apexnew;
+.form-title-reg > h1 {
+  font-size: 500%;
+  font-family: liger;
   text-transform: uppercase;
-  letter-spacing: 12%;
+  font-weight: 600;
+  margin-top: 4vh;
 }
-.column-reg{
+.column-reg {
   display: flex;
   flex-direction: row;
-  gap: 10vw ;
+  gap: 3vw;
   margin-top: 5vh;
-  /* border-color: black;
-  box-sizing: border-box; */
-  box-shadow: 3px 3px 2px 2px black;
 
 }
-.column1{
-  /* width: 50%;
-  float: left; */
-  background-color: white;
+.column1-reg {
+  /* background-color: red; */
+  font-size: 150%;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:4%;
 }
-.column2{
-  /* width: 50%;
-  float: right; */
-  background-color: red;
+.column2-reg {
+  /* background-color: brown; */
+  padding-left: 3vw;
+  border-left: solid white 2px;
+  color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
-.form{
+.form-reg {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  gap: 2vh;
+  font-size: large;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+  ::-webkit-input-placeholder {
+    color: black;
+    text-align: center;
+    opacity: 0.5;
+  }
+}
+
+#name {
+  background-color: transparent;
+  border: solid rgb(0, 0, 0,0.8) 1px;
+  padding: 2px;
+  margin-top: 1%;
+}
+#department {
+  background-color: transparent;
+  border: solid rgb(0, 0, 0,0.5) 1px;
+}
+#year {
+  background-color: transparent;
+  border: solid rgb(0, 0, 0,0.5) 1px;
+}
+#college {
+  background-color: transparent;
+  border: solid rgb(0, 0, 0,0.5)1px;
+}
+#number {
+  background-color: transparent;
+  border: solid rgb(0, 0, 0,0.5) 1px;
+}
+#email {
+  background-color: transparent;
+  border: solid rgb(0, 0, 0,0.5) 1px;
+}
+.submit-btn {
+  border: solid rgb(0, 0, 0,0.5) 2px;
+  padding: 5px;
+  background-color: cyan;
+
 }
