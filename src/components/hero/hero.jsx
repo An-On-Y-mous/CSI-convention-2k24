@@ -231,7 +231,7 @@ const hero = () => {
                 <Location className="location-icon" />
               </h2>
               <div className="flex flex-col ">
-                <h3 className="text-black pt-[2vh] text-[0.8vw] venue-text-mobile font-bold">
+                <h3 className="text-black pt-[1vh] text-[0.8vw] venue-text-mobile font-bold">
                   SRM Valliammai Engineering College, SRM Nagar, Kattankulathur
                 </h3>
                 <h3
@@ -241,16 +241,6 @@ const hero = () => {
                   Geographical Ping{" "}
                   <ArrowRightBlack className="arrow-right-icon" />
                 </h3>
-                <h3
-                  className="text_venue2"
-                  onClick={() => handleCardClicks("/#")}
-                >
-                  How to reach? <ArrowRightBlack className="arrow-right-icon" />
-                </h3>
-                {/* <p className="text-white  text-[0.8vw] ">
-                  National Highway 45, Potheri, SRM Nagar, Kattankulathur, Tamil
-                  Nadu - 603203
-                </p> */}
                 <div className="round"></div>
               </div>
             </div>
@@ -264,10 +254,21 @@ const hero = () => {
                 View Events <ArrowRightBlack className="arrow-right-icon" />
               </h3>
               <h3 className="text9" onClick={() => handleCardClicks("/events")}>
-                View Events <ArrowRightBlack className="arrow-right-icon" />
+                View Timings <ArrowRightBlack className="arrow-right-icon" />
               </h3>
             </div>
-
+            <div className="col7 animated-div">
+              <div className="flex justify-items-start">
+                <h3 className="text-delegates">Delegates</h3>
+              </div>
+              <h3
+                className="text-delegates-obs"
+                onClick={() => handleCardClicks("/delegates")}
+              >
+                SRMVEC CSI OB'S <ArrowRightWhite className="arrow-right-icon" />
+              </h3>
+            </div>
+            <div></div>
             {/* -------------------------- Column 6  ---------------------------------- */}
             <div className="col6 animated-div">
               <h2 className="text13">
