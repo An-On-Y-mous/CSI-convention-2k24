@@ -13,3 +13,4 @@ export { default as Success } from "./qr/success.jsx";
 export { default as Denied } from "./qr/denied.jsx";
 export { default as Login } from "./login/login.jsx";
 export { default as Registerform } from "./register-form/register-form.jsx";
+export { default as RegComplete } from "./register-form/reg-complete.jsx";

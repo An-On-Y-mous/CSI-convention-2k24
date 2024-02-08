@@ -14,6 +14,8 @@ import {
   About,
   Verify,
   Login,
+  RegComplete,
+  Success,
 } from "./components";
 
 import ReactGA from "react-ga";
@@ -79,11 +81,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           }
         />
         {/* <Route
-          path="/judges"
+          path="/registersuccessful"
           element={
             <div>
-              <Navbar />
-              <Judges />
+              <Registerform/>
+              <RegComplete />
             </div>
           }
         /> */}
@@ -96,6 +98,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </div>
           }
         />
+        <Route path="/registration-complete" component={RegComplete} />
         <Route path="/qr/verify/:id" element={<Verify />} />
         <Route path="/login" element={<Login />} />
       </Routes>
