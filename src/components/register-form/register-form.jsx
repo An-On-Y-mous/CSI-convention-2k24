@@ -8,9 +8,13 @@ const Registerform = () => {
     document.title = "Registration | CSI Convention 2024";
   });
   const navigate = useNavigate();
-
   const handleSubmit = () => {
-    fetch("api/register", {
+    if (!name || !department || !year || !college || !number || !email) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    fetch("/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -29,6 +33,9 @@ const Registerform = () => {
         console.log(data.message);
         setRegistrationComplete(true);
         navigate("/reg-complete");
+        setTimeout(() => {
+          navigate("/");
+        }, 3000);
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -188,8 +195,13 @@ const Registerform = () => {
           {/* <div className="submit-btn">
             <button onClick={() => handleSubmit()}>Submit</button>
           </div> */}
+
           <div>
-            <button onClick={() => handleSubmit()} class="btn-17">
+            <button
+              onClick={() => handleSubmit()}
+              class="btn-17"
+              title="click to submit the registration"
+            >
               <span class="text-container">
                 <span class="text">submit</span>
               </span>
