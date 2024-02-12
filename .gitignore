@@ -25,3 +25,5 @@ dist-ssr
 .env
 sheets_creds.json
 sheet_cred.json
+yarn.lock
+package-lock.json
