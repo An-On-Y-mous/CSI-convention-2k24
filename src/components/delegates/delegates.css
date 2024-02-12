@@ -1,0 +1,57 @@
+.parent_delegates {
+  background-image: url("/assets/aesthetic2.jpg");
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  isolation: isolate;
+}
+
+.parent_delegates::after {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  opacity: 0.8;
+  background-color: black;
+  z-index: -99;
+}
+
+.parent_delegates h1 {
+  text-align: center;
+  font-family: audiowide;
+  font-size: 65px;
+  color: pink;
+  font-weight: 900;
+  padding-top: 5vh;
+  letter-spacing: 5px;
+}
+
+.obs {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+}
+.obs ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5vh 8vw;
+  list-style-type: none;
+}
+.obs ul img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
+.obs ul li {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.obs ul div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

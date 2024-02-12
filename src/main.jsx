@@ -14,6 +14,7 @@ import {
   About,
   Verify,
   Login,
+  Delegates,
 } from "./components";
 
 import ReactGA from "react-ga";
@@ -78,15 +79,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </div>
           }
         />
-        {/* <Route
-          path="/judges"
+        <Route
+          path="/delegates"
           element={
             <div>
               <Navbar />
-              <Judges />
+              <Delegates />
             </div>
           }
-        /> */}
+        />
         <Route
           path="/register"
           element={

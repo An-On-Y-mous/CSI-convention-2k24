@@ -50,7 +50,7 @@ const Navbar = () => {
       action: "click",
       label: "register",
     });
-    window.open('/register');
+    window.open("/register");
   };
   const handleScroll = (id) => {
     ReactGA.event({
@@ -150,7 +150,7 @@ const Navbar = () => {
           </ul>
           <div className="last">
             <h2 className="register">
-              <h3 onClick={handleRegisterClick}> Register</h3>
+              <a onClick={handleRegisterClick}> Register</a>
             </h2>
           </div>
         </div>
@@ -167,9 +167,7 @@ const Navbar = () => {
             </div>
             <div className="last-mobile">
               <h2 className="register-mobile">
-                <h3 onClick={handleRegisterClick}>
-                  Register
-                </h3>
+                <a onClick={handleRegisterClick}>Register</a>
               </h2>
             </div>
             <Grid
