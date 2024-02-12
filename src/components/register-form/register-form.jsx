@@ -1,15 +1,16 @@
 import React from "react";
 import "./register-form.css";
 import { useState, setState, useEffect } from "react";
-
+import { useNavigate } from "react-router-dom";
 
 const Registerform = () => {
   useEffect(() => {
     document.title = "Registration";
   });
+  const navigate = useNavigate();
 
   const handleSubmit = () => {
-    fetch("/api/register", {
+    fetch("http://localhost:4444/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,6 +27,8 @@ const Registerform = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log(data.message);
+        setRegistrationComplete(true);
+        navigate("/reg-complete");
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -77,6 +80,7 @@ const Registerform = () => {
   const [college, setCollege] = useState(null);
   const [number, setNumber] = useState(null);
   const [email, setEmail] = useState(null);
+  const [registrationComplete, setRegistrationComplete] = useState(false);
 
   const handleInputchange = (e) => {
     const { id, value } = e.target;
@@ -104,98 +108,98 @@ const Registerform = () => {
     <React.Fragment>
       <div className="parent-form-reg">
         <div className="parent-child-reg">
-          <div className="form-title-reg">
-            <h1>Registration</h1>
+          <div class="shape"></div>
+          <div class="shape"></div>
+        </div>
+        <div className="form-reg">
+          <h3>Registration</h3>
+          {/* <.......Name.....> */}
+          <div className="name-reg">
+            <label>Name</label>
+            <input
+              type="text"
+              placeholder="Name (Ex: Gopal.L)"
+              id="name"
+              required
+              value={name}
+              onChange={(e) => handleInputchange(e)}
+            />
           </div>
-          <div className="column-reg">
-            {/* <.......column1.....> */}
-            <div className="column1-reg">
-              <img src="/images/csi-kpm.png" alt="" width={"180px"} />
-              <h1>CSI - Convention 2K24</h1>
-            </div>
-            {/* <.......Form-Starting------column2.....> */}
-            <div className="column2-reg" label="col2">
-              {/* <.......Name.....> */}
-              <div className="form-reg">
-                <div className="name-reg">
-                  <label>Name</label>
-                  <br />
-                  <input
-                    type="text"
-                    placeholder="Name (Ex: Gopal.L)"
-                    id="name"
-                    value={name}
-                    onChange={(e) => handleInputchange(e)}
-                  />
-                </div>
-                {/* <.......Department.....> */}
-                <div className="department-reg">
-                  <label>Department</label>
-                  <br />
-                  <input
-                    type="text"
-                    placeholder="Department"
-                    id="department"
-                    value={department}
-                    onChange={(e) => handleInputchange(e)}
-                  />
-                </div>
-                {/* <.......Year.....> */}
-                <div className="year">
-                  <label>Year of Study</label>
-                  <br />
-                  <input
-                    type="text"
-                    placeholder="00000"
-                    id="year"
-                    value={year}
-                    onChange={(e) => handleInputchange(e)}
-                  />
-                </div>
-                {/* <.......College Name.....> */}
-                <div className="college">
-                  <label>College Name</label>
-                  <br />
-                  <input
-                    type="text"
-                    placeholder="College Name"
-                    id="college"
-                    value={college}
-                    onChange={(e) => handleInputchange(e)}
-                  />
-                </div>
-                {/* <.......Mobile Number.....> */}
-                <div className="mbl-number">
-                  <label>Mobile Number</label>
-                  <br />
-                  <input
-                    type="text"
-                    placeholder="0123456789"
-                    id="number"
-                    value={number}
-                    onChange={(e) => handleInputchange(e)}
-                  />
-
-                  {/* <.......Email ID.....> */}
-                  <div className="Email ID">
-                    <label>Email ID</label>
-                    <br />
-                    <input
-                      type="text"
-                      placeholder="Email ID"
-                      id="email"
-                      value={email}
-                      onChange={(e) => handleInputchange(e)}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="submit-btn">
-                <button onClick={() => handleSubmit()}>Submit</button>
-              </div>
-            </div>
+          {/* <.......Department.....> */}
+          <div className="department-reg">
+            <label>Department</label>
+            <input
+              type="text"
+              placeholder="Department"
+              id="department"
+              required
+              value={department}
+              onChange={(e) => handleInputchange(e)}
+            />
           </div>
+          {/* <.......Year.....> */}
+          <div className="year">
+            <label>Year of Study</label>
+            <input
+              type="text"
+              placeholder="00000"
+              id="year"
+              required
+              value={year}
+              onChange={(e) => handleInputchange(e)}
+            />
+          </div>
+          {/* <.......College Name.....> */}
+          <div className="college">
+            <label>College Name</label>
+            <input
+              type="text"
+              placeholder="College Name"
+              id="college"
+              required
+              value={college}
+              onChange={(e) => handleInputchange(e)}
+            />
+          </div>
+          {/* <.......Mobile Number.....> */}
+          <div className="mbl-number">
+            <label>Mobile Number</label>
+            <input
+              type="text"
+              placeholder="0123456789"
+              id="number"
+              required
+              value={number}
+              onChange={(e) => handleInputchange(e)}
+            />
+          </div>
+          {/* <.......Email ID.....> */}
+          <div className="Email ID">
+            <label>Email ID</label>
+            <input
+              type="text"
+              placeholder="Email ID"
+              id="email"
+              required
+              value={email}
+              onChange={(e) => handleInputchange(e)}
+            />
+          </div>
+          {/* <div className="submit-btn">
+            <button onClick={() => handleSubmit()}>Submit</button>
+          </div> */}
+          <div>
+            <button onClick={() => handleSubmit()} class="btn-17">
+              <span class="text-container">
+                <span class="text">submit</span>
+              </span>
+            </button>
+          </div>
+          {/* {registrationComplete && (
+            <div className="registration-complete-message">
+              Registration complete!
+            </div>
+          )} */}
         </div>
       </div>
     </React.Fragment>
