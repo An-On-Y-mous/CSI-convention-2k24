@@ -7,8 +7,8 @@
   padding-bottom: 2vh;
 }
 .parent-software-title {
-  padding-top: 6vh;
-  padding-bottom: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 1vh;
   font-size: 3.5vw;
   color: rgb(188, 219, 244);
   font-family: audiowide;
@@ -125,4 +125,8 @@
     opacity: 1;
     transform: translateY(0vh);
   }
+}
+
+.description{
+  font-weight: 700;
 }

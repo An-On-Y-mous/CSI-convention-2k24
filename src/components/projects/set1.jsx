@@ -29,19 +29,41 @@ const set1 = () => {
         </p> */}
         <div className="software-container">
           <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Event-1</h2>
+            <h2 className="software-content-title">TRICODE CHALLENGE</h2>
             <p className="software-content-description projects-close">
-              <img src="/assets/bg6.webp" alt="" />
+              <span className="description">DESCRIPTION: </span>
+              Dive into the Tricode Challenge, an electrifying coding
+              competition that pushes boundaries with a unique Tri-Language
+              Challenge. Navigate coding odysseys, solve real-world problems,
+              and collaborate in teams for an adrenaline-packed experience.
+              Unleash your coding prowess and compete for top honors, prizes,
+              and recognition.
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Event-2</h2>
-            <p className="software-content-description projects-close"></p>
+            <h2 className="software-content-title">INNO-VATE PAPERS</h2>
+            <p className="software-content-description projects-close">
+              <span className="description">DESCRIPTION: </span>
+              INNO-VATE PAPERS is a platform where groundbreaking research meets
+              innovation. Researchers and academics are invited to present
+              papers on cutting-edge topics, fostering intellectual exchange and
+              technological advancements. Join us to explore the future of
+              innovation through insightful papers, discussions, and networking
+              opportunities.
+            </p>
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Event-3</h2>
-            <p className="software-content-description projects-close"></p>
+            <h2 className="software-content-title">TECHSCAPE QUEST</h2>
+            <p className="software-content-description projects-close">
+              <span className="description">DESCRIPTION: </span>
+              Embark on a thrilling expedition into the world of technology with
+              TechScape Quest. This dynamic event challenges tech enthusiasts
+              and innovators to navigate through diverse landscapes of coding
+              challenges, emerging technologies, and problem-solving quests.
+              Join us for a journey that transcends boundaries, explores the
+              tech frontier, and celebrates innovation.
+            </p>
           </div>
         </div>
 
