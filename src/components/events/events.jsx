@@ -7,12 +7,12 @@ const events = () => {
     ReactGA.event({
       category: "Button",
       action: "click",
-      label: `How To reach`, //------------------------ need to change
+      label: `How To register`, //------------------------ need to change
     });
-    window.open("/how-to-reach");
+    window.open("/how-to-register");
   };
   useEffect(() => {
-    document.title = "Register";
+    document.title = "How to Register | CSI Convention 2024";
   });
   const handleStage = (stage) => {
     ReactGA.event({

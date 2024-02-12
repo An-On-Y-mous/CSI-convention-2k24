@@ -1,16 +1,17 @@
 .parent_delegates {
   background-image: url("/assets/aesthetic2.jpg");
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   position: relative;
   isolation: isolate;
+  padding-bottom: 10vh;
 }
 
 .parent_delegates::after {
   content: " ";
   position: absolute;
   inset: 0;
-  opacity: 0.8;
+  opacity: 0.7;
   background-color: black;
   z-index: -99;
 }
@@ -24,7 +25,19 @@
   padding-top: 5vh;
   letter-spacing: 5px;
 }
+.parent_delegates h2 {
+  color: rgb(215, 235, 253);
+  font-family: "russo one";
+  font-size: 45px;
+  padding-left: 5vw;
+  padding-top: 3vh;
+  border-bottom: 3px solid white;
+  width: fit-content;
+}
 
+.parent_delegates .child_h2_del {
+  padding-top: 10vh;
+}
 .obs {
   display: flex;
   justify-content: center;
@@ -32,7 +45,7 @@
 }
 .obs ul {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 5vh 8vw;
   list-style-type: none;
 }
@@ -50,8 +63,42 @@
   font-weight: 600;
 }
 
-.obs ul div {
+.container_del {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2vh;
+  background-color: rgb(0, 0, 0, 0.3);
+  border: 2px solid rgb(255, 255, 255, 1);
+  border-bottom: 0;
+  box-shadow: 0vw 1vh 0vw 0vw rgb(255, 255, 255, 0.2);
+  padding: 4vh 2vw 4vh 2vw;
+  border-radius: 15%;
+  backdrop-filter: blur(3px);
+}
+
+.container_del > div,
+.container_promotional > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+div > li:first-child {
+  text-transform: capitalize;
+}
+
+/*Special class for promotional team was given due to larger names and paddings are adjusted according to it*/
+.container_promotional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  background-color: rgb(0, 0, 0, 0.3);
+  border: 2px solid rgb(255, 255, 255, 1);
+  border-bottom: 0;
+  box-shadow: 0vw 1vh 0vw 0vw rgb(255, 255, 255, 0.2);
+  padding: 4vh 0.5vw 4vh 0.5vw;
+  border-radius: 15%;
+  backdrop-filter: blur(3px);
 }
