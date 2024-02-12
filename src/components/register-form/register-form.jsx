@@ -5,12 +5,12 @@ import { useNavigate } from "react-router-dom";
 
 const Registerform = () => {
   useEffect(() => {
-    document.title = "Registration";
+    document.title = "Registration | CSI Convention 2024";
   });
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    fetch("http://localhost:4444/api/register", {
+    fetch("api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
