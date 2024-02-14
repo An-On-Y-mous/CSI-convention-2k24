@@ -20,7 +20,7 @@ const hero = () => {
       action: "click",
       label: "register",
     });
-    window.open("https://forms.gle/ETnuCdbYnkBzaBUD8");
+    window.open("/register");
   };
   const handleCardClicks = (card) => {
     ReactGA.event({
