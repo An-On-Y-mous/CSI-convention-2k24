@@ -118,7 +118,7 @@ const Registerform = () => {
             <label>Name</label>
             <input
               type="text"
-              placeholder="Name (Ex: Gopal.L)"
+              placeholder="Gopal khan L"
               id="name"
               required
               value={name}
@@ -130,7 +130,7 @@ const Registerform = () => {
             <label>Department</label>
             <input
               type="text"
-              placeholder="Department"
+              placeholder="CSE / IT / CYS / ECE / EEE"
               id="department"
               required
               value={department}
@@ -142,7 +142,7 @@ const Registerform = () => {
             <label>Year of Study</label>
             <input
               type="text"
-              placeholder="00000"
+              placeholder="I / II / III / IV "
               id="year"
               required
               value={year}
@@ -154,7 +154,7 @@ const Registerform = () => {
             <label>College Name</label>
             <input
               type="text"
-              placeholder="College Name"
+              placeholder="SRM Valliammai Engineering College"
               id="college"
               required
               value={college}
@@ -166,7 +166,7 @@ const Registerform = () => {
             <label>Mobile Number</label>
             <input
               type="text"
-              placeholder="0123456789"
+              placeholder="7010373822"
               id="number"
               required
               value={number}
@@ -178,7 +178,7 @@ const Registerform = () => {
             <label>Email ID</label>
             <input
               type="text"
-              placeholder="Email ID"
+              placeholder="kabeemkubaam@gmail.com"
               id="email"
               required
               value={email}
