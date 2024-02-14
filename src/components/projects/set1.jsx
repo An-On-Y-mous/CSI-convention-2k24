@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./projects.css";
 import ReactGA from "react-ga";
-import Set2 from "./set2";
 
 const set1 = () => {
   useEffect(() => {

@@ -9,7 +9,6 @@ import {
   Events,
   Guildelines,
   Set1,
-  Set2,
   Registerform,
   About,
   Verify,
@@ -99,7 +98,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </div>
           }
         />
-        <Route path="/reg-complete" element={<RegComplete/>} />
+        <Route path="/reg-complete" element={<RegComplete />} />
         <Route path="/qr/verify/:id" element={<Verify />} />
         <Route path="/login" element={<Login />} />
       </Routes>
