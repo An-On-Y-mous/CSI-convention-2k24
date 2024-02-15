@@ -14,7 +14,7 @@ const Registerform = () => {
       return;
     }
 
-    fetch("/api/register", {
+    fetch("http://localhost:4445/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,45 +41,6 @@ const Registerform = () => {
         console.error("Error:", error);
       });
   };
-
-  // //<----------------------START Google Sheets API--------------------------->//
-
-  // const SPREADSHEET_ID = "1IJYTaforePk8rYqjLZl2e5IWJzhOA_sG2MYr3aZw09s";
-  // const SHEET_ID = "Sheet1";
-
-  // const { client_email, private_key } = credentials;
-
-  // const handleOAuth = async () => {
-  //   const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
-  //   await doc.useServiceAccountAuth({
-  //     client_email,
-  //     private_key,
-  //   });
-  //   await doc.loadInfo();
-
-  //   const sheet = doc.sheetsById[SHEET_ID];
-  //   const newRow = await sheet.addRow({
-  //     Name: name,
-  //     Department: department,
-  //     Year: year,
-  //     College: college,
-  //     Number: number,
-  //     Email: email,
-  //   });
-
-  //   console.log("Row added:", newRow);
-  // };
-
-  // const handleSubmit = async () => {
-  //   try {
-  //     await handleOAuth();
-  //     console.log("Data submitted successfully to Google Sheets!");
-  //   } catch (error) {
-  //     console.error("Error submitting data:", error);
-  //   }
-  // };
-
-  //<----------------------END Google Sheets API--------------------------->//
 
   const [name, setName] = useState(null);
   const [department, setDepartment] = useState(null);

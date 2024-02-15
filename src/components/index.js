@@ -14,3 +14,4 @@ export { default as Login } from "./login/login.jsx";
 export { default as Registerform } from "./register-form/register-form.jsx";
 export { default as Delegates } from "./delegates/delegates.jsx";
 export { default as RegComplete } from "./register-form/reg-complete.jsx";
+export { default as Register } from "./register-form/register.jsx";

@@ -1,8 +1,6 @@
 .parent-form-reg {
   background-color: #080710;
   height: 100vh;
-  left: 50%;
-  top: 50%;
 }
 .parent-child-reg {
   width: 430px;
@@ -96,6 +94,7 @@ input {
 }
 
 .btn-17 {
+  appearance: button;
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
   background-color: #000;
@@ -110,7 +109,7 @@ input {
   line-height: 1.5;
   margin: 0;
   margin-top: 2vh;
-  margin-left: 4.5vw;
+  mask-image: radial-gradient(#000, #fff);
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0;
   text-transform: uppercase;
@@ -126,7 +125,6 @@ input {
 
 .btn-17 svg {
   display: block;
-  vertical-align: middle;
 }
 
 .btn-17 [hidden] {

@@ -16,6 +16,7 @@ import {
   Delegates,
   RegComplete,
   Success,
+  Register,
 } from "./components";
 
 import ReactGA from "react-ga";
@@ -94,7 +95,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           element={
             <div>
               <Navbar />
-              <Registerform />
+              <Register />
             </div>
           }
         />
