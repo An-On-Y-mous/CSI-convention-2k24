@@ -1,5 +1,4 @@
 import React from "react";
-import "../register-form/reg-complete.css";
 import Lottie from "lottie-react";
 import tick from "../../assets/verified.json";
 

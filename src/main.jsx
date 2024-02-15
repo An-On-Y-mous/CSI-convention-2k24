@@ -9,13 +9,11 @@ import {
   Events,
   Guildelines,
   Set1,
-  Registerform,
   About,
   Verify,
   Login,
   Delegates,
   RegComplete,
-  Success,
   Register,
 } from "./components";
 
