@@ -82,6 +82,7 @@
   background-color: rgb(32, 29, 32, 1);
   color: aliceblue;
   font-weight: lighter;
+  cursor: pointer;
 }
 
 .register-left .register-icons {

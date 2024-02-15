@@ -85,7 +85,14 @@ const register = () => {
             </h3>
             <div className="register-left-container">
               <h2>Celebrating 5 years of Excellence</h2>
-              <div className="watch-intro">
+              <div
+                className="watch-intro"
+                onClick={() =>
+                  window.open(
+                    "https://youtu.be/BFcK616mvKM?si=AgU2CtcLVeRTb0Dm"
+                  )
+                }
+              >
                 {" "}
                 Watch Intro{" "}
                 <PlayCircleIcon
