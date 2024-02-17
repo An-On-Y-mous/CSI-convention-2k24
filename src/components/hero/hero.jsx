@@ -37,7 +37,7 @@ const hero = () => {
     seconds: 0,
   });
   const handleCountdown = () => {
-    const countDate = new Date("Feburary 27, 2024 09:00:00").getTime();
+    const countDate = new Date("March 6, 2024 08:00:00").getTime();
     const now = new Date().getTime();
     const diff = countDate - now;
     {
@@ -223,7 +223,7 @@ const hero = () => {
             <div
               className="col4 animated-div"
               onClick={() =>
-                window.open("https://goo.gl/maps/iaE4Kko8wqqHs4jx9")
+                window.open("https://maps.app.goo.gl/B2Htd2jCfUsWGPNF6")
               }
             >
               <h2 className="text10">
@@ -248,7 +248,7 @@ const hero = () => {
 
             <div className="col3 animated-div">
               <div className="flex justify-items-start">
-                <h3 className="text7">Events</h3>
+                <h3 className="text7">More Details</h3>
               </div>
               <h3 className="text8" onClick={() => handleCardClicks("/events")}>
                 View Events <ArrowRightBlack className="arrow-right-icon" />

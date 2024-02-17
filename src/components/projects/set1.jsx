@@ -93,8 +93,15 @@ const set1 = () => {
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Event-3</h2>
-            <p className="software-content-description projects-close"></p>
+            <h2 className="software-content-title">Obliviate</h2>
+            <p className="software-content-description projects-close">
+              Test your memory as you view captivating images, absorbing every
+              detail. Then, recall as many images as you can to earn points.
+              From landscapes to abstract art, challenge your cognitive skills
+              in this exciting event. Perfect for all ages and abilities, join
+              us for an unforgettable test of memory prowess. Every image tells
+              a story – how many will you remember?
+            </p>
           </div>
         </div>{" "}
       </div>

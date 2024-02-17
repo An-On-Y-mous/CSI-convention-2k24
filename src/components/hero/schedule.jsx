@@ -37,7 +37,7 @@ const schedule = () => {
                 <div>
                   Feb
                   <div>
-                    <div> 02</div> <div>nd</div>
+                    <div> 16</div> <div>th</div>
                   </div>
                 </div>
               </h3>
@@ -98,9 +98,9 @@ const schedule = () => {
               <h3 className="container-title">Registration Closes</h3>
               <h3 className="date">
                 <div>
-                  Feb
+                  March1
                   <div>
-                    <div>25</div> <div>st</div>
+                    <div>3</div> <div>rd</div>
                   </div>
                 </div>
               </h3>
@@ -117,9 +117,9 @@ const schedule = () => {
               <h3 className="container-title">The Convention</h3> <br />
               <h3 className="date">
                 <div>
-                  Feb
+                  March
                   <div>
-                    <div>28</div> <div>st</div>
+                    <div>6</div> <div>th</div>
                   </div>
                 </div>
               </h3>
@@ -135,9 +135,9 @@ const schedule = () => {
               <h3 className="container-title">Award Ceremony</h3>
               <h3 className="date">
                 <div>
-                  Feb
+                  March
                   <div>
-                    <div>28</div> <div>th</div>
+                    <div>6</div> <div>th</div>
                   </div>
                 </div>
               </h3>
