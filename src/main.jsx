@@ -15,6 +15,7 @@ import {
   Delegates,
   RegComplete,
   Register,
+  Timings,
 } from "./components";
 
 import ReactGA from "react-ga";
@@ -94,6 +95,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <div>
               <Navbar />
               <Register />
+            </div>
+          }
+        />
+        <Route
+          path="/timings"
+          element={
+            <div>
+              <Navbar />
+              <Timings />
             </div>
           }
         />

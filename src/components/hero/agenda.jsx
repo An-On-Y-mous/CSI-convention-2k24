@@ -59,10 +59,7 @@ const section2 = () => {
               In its triumphant 5th year, our SRM VEC CSI - Student Branch has
               evolved into a pinnacle of innovation and collaboration. Gathering
               tech luminaries, industry leaders, and passionate enthusiasts, the
-              event continues to push boundaries. A celebration of knowledge
-              exchange, CSI has become a beacon for the tech community,
-              fostering connections, and inspiring attendees to navigate the
-              ever-changing technological landscape with confidence.
+              event continues to push boundaries.
             </p>
           </div>
         </div>

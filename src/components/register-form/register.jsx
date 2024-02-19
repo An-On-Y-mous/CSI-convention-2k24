@@ -14,7 +14,7 @@ const register = () => {
   const navigate = useNavigate();
   const handleSubmit = () => {
     if (!name || !department || !year || !college || !number || !email) {
-      alert("Please fill out all fields.");
+      alert("Fill all the details");
       return;
     }
 
@@ -80,31 +80,12 @@ const register = () => {
       <div className="main-register">
         <div className="register-container">
           <div className="register-left">
-            <h3>
-              <img src="/assets/csi.webp" width="30px" /> SRMVEC CSI SB
-            </h3>
             <div className="register-left-container">
-              <h2>Celebrating 5 years of Excellence</h2>
-              <div
-                className="watch-intro"
-                onClick={() =>
-                  window.open(
-                    "https://youtu.be/BFcK616mvKM?si=AgU2CtcLVeRTb0Dm"
-                  )
-                }
-              >
-                {" "}
-                Watch Intro{" "}
-                <PlayCircleIcon
-                  style={{ color: "rgb(154, 86, 255)", fontSize: "40px" }}
-                />
-              </div>
+              <h2>Sign Up Now!</h2>
+              <video autoPlay loop controls muted>
+                <source src="/assets/gif.mp4" />
+              </video>
             </div>
-            {/* <div className="register-icons">
-              <InstagramIcon style={{ fontSize: "40px" }} />{" "}
-              <YouTubeIcon style={{ fontSize: "40px" }} />{" "}
-              <FacebookIcon style={{ fontSize: "40px" }} />
-            </div> */}
           </div>
           <div className="register-right">
             <h2>Let the Knowledge Venture begins!</h2>
@@ -190,7 +171,7 @@ const register = () => {
               <button
                 onClick={() => handleSubmit()}
                 className="btn-17"
-                title="click to submit the registration"
+                title="Submit Form"
               >
                 <span class="text-container">
                   <span class="text">submit</span>

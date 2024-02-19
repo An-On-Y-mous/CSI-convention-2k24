@@ -253,7 +253,10 @@ const hero = () => {
               <h3 className="text8" onClick={() => handleCardClicks("/events")}>
                 View Events <ArrowRightBlack className="arrow-right-icon" />
               </h3>
-              <h3 className="text9" onClick={() => handleCardClicks("/events")}>
+              <h3
+                className="text9"
+                onClick={() => handleCardClicks("/timings")}
+              >
                 View Timings <ArrowRightBlack className="arrow-right-icon" />
               </h3>
             </div>

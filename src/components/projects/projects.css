@@ -5,7 +5,8 @@
   width: 100%;
   color: white;
   padding-bottom: 2vh;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 .parent-software-title {
   padding-top: 5vh;

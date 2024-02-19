@@ -22,10 +22,6 @@ const set1 = () => {
     <React.Fragment>
       <div className="parent-software">
         <h1 className="parent-software-title">Events</h1>
-        {/* <p className="projects-disclaimer">
-          OWN/UNIQUE PROBLEM STATEMENTS ARE ALSO WELCOMED - Kindly intimate when
-          speaking with registration team
-        </p> */}
         <div className="software-container">
           <div className="software-content" onClick={handleSoftwareView}>
             <h2 className="software-content-title">TRICODE CHALLENGE</h2>
@@ -103,7 +99,10 @@ const set1 = () => {
               a story – how many will you remember?
             </p>
           </div>
-        </div>{" "}
+        </div>
+        <h2 className="register">
+          <a onClick={() => window.open("/register")}> Register</a>
+        </h2>
       </div>
     </React.Fragment>
   );

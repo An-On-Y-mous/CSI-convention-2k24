@@ -1,0 +1,70 @@
+.parent-timings {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url("/assets/bg9.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  isolation: isolate;
+  z-index: -2;
+}
+
+.parent-timings::after {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.timings-heading {
+  font-family: mars;
+  color: white;
+  font-size: 70px;
+  font-weight: 800;
+  position: relative;
+  text-align: center;
+}
+
+.timings-main {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+}
+.timings-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5vh;
+  column-gap: 2vw;
+  width: fit-content;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  padding: 0vh 3vw;
+}
+
+.timings-container p {
+  color: black;
+  font-size: 20px;
+  font-family: "russo one";
+  padding: 1.5vh 1vw;
+  border-radius: 1vw;
+  border: 2px solid white;
+  position: relative;
+  background-image: url("/assets/light_bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  isolation: isolate;
+  width: 40vw;
+  text-align: center;
+}
+
+.timings-container p::after {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0;
+}
