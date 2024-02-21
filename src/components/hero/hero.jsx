@@ -177,11 +177,11 @@ const hero = () => {
             {/* -------------------------- Column 1 * ---------------------------------- */}
             <div className="col1 animated-div">
               <h3 className="text">
-                <div>
+        
                   <div>
                     <h2 className="text_quint"> Quintessentials</h2>
-                  </div>{" "}
-                </div>
+                  </div>
+           
                 <Calender className="calender-icon" />
               </h3>
               <h2

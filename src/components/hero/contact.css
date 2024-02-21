@@ -18,7 +18,7 @@
   margin-left: 6vw;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 40px;
-    padding-bottom: 0;
+    padding-bottom: 2vh;
     padding-left: 10vw;
   }
 }
@@ -43,6 +43,11 @@
   );
   border-image-slice: 1;
   width: 35vw;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .contact-title::after {
+    display: none;
+  }
 }
 .contact-title img {
   position: absolute;

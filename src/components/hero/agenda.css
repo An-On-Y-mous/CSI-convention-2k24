@@ -1,9 +1,6 @@
 .section2 {
   position: relative;
   isolation: isolate;
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    margin-top: 10vh;
-  }
 }
 
 .section2::after {
@@ -29,7 +26,7 @@
   padding: 3vw;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     padding: 0vh 1vw;
-    padding-top: 93vh;
+    padding-top: 5vh;
   }
 }
 .agenda::after {

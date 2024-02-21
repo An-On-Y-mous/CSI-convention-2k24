@@ -105,7 +105,7 @@ const contact = () => {
                             height: "35px",
                           }}
                         />
-                        shree@hackatank.tech
+                        shree@csiconvention.site
                         <span id="contact-card-launch2">
                           <RocketLaunchIcon
                             className="rocketLaunch"
