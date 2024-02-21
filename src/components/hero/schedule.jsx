@@ -211,10 +211,7 @@ const schedule = () => {
                   <div>
                     <div>6</div> <div>th</div>
                   </div>
-                  - sep
-                  <div>
-                    <div>9</div> <div>th</div>
-                  </div>
+                 
                 </div>
               </h3>
               <p className="container-description-mobile">
