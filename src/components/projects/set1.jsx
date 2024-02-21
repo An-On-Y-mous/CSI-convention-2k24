@@ -100,8 +100,8 @@ const set1 = () => {
             </p>
           </div>
         </div>
-        <h2 className="register">
-          <a onClick={() => window.open("/register")}> Register</a>
+        <h2 className="register-events">
+          <a onClick={() => window.open("/register")}> Register Now</a>
         </h2>
       </div>
     </React.Fragment>

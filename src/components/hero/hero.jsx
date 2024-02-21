@@ -8,7 +8,6 @@ import Schedule from "./schedule";
 import Sponsors from "./sponsors";
 import { Footer } from "../";
 import { ReactComponent as Calender } from "../../assets/calender.svg";
-import { ReactComponent as Info } from "../../assets/info.svg";
 import { ReactComponent as Location } from "../../assets/location.svg";
 import { ReactComponent as ArrowRightWhite } from "../../assets/arrow-right-white.svg";
 import { ReactComponent as ArrowRightBlack } from "../../assets/arrow-right-black.svg";
@@ -132,10 +131,6 @@ const hero = () => {
                   {"Convention-"}
                   <span className="convention1">2024</span>
                 </h1>
-
-                {/* <br /> */}
-                {/* <p className="tag1"> A National Level 24 Hour Hackathon</p> */}
-                {/* <span className="hackathon">Hackathon</span> */}
                 <p className="description">
                   <span>"A Multiverse of Brilliance, Where Events</span>
                   <span> Converge for Innovation and Inspiration!"</span>
@@ -153,9 +148,7 @@ const hero = () => {
               </div>
             </div>
             <div className="countdown-main">
-              {/* <h2 className="countdown-text">
-            Join us for the ultimate coding extravaganza!
-          </h2> */}
+             
               <div className="countdown anim">
                 <div className="day-card anim">
                   <h3 className="day">{countdown.days}</h3>
@@ -204,21 +197,7 @@ const hero = () => {
                 How to Register <ArrowRightWhite className="arrow-right-icon" />
               </h2>
             </div>
-            {/* -------------------------- Column 2 * ---------------------------------- */}
-            {/* <div className="col2 animated-div">
-              <h3 className="text4">
-                Information Details <Info className="info-icon" />
-              </h3>
-              <p className="text5" onClick={() => handleCardClicks("/about")}>
-                About
-                <ArrowRightWhite className="arrow-right-icon" />
-              </p>
-              <p className="text6" onClick={() => handleCardClicks("/judges")}>
-                Judge Panel
-                <ArrowRightWhite className="arrow-right-icon" />
-              </p>
-            </div> */}
-
+          
             {/* -------------------------- Column 4  ---------------------------------- */}
             <div
               className="col4 animated-div"
@@ -230,13 +209,13 @@ const hero = () => {
                 Venue
                 <Location className="location-icon" />
               </h2>
-              <div className="flex flex-col ">
+              <div className="flex flex-col">
                 <h3 className="text-black pt-[1vh] text-[0.8vw] venue-text-mobile font-bold">
                   SRM Valliammai Engineering College, SRM Nagar, Kattankulathur
                 </h3>
                 <h3
                   className="text_venue1"
-                  onClick={() => handleCardClicks("/#")}
+                  onClick={() => window.open('https://maps.app.goo.gl/B2Htd2jCfUsWGPNF6')}
                 >
                   Geographical Ping{" "}
                   <ArrowRightBlack className="arrow-right-icon" />

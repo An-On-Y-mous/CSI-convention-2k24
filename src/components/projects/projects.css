@@ -132,3 +132,24 @@
 .description {
   font-weight: 700;
 }
+
+.register-events {
+  position: relative;
+  cursor: pointer;
+  font-family: poppins;
+  font-size: 1.2vw;
+  padding: 0.5vh 1vw;
+  border: 2px solid slategray;
+  border-radius: 0.5vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 25px;
+    padding: 0.5vh 4vw;
+    border-radius: 10vw;
+  }
+}
+
+.register-events > p {
+  text-decoration: none;
+  color: aliceblue;
+  cursor: pointer;
+}
