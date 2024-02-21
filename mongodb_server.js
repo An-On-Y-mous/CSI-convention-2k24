@@ -1,15 +1,11 @@
-// server.js
-// const express = require('express');
+
 import express from "express";
-// const bodyParser = require('body-parser');
 import bodyParser from "body-parser";
-// const cors = require('cors');
 import cors from "cors";
 import sheet from "./sheetsService.mjs";
 const app = express();
 const PORT = process.env.PORT || 4444;
 
-// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 

@@ -13,9 +13,13 @@ const register = (props) => {
     document.title = "Registration | CSI Convention 2024";
   });
   const navigate = useNavigate();
+  const [buttonDisabled, setButtonDisabled] = useState(false);
   const handleSubmit = () => {
+   
+    setButtonDisabled(true);
     if (!name || !department || !year || !college || !number || !email) {
       alert("Fill all the details");
+      setButtonDisabled(false);
       return;
     }
     setButtonDisabled(true);

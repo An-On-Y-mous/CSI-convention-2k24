@@ -15,3 +15,4 @@ export { default as Delegates } from "./delegates/delegates.jsx";
 export { default as RegComplete } from "./register-form/reg-complete.jsx";
 export { default as Register } from "./register-form/register.jsx";
 export { default as Timings } from "./timings/timings.jsx";
+export {default as ReginComplete} from './register-form/reg-incomplete.jsx'

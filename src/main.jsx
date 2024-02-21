@@ -16,6 +16,7 @@ import {
   RegComplete,
   Register,
   Timings,
+  ReginComplete
 } from "./components";
 
 import ReactGA from "react-ga";
@@ -108,6 +109,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           }
         />
         <Route path="/reg-complete" element={<RegComplete />} />
+        <Route path="/reg-incomplete" element={<ReginComplete />} />
         <Route path="/qr/verify/:id" element={<Verify />} />
         <Route path="/login" element={<Login />} />
       </Routes>
