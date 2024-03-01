@@ -5,25 +5,27 @@ import { GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 import { auth } from "../../lib/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useState } from "react";
-import Notallowed from "../qr/notallowed";
+import Notallowed from "../qr/status/notallowed";
+import {
+  super_admins,
+  event_heads,
+  food_commitee,
+} from "../../lib/login_access.js";
 
 const Login = () => {
   const [user] = useAuthState(auth);
   const google = new GoogleAuthProvider();
-  const verifiedMails = [
-    "raghavcybe@gmail.com",
-    "killerkishore474@gmail.com",
-    "random0120003@gmail.com",
-    "thelinuxsec@gmail.com",
-    "yenshree@gmail.com",
-    "prorahul555@gmail.com",
-  ];
+
   const [notVerified, setNotVerified] = useState(false);
 
   const handleLogin = async () => {
     const result = await signInWithPopup(auth, google);
     const email = result.user.email;
-    if (!verifiedMails.includes(email)) {
+    if (
+      !super_admins.includes(email) &&
+      !event_heads.includes(email) &&
+      !food_commitee.includes(email)
+    ) {
       setNotVerified(true);
       return await handleLogout();
     }

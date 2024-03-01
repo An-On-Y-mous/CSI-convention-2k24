@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import tick from "../../assets/verified.json";
+import tick from "../../../assets/verified.json";
 
 const Success = (props) => {
   return (

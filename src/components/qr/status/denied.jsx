@@ -1,12 +1,11 @@
 import Lottie from "lottie-react";
-import cross from "../../assets/denied.json";
-import "./notallowed.css";
+import cross from "../../../assets/denied.json";
 
-const Notallowed = () => {
+const Denied = (props) => {
   return (
-    <div className="not-allowed">
+    <div className="verify-title">
       <h1>
-        You are not allowed to access this resource
+        Verification Failed
         <Lottie
           animationData={cross}
           style={{
@@ -16,8 +15,9 @@ const Notallowed = () => {
           loop={1}
         />
       </h1>
+      <h3>DEBUG ID - {props.id}</h3>
     </div>
   );
 };
 
-export default Notallowed;
+export default Denied;
