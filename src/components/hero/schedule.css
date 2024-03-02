@@ -218,6 +218,9 @@
 .container-description {
   text-align: justify;
   font-size: 1.1vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 1.2vw;
+  }
 }
 .circle {
   position: absolute;
@@ -338,7 +341,7 @@
 .container-mobile p {
   position: relative;
   padding-top: 2vh;
-  font-size: 3vw;
+  font-size: 4vw;
   text-align: justify;
 }
 .date-mobile {

@@ -25,12 +25,30 @@
         <priority>0.8</priority>
     </url>
     <url>
+<<<<<<< HEAD
         <loc>https://www.csiconvention.site/technical</loc>
+=======
+        <loc>https://www.csiconvention.site/howtoregister</loc>
+>>>>>>> 77c344db58a9f12f9c9f4e3490fcae7c6f9902c7
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
+<<<<<<< HEAD
         <loc>https://www.csiconvention.site/nontechnical</loc>
+=======
+        <loc>https://www.csiconvention.site/events</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.csiconvention.site/delegates</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.csiconvention.site/timings</loc>
+>>>>>>> 77c344db58a9f12f9c9f4e3490fcae7c6f9902c7
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>

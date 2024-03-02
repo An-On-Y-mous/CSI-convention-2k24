@@ -40,7 +40,7 @@
   display: swap;
 }
 @font-face {
-  font-family: mars;
+  font-family: mars-bold;
   src: url("/fonts/mars/Mars Bold.ttf");
   font-weight: bold;
   font-style: normal;
@@ -131,6 +131,15 @@
   font-family: xephyritalic;
   src: url(/fonts/XephyrSemiItalic.otf);
 }
+
+@font-face {
+  font-family: thillends;
+  src: url(/fonts/Thillends.otf);
+}
+@font-face {
+  font-family: apexnew;
+  src: url(/fonts/apexnew.ttf);
+}
 @font-face {
   font-family: dashhorizon;
   src: url(/fonts/Dashhorizon.otf);
@@ -145,6 +154,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: poppins;
+  box-sizing: border-box;
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -184,10 +194,9 @@ p {
 .bg-sep {
   position: relative;
   height: 0.2vh;
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait){
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     display: none;
   }
-  
 }
 .bg-sep::after {
   content: "";
@@ -327,4 +336,7 @@ p {
   font-family: audiowide;
   text-transform: uppercase;
   letter-spacing: 2px;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+   font-size: 30px;
+  }
 }

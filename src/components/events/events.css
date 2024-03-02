@@ -11,6 +11,8 @@
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     padding: 5vh 3vw;
     gap: 5vh;
+    min-height: 100vh;
+    height: fit-content;
   }
 }
 
@@ -122,6 +124,10 @@
   font-size: 2vh;
   width: 100%;
 }
+.section-format p a {
+  text-decoration: underline;
+  color: skyblue;
+}
 .active {
   display: block;
   animation: eventsFade 0.5s ease-in forwards;
@@ -137,17 +143,20 @@
   }
 }
 
-.fee{
+.fee {
   font-weight: 800;
   font-size: 1.3vw;
   margin-top: 5vh;
 }
-.amount{
+.fee p {
+  font-weight: 500;
+}
+.amount {
   font-size: 1vw;
   font-weight: 750;
   padding-left: 3vw;
   padding-top: 1vh;
 }
-.stage2-reference{
+.stage2-reference {
   cursor: pointer;
 }

@@ -7,12 +7,12 @@ const events = () => {
     ReactGA.event({
       category: "Button",
       action: "click",
-      label: `How To reach`, //------------------------ need to change
+      label: `How To register`, //------------------------ need to change
     });
-    window.open("/how-to-reach");
+    window.open("/how-to-register");
   };
   useEffect(() => {
-    document.title = "Register";
+    document.title = "How to Register | CSI Convention 2024";
   });
   const handleStage = (stage) => {
     ReactGA.event({
@@ -70,20 +70,19 @@ const events = () => {
               {" "}
               <h1>Registration</h1>
               <p>
-                🔗 Scan the QR in the poster or search www.csiconcention.site
-                for registration.
+                🔗 Scan the QR below or click here for
+                <a href="/register"> Registration </a>
                 <br /> <br />
-                1️⃣ It will redirect you to the respective Google forms. Kindly
-                fill in the requested details.
+                1️⃣ It will redirect you to the respective page. Kindly fill in
+                the requested details.
                 <br /> <br />
                 2️⃣Our registration team will contact you further upon
                 registration.
                 <br /> <br />
-                3️⃣Last date for registration is on or before the 25th of
-                February 2024.
+                3️⃣Last date for registration is on or before the 3th of March
+                2024.
                 <br /> <br />
-                4️⃣The first round is free for all the teams that register for
-                the event.
+                4️⃣Kindly request for accomodation in advance (if needed).
                 <br /> <br />
                 {/* 5️⃣ */}
               </p>
@@ -100,23 +99,23 @@ const events = () => {
               </h1>
               <p>
                 1️⃣ Our registration team will contact you in a couple of days
-                post registration
+                post registration.
                 <br />
                 <br />
                 2️⃣ Kindly check all your personal details including name and
-                contact information
+                contact information.
                 <br />
                 <br />
-                3️⃣ Be cautious about the details given as it may reflect in
+                3️⃣ You will be provided with a Identification number /
+                registration number for future reference.
+                <br />
+                <br />
+                4️⃣ Be cautious about the details given as it may reflect in
                 certification procedures.
                 <br />
                 <br />
-                4️⃣ Please provide alternate mobile number and email-ID for
+                5️⃣ Please provide alternate mobile number and email-ID for
                 reaching out.
-                <br />
-                <br />
-                5️⃣ Please inform the registration team in case of accomadation
-                requirement.
                 <br />
                 <br />
                 6️⃣ Feel free to communicate with the registration team for
@@ -142,8 +141,8 @@ const events = () => {
                 transaction.
                 <br />
                 <br />
-                4️⃣ After the payment is successful, kindly send the screenshot
-                of the payment via whatsapp to the registration team.
+                4️⃣ After the payment is successful, share the screenshot of the
+                payment via whatsapp to the registration team.
                 <br />
                 <br />
                 5️⃣ Kindly check your mail for payment confirmation receipt and
@@ -157,11 +156,17 @@ const events = () => {
                 Hence without the confirmation mail and Id number you will
                 unable to attend the event.
                 <br />
-                <h1 className="fee">Registration Fee</h1>
+                <h1 className="fee">
+                  Registration Fee{" "}
+                  <p>
+                    (Incl. Food and Refreshment / accomodation requires a
+                    seperate fee)
+                  </p>
+                </h1>
                 <p className="amount">
-                  💵 For CSI-Members = 200/person
+                  💵 For CSI-Members = 199/person
                   <br />
-                  💵 For Non CSI-Members = 300/person
+                  💵 For Non CSI-Members = 299/person
                   <br />
                   <br />
                 </p>

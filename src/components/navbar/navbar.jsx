@@ -50,7 +50,7 @@ const Navbar = () => {
       action: "click",
       label: "register",
     });
-    window.open("https://forms.gle/ETnuCdbYnkBzaBUD8");
+    window.open("/register");
   };
   const handleScroll = (id) => {
     ReactGA.event({
@@ -85,7 +85,7 @@ const Navbar = () => {
         <div className="components">
           <div className="title" onClick={() => window.open("/", "_self")}>
             <img src="/assets/diamond.webp" className="logo" alt="Logo" />
-            CSI - CONCLAVE
+            CSI - CONVENTION
             <div className="socials">
               <div className="insta">
                 <SocialIcon
@@ -150,7 +150,7 @@ const Navbar = () => {
           </ul>
           <div className="last">
             <h2 className="register">
-              <p onClick={handleRegisterClick}> Register</p>
+              <a onClick={handleRegisterClick}> Register</a>
             </h2>
           </div>
         </div>
@@ -163,13 +163,11 @@ const Navbar = () => {
               onClick={() => window.open("/", "_self")}
             >
               <img src="/assets/diamond.webp" width="30vw" alt="logo" />
-              CSI-Conclave
+              CSI&nbsp; - &nbsp;CONVENTION
             </div>
             <div className="last-mobile">
               <h2 className="register-mobile">
-                <a href="https://forms.gle/mqHSf1kpoTUiMURH6" target="_blank">
-                  Register
-                </a>
+                <a onClick={handleRegisterClick}>Register</a>
               </h2>
             </div>
             <Grid
@@ -180,7 +178,7 @@ const Navbar = () => {
           <div className="navbar-open navbar-close-mobile">
             <ul>
               <li>
-                <p onClick={() => window.open("/about",)}>About</p>
+                <p onClick={() => window.open("/about")}>About</p>
               </li>
               <li>
                 <p onClick={() => handleScroll("#agenda")}>Agenda</p>

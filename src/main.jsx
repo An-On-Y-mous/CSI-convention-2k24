@@ -9,11 +9,13 @@ import {
   Events,
   Guildelines,
   Set1,
-  Set2,
-  Judges,
   About,
   Verify,
   Login,
+  Delegates,
+  RegComplete,
+  Register,
+  Timings,
 } from "./components";
 
 import ReactGA from "react-ga";
@@ -42,7 +44,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           }
         />
         <Route
-          path="/register"
+          path="/howtoregister"
           element={
             <div className="events-bg">
               <Navbar />
@@ -59,17 +61,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </div>
           }
         />
+
         <Route
-          path="/nontechnical"
-          element={
-            <div className="set2-bg">
-              <Navbar />
-              <Set2 />
-            </div>
-          }
-        />
-        <Route
-          path="/technical"
+          path="/events"
           element={
             <div className="set1-bg">
               <Navbar />
@@ -86,15 +80,34 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </div>
           }
         />
-        {/* <Route
-          path="/judges"
+        <Route
+          path="/delegates"
           element={
             <div>
               <Navbar />
-              <Judges />
+              <Delegates />
             </div>
           }
-        /> */}
+        />
+        <Route
+          path="/register"
+          element={
+            <div>
+              <Navbar />
+              <Register />
+            </div>
+          }
+        />
+        <Route
+          path="/timings"
+          element={
+            <div>
+              <Navbar />
+              <Timings />
+            </div>
+          }
+        />
+        <Route path="/reg-complete" element={<RegComplete />} />
         <Route path="/qr/verify/:id" element={<Verify />} />
         <Route path="/login" element={<Login />} />
       </Routes>

@@ -8,7 +8,6 @@ import Schedule from "./schedule";
 import Sponsors from "./sponsors";
 import { Footer } from "../";
 import { ReactComponent as Calender } from "../../assets/calender.svg";
-import { ReactComponent as Info } from "../../assets/info.svg";
 import { ReactComponent as Location } from "../../assets/location.svg";
 import { ReactComponent as ArrowRightWhite } from "../../assets/arrow-right-white.svg";
 import { ReactComponent as ArrowRightBlack } from "../../assets/arrow-right-black.svg";
@@ -20,7 +19,7 @@ const hero = () => {
       action: "click",
       label: "register",
     });
-    window.open("https://forms.gle/ETnuCdbYnkBzaBUD8");
+    window.open("/register");
   };
   const handleCardClicks = (card) => {
     ReactGA.event({
@@ -37,7 +36,7 @@ const hero = () => {
     seconds: 0,
   });
   const handleCountdown = () => {
-    const countDate = new Date("Feburary 27, 2024 09:00:00").getTime();
+    const countDate = new Date("March 6, 2024 08:00:00").getTime();
     const now = new Date().getTime();
     const diff = countDate - now;
     {
@@ -118,32 +117,24 @@ const hero = () => {
         <section className="column">
           <div className="left_side">
             <div className="curve"></div>
-            <div className="title1">
-              <div className="title_head">
-                <div className="prt_title">
-                  <div className="kpm_img_mobile">
-                    <img
-                      src="/images/csi-kpm.png"
-                      alt=""
-                      style={{ width: "150px" }}
-                    />
-                  </div>
-                  <div className="des">
-                    <h1 className="hackathon">
-                      {" "}
-                      {"Convention-"}
-                      <span className="hackathon1">2024</span>
-                    </h1>
-
-                    {/* <br /> */}
-                    {/* <p className="tag1"> A National Level 24 Hour Hackathon</p> */}
-                    {/* <span className="hackathon">Hackathon</span> */}
-                    <p className="description">
-                      <span>"A Multiverse of Brilliance, Where Events</span>
-                      <span> Converge for Innovation and Inspiration!"</span>
-                    </p>
-                  </div>
-                </div>
+            <div className="prt_title">
+              <div className="kpm_img_mobile">
+                <img
+                  src="/images/csi-kpm.png"
+                  alt=""
+                  style={{ width: "115px" }}
+                />
+              </div>
+              <div className="des">
+                <h1 className="convention">
+                  {" "}
+                  {"Convention-"}
+                  <span className="convention1">2024</span>
+                </h1>
+                <p className="description">
+                  <span>"A Multiverse of Brilliance, Where Events</span>
+                  <span> Converge for Innovation and Inspiration!"</span>
+                </p>
               </div>
             </div>
 
@@ -153,15 +144,11 @@ const hero = () => {
               </div>
               <div>
                 {" "}
-                <KeyboardDoubleArrowRightSharpIcon
-                  style={{ fontSize: 40, marginBottom: "1vh" }}
-                />
+                <KeyboardDoubleArrowRightSharpIcon style={{ fontSize: 40 }} />
               </div>
             </div>
             <div className="countdown-main">
-              {/* <h2 className="countdown-text">
-            Join us for the ultimate coding extravaganza!
-          </h2> */}
+             
               <div className="countdown anim">
                 <div className="day-card anim">
                   <h3 className="day">{countdown.days}</h3>
@@ -190,11 +177,11 @@ const hero = () => {
             {/* -------------------------- Column 1 * ---------------------------------- */}
             <div className="col1 animated-div">
               <h3 className="text">
-                <div>
+        
                   <div>
                     <h2 className="text_quint"> Quintessentials</h2>
-                  </div>{" "}
-                </div>
+                  </div>
+           
                 <Calender className="calender-icon" />
               </h3>
               <h2
@@ -205,58 +192,34 @@ const hero = () => {
               </h2>
               <h2
                 className="text3"
-                onClick={() => handleCardClicks("/register")}
+                onClick={() => handleCardClicks("/howtoregister")}
               >
                 How to Register <ArrowRightWhite className="arrow-right-icon" />
               </h2>
             </div>
-            {/* -------------------------- Column 2 * ---------------------------------- */}
-            {/* <div className="col2 animated-div">
-              <h3 className="text4">
-                Information Details <Info className="info-icon" />
-              </h3>
-              <p className="text5" onClick={() => handleCardClicks("/about")}>
-                About
-                <ArrowRightWhite className="arrow-right-icon" />
-              </p>
-              <p className="text6" onClick={() => handleCardClicks("/judges")}>
-                Judge Panel
-                <ArrowRightWhite className="arrow-right-icon" />
-              </p>
-            </div> */}
-
+          
             {/* -------------------------- Column 4  ---------------------------------- */}
             <div
               className="col4 animated-div"
               onClick={() =>
-                window.open("https://goo.gl/maps/iaE4Kko8wqqHs4jx9")
+                window.open("https://maps.app.goo.gl/B2Htd2jCfUsWGPNF6")
               }
             >
               <h2 className="text10">
                 Venue
                 <Location className="location-icon" />
               </h2>
-              <div className="flex flex-col ">
-                <h3 className="text-black pt-[2vh] text-[0.8vw] venue-text-mobile font-bold">
+              <div className="flex flex-col">
+                <h3 className="text-black pt-[1vh] text-[0.8vw] venue-text-mobile font-bold">
                   SRM Valliammai Engineering College, SRM Nagar, Kattankulathur
                 </h3>
                 <h3
                   className="text_venue1"
-                  onClick={() => handleCardClicks("/#")}
+                  onClick={() => window.open('https://maps.app.goo.gl/B2Htd2jCfUsWGPNF6')}
                 >
                   Geographical Ping{" "}
                   <ArrowRightBlack className="arrow-right-icon" />
                 </h3>
-                <h3
-                  className="text_venue2"
-                  onClick={() => handleCardClicks("/#")}
-                >
-                  How to reach? <ArrowRightBlack className="arrow-right-icon" />
-                </h3>
-                {/* <p className="text-white  text-[0.8vw] ">
-                  National Highway 45, Potheri, SRM Nagar, Kattankulathur, Tamil
-                  Nadu - 603203
-                </p> */}
                 <div className="round"></div>
               </div>
             </div>
@@ -264,22 +227,30 @@ const hero = () => {
 
             <div className="col3 animated-div">
               <div className="flex justify-items-start">
-                <h3 className="text7">Events</h3>
+                <h3 className="text7">More Details</h3>
               </div>
-              <h3
-                className="text8"
-                onClick={() => handleCardClicks("/technical")}
-              >
-                Technical <ArrowRightBlack className="arrow-right-icon" />
+              <h3 className="text8" onClick={() => handleCardClicks("/events")}>
+                View Events <ArrowRightBlack className="arrow-right-icon" />
               </h3>
               <h3
                 className="text9"
-                onClick={() => handleCardClicks("/nontechnical")}
+                onClick={() => handleCardClicks("/timings")}
               >
-                Non-Technical <ArrowRightBlack className="arrow-right-icon" />
+                View Timings <ArrowRightBlack className="arrow-right-icon" />
               </h3>
             </div>
-
+            <div className="col7 animated-div">
+              <div className="flex justify-items-start">
+                <h3 className="text-delegates">Delegates</h3>
+              </div>
+              <h3
+                className="text-delegates-obs"
+                onClick={() => handleCardClicks("/delegates")}
+              >
+                SRMVEC CSI OB'S <ArrowRightWhite className="arrow-right-icon" />
+              </h3>
+            </div>
+            <div></div>
             {/* -------------------------- Column 6  ---------------------------------- */}
             <div className="col6 animated-div">
               <h2 className="text13">

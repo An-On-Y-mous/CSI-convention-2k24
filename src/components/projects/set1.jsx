@@ -10,7 +10,7 @@ const set1 = () => {
     ReactGA.event({
       category: "Button",
       action: "click",
-      label: "Projects - set 1",
+      label: "Technical Events",
     });
     const ElementVisibility = Element.currentTarget.querySelector(
       ".software-content-description"
@@ -21,175 +21,88 @@ const set1 = () => {
   return (
     <React.Fragment>
       <div className="parent-software">
-        <h1 className="parent-software-title">Technical Events</h1>
-        {/* <p className="projects-disclaimer">
-          OWN/UNIQUE PROBLEM STATEMENTS ARE ALSO WELCOMED - Kindly intimate when
-          speaking with registration team
-        </p> */}
+        <h1 className="parent-software-title">Events</h1>
         <div className="software-container">
           <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Event-1</h2>
+            <h2 className="software-content-title">TRICODE CHALLENGE</h2>
             <p className="software-content-description projects-close">
-              <img src="/assets/bg6.webp" alt="" />
+              <span className="description">DESCRIPTION: </span>
+              Dive into the Tricode Challenge, an electrifying coding
+              competition that pushes boundaries with a unique Tri-Language
+              Challenge. Navigate coding odysseys, solve real-world problems,
+              and collaborate in teams for an adrenaline-packed experience.
+              Unleash your coding prowess and compete for top honors, prizes,
+              and recognition.
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Event-2</h2>
-            <p className="software-content-description projects-close"></p>
-          </div>
-
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Event-3</h2>
-            <p className="software-content-description projects-close"></p>
-          </div>
-
-          {/* <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">
-              Waste Management and Recycling Optimization
-            </h2>
+            <h2 className="software-content-title">INNO-VATE PAPERS</h2>
             <p className="software-content-description projects-close">
-              Develop an intelligent system that optimizes waste collection and
-              recycling processes in urban areas. The solution could include
-              real-time data analysis, route optimization, and incentivizing
-              citizens to participate actively in recycling initiatives.
+              <span className="description">DESCRIPTION: </span>
+              INNO-VATE PAPERS is a platform where groundbreaking research meets
+              innovation. Researchers and academics are invited to present
+              papers on cutting-edge topics, fostering intellectual exchange and
+              technological advancements. Join us to explore the future of
+              innovation through insightful papers, discussions, and networking
+              opportunities.
             </p>
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">
-              Cybersecurity for IoT Devices
-            </h2>
+            <h2 className="software-content-title">TECHSCAPE QUEST</h2>
             <p className="software-content-description projects-close">
-              Build a security solution to protect Internet of Things (IoT)
-              devices from potential threats and vulnerabilities. The solution
-              should ensure data privacy, integrity, and device authentication
-              to prevent unauthorized access
-            </p>
-          </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Smart Home Innovation</h2>
-            <p className="software-content-description projects-close">
-              Develop a cost-effective and energy-efficient smart home system
-              that integrates various devices (lights, thermostat, security,
-              etc.) and can be controlled through a single platform or using
-              voice commands
-            </p>
-          </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Healthcare Tech</h2>
-            <p className="software-content-description projects-close">
-              Design a wearable device that monitors vital signs (heart rate,
-              blood pressure, oxygen levels) accurately and in real-time,
-              transmitting data to healthcare professionals or loved ones{" "}
-            </p>
-          </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Agricultural Automation</h2>
-            <p className="software-content-description projects-close">
-              Build an automated system that optimizes irrigation,
-              fertilization, and pest control in a greenhouse or field,
-              utilizing sensors and actuators for better crop yield and resource
-              efficiency
+              <span className="description">DESCRIPTION: </span>
+              Embark on a thrilling expedition into the world of technology with
+              TechScape Quest. This dynamic event challenges tech enthusiasts
+              and innovators to navigate through diverse landscapes of coding
+              challenges, emerging technologies, and problem-solving quests.
+              Join us for a journey that transcends boundaries, explores the
+              tech frontier, and celebrates innovation.
             </p>
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Assistive Technology</h2>
+            <h2 className="software-content-title">MEME-IT-UP</h2>
             <p className="software-content-description projects-close">
-              Develop a device or solution that aids individuals with
-              disabilities, such as a wearable for visually impaired people that
-              provides realtime navigation assistance or a device that enhances
-              communication for those with speech impairments{" "}
+              <span className="description">DESCRIPTION: </span>
+              Prepare for an uproarious clash of humor and creativity in
+              Meme-It-Up! This event invites participants to showcase their wit
+              by creating and sharing the most side-splitting memes. Engage in a
+              friendly battle of laughter, explore the depths of your comedic
+              genius, and compete for the title of Meme Master. Let the laughter
+              commence!
             </p>
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">
-              Transportation & Logistics
-            </h2>
+            <h2 className="software-content-title">START-UP SURGE</h2>
             <p className="software-content-description projects-close">
-              Prototype of a Solar Powered IOT Device with the ability to
-              connect to a smart network to be used in Geo Tagging of Physical
-              Assets Created under CSR
+              <span className="description">DESCRIPTION: </span>
+              Embark on a journey of entrepreneurial exploration at Startup
+              Surge! This event is a platform for aspiring innovators and
+              startups to showcase their groundbreaking ideas, pitch their
+              ventures to a panel of experts, and compete for valuable
+              resources. Join us to witness the rise of the next wave of
+              disruptors and innovators in the Startup Surge. Get ready to
+              ignite the entrepreneurial spark!
             </p>
           </div>
+
           <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">
-              Mental Health and Wellness Support
-            </h2>
+            <h2 className="software-content-title">Obliviate</h2>
             <p className="software-content-description projects-close">
-              Develop a mental health device that provides users with resources
-              for stress management, mindfulness exercises, and access to
-              virtual therapy sessions to promote overall well-being.
+              Test your memory as you view captivating images, absorbing every
+              detail. Then, recall as many images as you can to earn points.
+              From landscapes to abstract art, challenge your cognitive skills
+              in this exciting event. Perfect for all ages and abilities, join
+              us for an unforgettable test of memory prowess. Every image tells
+              a story – how many will you remember?
             </p>
           </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Disaster Management:</h2>
-            <p className="software-content-description projects-close">
-              Suggest and develop an innovative approach for redeveloping the
-              centralized sewage treatment plants and help the city managers to
-              better adopt decentralized approaches and ensure water resources
-              through reuse.{" "}
-            </p>
-          </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Fire suppressant</h2>
-            <p className="software-content-description projects-close">
-              A material which can be installed in the confined spaces of a
-              submarine there by suppressing a fire in the initial stages only.
-              The material should be available in multiple options such as pads
-              for flooring, wire or cable’s covering, covers and tapes which can
-              be applied on small places which are deemed hazardous from the
-              fire-safety perspective. The fire suppressant should release the
-              extinguishing agent stored in the form of micro-capsules at a
-              specific temperature{" "}
-            </p>
-          </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title ">
-              Sustainable Solutions for Urban Mobility
-            </h2>
-            <p className="software-content-description projects-close">
-              Develop an application or system that addresses the challenges of
-              urban transportation, promoting sustainable alternatives such as
-              cycling, walking, or public transport. Consider factors like
-              traffic congestion, air pollution, and ease of access for all
-              citizens.
-            </p>
-          </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">
-              Smart firefighting breathing apparatus
-            </h2>
-            <p className="software-content-description projects-close">
-              It is intend to design add-on smart features to the existing
-              Breathing Apparatus (BA) sets. To increase the efficiency and
-              safety of crew in Fire Fighting Organization, smart fire-fighting
-              BA has been proposed as an addon to the existing breathing
-              apparatus which can monitor parameters such as pressure, breathing
-              rate and time remaining and convey the same to fire-fighting
-              attendant using wireless means{" "}
-            </p>
-          </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">Wildlife Conservation</h2>
-            <p className="software-content-description projects-close">
-              Build a wildlife tracking and monitoring system using GPS,
-              sensors, and cameras to gather data on animal behaviour and
-              habitat, aiding in conservation efforts.{" "}
-            </p>
-          </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h2 className="software-content-title">
-              Sustainable Transportation
-            </h2>
-            <p className="software-content-description projects-close">
-              Make a prototype for an efficient and eco-friendly transportation
-              system, like a solar-powered electric vehicle charging station or
-              an electric bike charge sharing technique
-            </p>
-          </div> */}
         </div>
+        <h2 className="register-events">
+          <a onClick={() => window.open("/register")}> Register Now</a>
+        </h2>
       </div>
     </React.Fragment>
   );

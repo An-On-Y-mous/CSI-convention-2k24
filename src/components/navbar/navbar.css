@@ -156,6 +156,7 @@
 }
 .register {
   position: relative;
+  cursor: pointer;
   font-family: poppins;
   font-size: 1.2vw;
   padding: 0.5vh 1vw;
@@ -204,8 +205,9 @@
   align-items: flex-end;
   font-family: mars;
   font-weight: bold;
-  font-size: 3.5vw;
+  font-size: 3.3vw;
   cursor: pointer;
+  letter-spacing: -5px;
 }
 .navbar-close-mobile {
   display: none;

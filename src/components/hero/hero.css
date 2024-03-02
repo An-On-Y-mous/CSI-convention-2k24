@@ -4,9 +4,11 @@
   padding-top: 3vh;
   position: relative;
   isolation: isolate;
-  height: 85vh;
+  height: 89vh;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     padding: 0 2vw;
+    padding-bottom: 5vh;
+    height: fit-content;
   }
 }
 .parent_hero::after {
@@ -15,13 +17,10 @@
   z-index: -2;
   inset: 0;
   opacity: 1;
-  /* background-image: url("/assets/darkpaths.webp"); */
-  background-color: #0d1c3b;
+  background-color: white;
   background-size: 12%;
   background-color: #0d1c3b;
-  background-color: #0d1c3b;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
-  /* background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E"); */
 }
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .parent_hero::after {
@@ -29,10 +28,8 @@
     position: absolute;
     z-index: -2;
     inset: 0;
-    opacity: 0.1;
     background-color: #0d1c3b;
-    background-size: 12%;
-    /* background-image: url("/assets/topography.svg"); */
+    background-size: 50%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
   }
 }
@@ -110,31 +107,18 @@
 .parent_hero .column {
   display: flex;
   justify-content: space-between;
+  margin-top: 7vh;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
+    margin-top: 0;
   }
 }
 .parent_hero .column .left_side {
-  padding-top: 2vh;
-  /* padding-left: -5vw; */
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     padding-top: 0vh;
-  }
-}
-.parent_hero .title1 {
-  position: relative;
-  font-size: 3.5vw;
-  text-transform: uppercase;
-  font-weight: 600;
-  line-height: 110%;
-  font-family: liger;
-  margin-top: 5vh;
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 10%;
-    margin-top: 24px;
   }
 }
 
@@ -144,75 +128,30 @@
   gap: 1vw;
 }
 
-/* .title1::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: -24.5vw;
-  top: -28vh;
-  bottom: 0;
-  right: 0;
-  scale: 0.45;
-  background-size: contain;
-  transform: rotate(-23deg);
-  background-repeat: no-repeat;
-  background-image: url("/assets/curve.webp");
-}
-.curve {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: -30vh;
-  bottom: 0;
-  right: 0.5vw;
-  scale: 0.19;
-  background-size: contain;
-  transform: rotate(-40deg) scaleX(-1);
-  background-repeat: no-repeat;
-  background-image: url("/assets/curve.webp");
-} */
-/* .tag1 {
-  position: absolute;
-  font-size: 1vw;
-  top: 7vh;
-  left: 0vw;
-  font-weight: 500;
-  letter-spacing: 1px;
-  font-family: suggested;
-} */
-
 .br {
   display: block;
   margin-bottom: 0em;
 }
-.parent_hero .title1 .hackathon {
+.parent_hero .convention {
   position: relative;
+  margin-top: -5vh;
   font-family: dashhorizon;
   letter-spacing: 7px;
+  text-transform: uppercase;
   font-size: 5vw;
   color: #f7cac9;
   border-color: black;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 35px;
+    margin-top: 0;
     letter-spacing: 1px;
   }
 }
-.hackathon1 {
+.convention1 {
   font-family: dashhorizon;
 }
-/* .parent_hero .title1 .hackathon::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  height: 4vh;
-  width: 0;
-  left: 0;
-  bottom: 1vh;
-  background: rgb(243, 158, 172, 0.7);
-  animation: line 1s ease-in-out forwards;
-} */
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-  .parent_hero .title1 .hackathon::after {
+  .parent_hero .hackathon::after {
     height: 2vh;
   }
 }
@@ -222,10 +161,8 @@
   }
 }
 
-.parent_hero .title1 .description {
-  /* margin-top: 2vh; */
-  /* margin-left: 6.7vw; */
-  font-size: 19px;
+.parent_hero .description {
+  font-size: 15px;
   font-weight: 750;
   font-family: "arial";
   line-height: normal;
@@ -233,7 +170,6 @@
   color: rgb(255, 255, 255);
   letter-spacing: 0px;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    margin-top: 1vh;
     font-size: 2.8vw;
     font-weight: 700;
   }
@@ -241,14 +177,13 @@
 
 .prt_title {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
   gap: 0.9vw;
 }
 
 .kpm_img_mobile {
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    width: 110px;
+    width: 115px;
     margin-top: 0vh;
     margin-right: 1vw;
   }
@@ -256,17 +191,17 @@
 .des {
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 0px;
 }
-.parent_hero .title1 .description span {
+.parent_hero .description span {
   font-weight: 400;
 }
 
 .register_now {
-  margin-top: 5vh;
-  margin-left: 2vw;
+  margin-top: 7vh;
+  margin-left: 1vw;
   position: relative;
-  padding: 0.4vh 0vw 0vh 0vw;
+  padding: 0vh 0vw 0vh 0vw;
   background-color: #f7cac9;
   border-radius: 2vw;
   cursor: pointer;
@@ -274,7 +209,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 21vw;
+  width: 17vw;
   /* height: fit-content; */
   transition: all 0.3s ease-in-out;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -284,25 +219,25 @@
   }
 }
 .register_now:hover {
-  width: 22vw;
+  width: 18vw;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     width: 62vw;
   }
 }
 .register_now h3 {
   text-decoration: none;
-  font-size: 1.25vw;
+  font-size: 17px;
   letter-spacing: -6px;
   color: rgb(0, 0, 0);
-  font-family: mars;
-  font-weight: bold;
+  font-family: mars-bold;
+  font-weight: 900;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 4vw;
   }
 }
 .countdown-main {
-  margin-top: 5vh;
-  margin-left: 2vw;
+  margin-top: 8vh;
+  margin-left: 1vw;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     margin-top: 2.5vh;
     margin-left: 3.5vw;
@@ -454,7 +389,6 @@
 .right_side .col1 {
   position: relative;
   padding: 1vw;
-  /* margin-top: 9vh; */
   height: fit-content;
   background-repeat: no-repeat;
   background-size: 38vw 25vw;
@@ -465,11 +399,9 @@
   isolation: isolate;
   transition: all 0.1s linear;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    margin-left: 2.5vw;
-    margin-top: -1vh;
-    padding: 2.5vh 3vw;
-    border-radius: 3vw;
-    width: 90vw;
+    margin-top: 0%;
+    border-radius: 4vw;
+    padding: 2vh 5vw;
     background-size: cover;
   }
 }
@@ -671,7 +603,6 @@
 }
 
 .right_side .col3 {
-  /* margin-top: 1vh; */
   position: relative;
   height: fit-content;
   padding: 1vw;
@@ -685,6 +616,7 @@
   transition: all 0.1s linear;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     margin-top: 2vh;
+    z-index: 99;
     border-radius: 4vw;
     padding: 2vh 5vw;
   }
@@ -714,14 +646,12 @@
 }
 .right_side .col3 .text7 {
   color: purple;
-  /* text-transform: uppercase; */
   font-family: exo;
   font-weight: 900;
   text-align: left;
   font-size: 1.5vw;
   width: 100%;
   letter-spacing: 1px;
-  /* border-bottom: 3px dotted rgb(0, 0, 0); */
   border-bottom: 2.9px dotted black;
 
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -750,7 +680,6 @@
   font-family: zeniq;
   letter-spacing: 1.8px;
   margin-top: 3vh;
-  /* padding-bottom: vh; */
   color: black;
   border-bottom: 2px dotted black;
   font-size: 1.2vw;
@@ -764,7 +693,6 @@
 }
 
 .right_side .col4 {
-  /* margin-top: 1vh; */
   position: relative;
   height: fit-content;
   padding: 1vw;
@@ -778,14 +706,14 @@
   transition: all 0.1s linear;
 
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    margin-top: 2vh;
+    margin-top: 1vh;
     border-radius: 4vw;
     padding: 2vh 5vw;
   }
 }
 
 .text_venue1 {
-  margin-top: 5vh;
+  margin-top: 2vh;
   font-family: zeniq;
   letter-spacing: 1px;
   border-bottom: 2px dotted black;
@@ -823,7 +751,6 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  backdrop-filter: blur(3px);
   background-color: rgb(0, 0, 0);
   opacity: 0.15;
 }
@@ -843,12 +770,12 @@
 .text13 {
   font-weight: 900;
   font-size: 1.2vw;
-  color: white;
+  color: black;
   display: flex;
   font-family: exo;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px dotted rgb(255, 255, 255);
+  border-bottom: 2px dotted black;
   padding-bottom: 1vh;
   margin-bottom: 2vh;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -873,7 +800,7 @@
   }
 }
 .text14 {
-  padding-top: 2vh;
+  padding-top: 1vh;
   display: flex;
   flex-direction: column;
   gap: 1vh;
@@ -883,13 +810,16 @@
   font-family: zeniq;
   font-size: 1.1vw;
   font-weight: 600;
-  color: white;
+  color: black;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 3.5vw;
+    font-size: 120%;
   }
 }
 .text14 > span:last-child {
   font-size: 1.09vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 120%;
+  }
 }
 .right_side .col4 .text12,
 .text15 {
@@ -904,24 +834,28 @@
 .venue-text-mobile {
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 4vw;
+   
   }
 }
 
 .right_side .col6 {
+  margin-top: -18.5vh;
   position: relative;
-  height: 24.4vh;
-  padding: 1vw;
+  height: fit-content;
+  padding: 1vh 1vw;
   background-repeat: no-repeat;
+  background-position: bottom right;
   background-size: cover;
   border-radius: 1vw;
   background-color: #485461;
   overflow: hidden;
-  /* background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%); */
-  background-image: url("/assets/spacestars.webp");
+  background-size: 100%;
+  background-position: bottom;
+  background-image: url("/assets/pexels-ovan.jpg");
   isolation: isolate;
   transition: all 0.1s linear;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    margin-top: 0.5vh;
+    margin-top: 2vh;
     border-radius: 2vw;
     padding: 1vh 3vw;
   }
@@ -931,6 +865,67 @@
   position: absolute;
   z-index: -2;
   inset: 0;
-  opacity: 0.4;
+  opacity: 0.1;
   background-color: #000000;
+}
+
+.col7 {
+  margin-top: -7.5vh;
+  position: relative;
+  height: fit-content;
+  padding: 2vh 1vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1vw;
+  background-color: #485461;
+  overflow: hidden;
+  background-image: url("/assets/light.webp");
+  isolation: isolate;
+  transition: all 0.1s linear;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 2vh;
+    border-radius: 2vw;
+    padding: 1vh 3vw;
+  }
+}
+.col7::after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  opacity: 0.5;
+  background-color: #000000;
+}
+
+.text-delegates {
+  font-weight: 900;
+  font-size: 1.2vw;
+  color: white;
+  letter-spacing: 1px;
+  display: flex;
+  font-family: exo;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dotted rgb(255, 255, 255);
+  width: 100%;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 6vw;
+  }
+}
+
+.text-delegates-obs {
+  margin-top: 2vh;
+  font-family: zeniq;
+  letter-spacing: 1px;
+  border-bottom: 2px dotted rgb(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1.1vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+  }
 }
