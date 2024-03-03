@@ -12,6 +12,7 @@ import Notallowed from "./status/notallowed";
 import Denied from "./status/denied";
 import FoodCommitee from "./levels/foodCommitee";
 import EventHead from "./levels/eventHead";
+import SuperAdmin from "./levels/superAdmin";
 
 const verify = () => {
   let { id } = useParams();
@@ -65,9 +66,17 @@ const verify = () => {
       ) : (
         <div>
           <h1>Ref. ID - {id}</h1>
-          <div>{isSuperAdmin ? <h1>Admin</h1> : ""}</div>
-          <div>{isEventHead ? <EventHead id={id} name={name} /> : ""}</div>
-          <div>{isFoodCommittee ? <FoodCommitee id={id} /> : ""}</div>
+          <div>{isSuperAdmin ? <SuperAdmin id={id} name={name} /> : ""}</div>
+          <div>
+            {!isSuperAdmin && isEventHead ? (
+              <EventHead id={id} name={name} />
+            ) : (
+              ""
+            )}
+          </div>
+          <div>
+            {!isSuperAdmin && isFoodCommittee ? <FoodCommitee id={id} /> : ""}
+          </div>
         </div>
       )}
     </main>
