@@ -11,6 +11,7 @@ import { getDoc, getDocs, collection, query, where } from "firebase/firestore";
 import Notallowed from "./status/notallowed";
 import Denied from "./status/denied";
 import FoodCommitee from "./levels/foodCommitee";
+import EventHead from "./levels/eventHead";
 
 const verify = () => {
   let { id } = useParams();
@@ -59,7 +60,7 @@ const verify = () => {
         <div>
           <h1>Ref. ID - {id}</h1>
           <div>{isSuperAdmin ? <h1>Admin</h1> : ""}</div>
-          <div>{isEventHead ? <h1> Events</h1> : ""}</div>
+          <div>{isEventHead ? <EventHead id={id} /> : ""}</div>
           <div>{isFoodCommittee ? <FoodCommitee id={id} /> : ""}</div>
         </div>
       )}
