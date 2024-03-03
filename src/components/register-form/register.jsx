@@ -8,6 +8,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
 const register = () => {
+  const [buttonDisabled, setButtonDisabled] = useState(false);
   useEffect(() => {
     document.title = "Registration | CSI Convention 2024";
   });
@@ -17,6 +18,7 @@ const register = () => {
       alert("Fill all the details");
       return;
     }
+    setButtonDisabled(true);
 
     fetch("/api/register", {
       method: "POST",
@@ -34,7 +36,6 @@ const register = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.message);
         setRegistrationComplete(true);
         navigate("/reg-complete");
         setTimeout(() => {
@@ -42,6 +43,7 @@ const register = () => {
         }, 3000);
       })
       .catch((error) => {
+        setButtonDisabled(false);
         console.error("Error:", error);
       });
   };
@@ -172,6 +174,7 @@ const register = () => {
                 onClick={() => handleSubmit()}
                 className="btn-17"
                 title="Submit Form"
+                disabled={buttonDisabled}
               >
                 <span class="text-container">
                   <span class="text">submit</span>
