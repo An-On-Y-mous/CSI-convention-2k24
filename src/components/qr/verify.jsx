@@ -7,7 +7,7 @@ import {
   event_heads,
   food_commitee,
 } from "../../lib/login_access";
-import { getDoc, getDocs, collection, query, where } from "firebase/firestore";
+import { getDocs, collection, query, where } from "firebase/firestore";
 import Notallowed from "./status/notallowed";
 import Denied from "./status/denied";
 import FoodCommitee from "./levels/foodCommitee";
@@ -15,12 +15,14 @@ import EventHead from "./levels/eventHead";
 
 const verify = () => {
   let { id } = useParams();
+
   id = parseInt(id);
   const [user, loading] = useAuthState(auth);
   const [isSuperAdmin, setSuperAdmin] = useState(false);
   const [isEventHead, setEventHead] = useState(false);
   const [isFoodCommittee, setFoodCommitte] = useState(false);
   const [noRecord, setNoRecord] = useState(false);
+  const [name, setName] = useState(null);
 
   const checkRecord = async (id) => {
     const docRef = query(
@@ -30,15 +32,19 @@ const verify = () => {
     const docs = await getDocs(docRef);
     let docData;
     docs.forEach((doc) => {
-      if (doc.exists()) docData = doc.data();
+      if (doc.exists()) {
+        docData = doc.data();
+        setName(doc.data().name);
+      }
     });
+
     if (docData) return true;
     else return false;
   };
   const checkPermission = async (email) => {
     if (super_admins.includes(email)) setSuperAdmin(true);
-    else if (event_heads.includes(email)) setEventHead(true);
-    else if (food_commitee.includes(email)) setFoodCommitte(true);
+    if (event_heads.includes(email)) setEventHead(true);
+    if (food_commitee.includes(email)) setFoodCommitte(true);
   };
 
   useEffect(() => {
@@ -60,7 +66,7 @@ const verify = () => {
         <div>
           <h1>Ref. ID - {id}</h1>
           <div>{isSuperAdmin ? <h1>Admin</h1> : ""}</div>
-          <div>{isEventHead ? <EventHead id={id} /> : ""}</div>
+          <div>{isEventHead ? <EventHead id={id} name={name} /> : ""}</div>
           <div>{isFoodCommittee ? <FoodCommitee id={id} /> : ""}</div>
         </div>
       )}

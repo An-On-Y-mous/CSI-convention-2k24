@@ -16,8 +16,9 @@ const Success = (props) => {
         />
       </h1>
       <h3>
-        Welcome Aboard - <span>{props.name}</span>
+        Welcome - <span>{props.name}</span>
       </h3>
+
       <h3>Ref ID - {props.id}</h3>
       {props.message ? <h3>Note: {props.message} </h3> : ""}
     </div>

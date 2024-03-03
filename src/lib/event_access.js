@@ -1,6 +1,9 @@
-export const event1 = ["raghavcybe@gmail.com"];
-export const event2 = ["srmvecwhitehatians@gmail.com"];
-export const event3 = ["srmveccsiyt@gmail.com"];
-export const event4 = ["csi.g20.cbe@gmail.com"];
-export const event5 = ["vijayaraghavan1453@gmail.com"];
-export const event6 = ["thelinuxsec@gmail.com"];
+export const Try_Code = ["raghavcybe@gmail.com"];
+export const InnoVate_Papers = ["srmveccsiyt@gmail.com"];
+export const TechScape_Quest = ["csi.g20.cbe@gmail.com"];
+export const Meme_Hit_Up = ["vijayaraghavan1453@gmail.com"];
+export const Startup_Surge = ["thelinuxsec@gmail.com"];
+export const Obliviate = [
+  "srmvecwhitehatians@gmail.com",
+  "vijayaraghavan1453@gmail.com",
+];
