@@ -1,115 +1,5 @@
-<<<<<<< HEAD
-"use client";
-import { useParams } from "react-router-dom";
-import { auth } from "../../lib/firebase";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { useState } from "react";
-import Notallowed from "./notallowed";
-import Success from "./success";
-import Denied from "./denied";
-import "./verify.css";
-
-const Verify = () => {
-  const { id } = useParams();
-  const [user, loading] = useAuthState(auth);
-  const [nameState, setNameState] = useState();
-  const [codeState, setCodeState] = useState();
-  const [idState, setIdState] = useState();
-  const [statusCode, setStatusCode] = useState();
-  const [isActive, setIsActive] = useState(false);
-
-  const handleOptions = async (self, id) => {
-    setIsActive(true);
-    var code = self.target.innerHTML;
-    const requestData = {
-      id: id,
-      code: code,
-      authemail: user?.email,
-    };
-    const response = await fetch(`/api/verify`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(requestData),
-    });
-
-    const data = await response.json();
-
-    if (response.status == 200) {
-      setNameState(data.name);
-      setIdState(data.id);
-      setCodeState(data.code);
-    } else {
-      setIdState(data.id);
-    }
-    setIsActive(false);
-
-    return setStatusCode(response.status);
-  };
-  return (
-    <main>
-      {loading ? (
-        <h1>Loading...</h1>
-      ) : (
-        <div>
-          {user ? (
-            <div>
-              {nameState ? (
-                <Success name={nameState} id={idState} code={codeState} />
-              ) : (
-                <div>
-                  {statusCode === 404 ? (
-                    <Denied id={idState} />
-                  ) : (
-                    <div className="qr-main">
-                      <div className={isActive ? "load" : "none"}>
-                        {" "}
-                        Hold on...
-                      </div>
-                      <div className={`qr-parent ${isActive ? "qr-bg" : ""}`}>
-                        <div className={isActive ? "none" : ""}>
-                          <h1 className="qr-name">
-                            Authenticated as <span> {user.displayName}</span>
-                          </h1>
-                          <div className="qr-options">
-                            <h1 onClick={(self) => handleOptions(self, id)}>
-                              IN
-                            </h1>
-                            <h1 onClick={(self) => handleOptions(self, id)}>
-                              Breakfast
-                            </h1>
-                            <h1 onClick={(self) => handleOptions(self, id)}>
-                              Lunch
-                            </h1>
-                            <h1 onClick={(self) => handleOptions(self, id)}>
-                              Dinner
-                            </h1>
-
-                            <h1 onClick={(self) => handleOptions(self, id)}>
-                              OUT
-                            </h1>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
-          ) : (
-            <Notallowed />
-          )}
-        </div>
-      )}
-    </main>
-  );
-};
-
-export default Verify;
-=======
 import React, { useState, useEffect } from "react";
-import { auth } from "../../lib/firebase";
+import { auth, db } from "../../lib/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
 import {
@@ -117,31 +7,64 @@ import {
   event_heads,
   food_commitee,
 } from "../../lib/login_access";
+import { getDoc, getDocs, collection, query, where } from "firebase/firestore";
+import Notallowed from "./status/notallowed";
+import Denied from "./status/denied";
+import FoodCommitee from "./levels/foodCommitee";
 
 const verify = () => {
-  const { id } = useParams();
+  let { id } = useParams();
+  id = parseInt(id);
   const [user, loading] = useAuthState(auth);
   const [isSuperAdmin, setSuperAdmin] = useState(false);
   const [isEventHead, setEventHead] = useState(false);
   const [isFoodCommittee, setFoodCommitte] = useState(false);
+  const [noRecord, setNoRecord] = useState(false);
 
-  const checkPermission = (email) => {
+  const checkRecord = async (id) => {
+    const docRef = query(
+      collection(db, "convention-2k24"),
+      where("id", "==", id)
+    );
+    const docs = await getDocs(docRef);
+    let docData;
+    docs.forEach((doc) => {
+      if (doc.exists()) docData = doc.data();
+    });
+    if (docData) return true;
+    else return false;
+  };
+  const checkPermission = async (email) => {
     if (super_admins.includes(email)) setSuperAdmin(true);
-    if (event_heads.includes(email)) setEventHead(true);
-    if (food_commitee.includes(email)) setFoodCommitte(true);
+    else if (event_heads.includes(email)) setEventHead(true);
+    else if (food_commitee.includes(email)) setFoodCommitte(true);
   };
 
   useEffect(() => {
-    if (!loading && user) checkPermission(user.email);
-  });
+    (async () => {
+      if (await checkRecord(id)) {
+        if (!loading && user) checkPermission(user.email);
+      } else setNoRecord(true);
+    })();
+  }, [id, loading]);
   return (
     <main>
-      {loading ? <h1> Loading...</h1> : ""}
-      <div>{isSuperAdmin ? <h1>Admin</h1> : ""}</div>
-      <div>{isEventHead ? <h1> Events</h1> : ""}</div>
-      <div>{isFoodCommittee ? <h1>Lunch Token</h1> : ""}</div>
+      {loading ? (
+        <h1>Loading...</h1>
+      ) : !user ? (
+        <Notallowed />
+      ) : noRecord ? (
+        <Denied id={id} />
+      ) : (
+        <div>
+          <h1>Ref. ID - {id}</h1>
+          <div>{isSuperAdmin ? <h1>Admin</h1> : ""}</div>
+          <div>{isEventHead ? <h1> Events</h1> : ""}</div>
+          <div>{isFoodCommittee ? <FoodCommitee id={id} /> : ""}</div>
+        </div>
+      )}
     </main>
   );
 };
+
 export default verify;
->>>>>>> 77c344db58a9f12f9c9f4e3490fcae7c6f9902c7
