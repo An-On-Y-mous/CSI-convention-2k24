@@ -102,6 +102,7 @@ const register = () => {
                     required
                     value={name}
                     onChange={(e) => handleInputchange(e)}
+                    disabled
                   />
                 </div>
                 {/* <.......Department.....> */}
@@ -114,6 +115,7 @@ const register = () => {
                     required
                     value={department}
                     onChange={(e) => handleInputchange(e)}
+                    disabled
                   />
                 </div>
 
@@ -127,6 +129,7 @@ const register = () => {
                     required
                     value={year}
                     onChange={(e) => handleInputchange(e)}
+                    disabled
                   />
                 </div>
               </div>
@@ -141,6 +144,7 @@ const register = () => {
                     required
                     value={college}
                     onChange={(e) => handleInputchange(e)}
+                    disabled
                   />
                 </div>
                 {/* <.......Mobile Number.....> */}
@@ -153,6 +157,7 @@ const register = () => {
                     required
                     value={number}
                     onChange={(e) => handleInputchange(e)}
+                    disabled
                   />
                 </div>
                 {/* <.......Email ID.....> */}
@@ -165,6 +170,7 @@ const register = () => {
                     required
                     value={email}
                     onChange={(e) => handleInputchange(e)}
+                    disabled
                   />
                 </div>
               </div>
@@ -174,12 +180,16 @@ const register = () => {
                 onClick={() => handleSubmit()}
                 className="btn-17"
                 title="Submit Form"
-                disabled={buttonDisabled}
+                disabled
               >
                 <span class="text-container">
                   <span class="text">submit</span>
                 </span>
               </button>
+              <h3 className="reg-close-msg">
+                Pre-registration slots have reached full capacity. However,
+                <span> on-spot registrations are now open.</span>{" "}
+              </h3>
             </div>
           </div>
         </div>

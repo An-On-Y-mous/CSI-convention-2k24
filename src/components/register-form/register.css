@@ -34,8 +34,8 @@
   overflow: hidden;
   isolation: isolate;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-  width: 98%;
-  margin: 1vh 1vw;
+    width: 98%;
+    margin: 1vh 1vw;
   }
 }
 .register-left::after {
@@ -80,9 +80,9 @@
   justify-content: center;
   align-items: center;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-   gap: 0;
-   height: 100%;
-   padding-bottom: 2vh;
+    gap: 0;
+    height: 100%;
+    padding-bottom: 2vh;
   }
 }
 .register-left-container video {
@@ -163,7 +163,7 @@
 .register-field {
   margin-top: 2vh;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-   margin-top:3vh ;
+    margin-top: 3vh;
   }
 }
 .register-field input::placeholder {
@@ -198,18 +198,19 @@
   font-size: 15px;
   height: 7vh;
   width: 20vw;
-  border: 1px solid white;
+  border: 1px solid red;
   border-radius: 0.5vw;
   background-color: transparent;
   margin-top: 1vh;
   color: white;
   padding: 1vh 1vw;
+  opacity: 0.5;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-  font-size: 15px;
-  height: 5vh;
-  width: fit-content; 
-  border-radius: 5vw; 
-  padding-left: 5vw;
+    font-size: 15px;
+    height: 5vh;
+    width: fit-content;
+    border-radius: 5vw;
+    padding-left: 5vw;
   }
 }
 
@@ -223,7 +224,14 @@
   box-sizing: border-box;
 }
 
+.reg-close-msg {
+  color: white;
+  span {
+    color: orange;
+  }
+}
 .btn-17 {
+  opacity: 0.1;
   appearance: button;
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
