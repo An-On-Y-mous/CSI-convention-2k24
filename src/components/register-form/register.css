@@ -226,9 +226,9 @@
 
 .reg-close-msg {
   color: white;
-  span {
-    color: orange;
-  }
+}
+.reg-close-msg span {
+  color: orange;
 }
 .btn-17 {
   opacity: 0.1;
