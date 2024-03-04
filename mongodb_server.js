@@ -14,12 +14,21 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // API endpoint to handle form submission
+const timestamp = new Date().toLocaleString("en-IN", {
+  timeZone: "Asia/Kolkata",
+});
 app.post("/api/register", async (req, res) => {
   const { name, department, year, college, number, email } = req.body;
-  await sheet([[name, department, year, college, number, email]]);
+
+  await sheet([[name, department, year, college, number, email, timestamp]]);
   res.status(200).json({ message: "Form submitted successfully!" });
 });
 
+app.post("/api/verify", async (req, res) => {
+  const { id, name, event, authBy } = req.body;
+  await sheet({ values: [[id, name, event, authBy, timestamp]], log: true });
+  res.status(200);
+});
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

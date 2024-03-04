@@ -3,12 +3,13 @@ import * as eventAccess from "../../../lib/event_access";
 import { auth } from "../../../lib/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Success from "../status/success";
+import apiCall from "../../../lib/apiCall";
 
 const eventHead = (props) => {
   const [user, loading] = useAuthState(auth);
   const [accessibleEvents, setAccessibleEvents] = useState([]);
   const [eventIn, setEventIn] = useState(false);
-  const [eventName, setEventName] = useState("");
+
   useEffect(() => {
     setAccessibleEvents([]);
     (async () => {
@@ -23,8 +24,9 @@ const eventHead = (props) => {
     })();
   }, [loading, user]);
 
-  const handleEventClick = async (self) => {
-    setEventName(self.target.innerHTML);
+  const handleEventClick = (self) => {
+    const eventName = self.target.innerHTML;
+    apiCall(props.id, props.name, eventName, user.email);
     setEventIn(true);
   };
   return (
@@ -40,16 +42,7 @@ const eventHead = (props) => {
       ) : (
         ""
       )}
-      {eventIn ? (
-        <Success
-          id={props.id}
-          authBy={user}
-          event={eventName}
-          name={props.name}
-        />
-      ) : (
-        ""
-      )}
+      {eventIn ? <Success id={props.id} name={props.name} /> : ""}
     </div>
   );
 };

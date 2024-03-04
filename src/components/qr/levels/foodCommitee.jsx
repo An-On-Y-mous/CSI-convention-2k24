@@ -8,19 +8,17 @@ import {
 } from "firebase/firestore";
 import { db } from "../../../lib/firebase";
 import Success from "../status/success";
+import apiCall from "../../../lib/apiCall";
 
 const foodCommitee = (props) => {
-  const [verified, setVerified] = useState(false);
   const [success, setSuccess] = useState(false);
   const [name, setName] = useState("");
   const [lunchTokenCount, setLunchTokenCount] = useState(0);
   const [LunchTimestamp, setLunchTimestamp] = useState("");
+
   const handleClick = async () => {
     const collectionRef = collection(db, "convention-2k24");
-    const queryRef = query(
-      collection(db, "convention-2k24"),
-      where("id", "==", props.id)
-    );
+    const queryRef = query(collectionRef, where("id", "==", props.id));
     const docs = await getDocs(queryRef);
     let docData;
     let docRef;
@@ -29,12 +27,15 @@ const foodCommitee = (props) => {
       docData = doc.data();
     });
     setName(docData.name);
+
     const options = {
       timeZone: "Asia/Kolkata",
       dateStyle: "short",
       timeStyle: "medium",
     };
+
     const istTime = new Date().toLocaleString("en-US", options);
+
     if (docData.LunchToken > 0) {
       setLunchTokenCount(docData.LunchToken);
       setLunchTimestamp(docData.LunchToken_timestamp);
@@ -42,11 +43,13 @@ const foodCommitee = (props) => {
         LunchToken_timestamp: istTime,
         LunchToken: docData.LunchToken + 1,
       });
+      apiCall(props.id, docData.name, "Lunch", props.authBy);
     } else {
       await updateDoc(docRef, {
         LunchToken_timestamp: istTime,
         LunchToken: docData.LunchToken + 1,
       });
+      apiCall(props.id, docData.name, "Lunch", props.authBy);
       return setSuccess(true);
     }
   };

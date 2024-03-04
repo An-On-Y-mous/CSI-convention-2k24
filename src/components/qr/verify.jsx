@@ -66,7 +66,13 @@ const verify = () => {
       ) : (
         <div>
           <h1>Ref. ID - {id}</h1>
-          <div>{isSuperAdmin ? <SuperAdmin id={id} name={name} /> : ""}</div>
+          <div>
+            {isSuperAdmin ? (
+              <SuperAdmin id={id} name={name} authBy={user.email} />
+            ) : (
+              ""
+            )}
+          </div>
           <div>
             {!isSuperAdmin && isEventHead ? (
               <EventHead id={id} name={name} />
@@ -75,7 +81,11 @@ const verify = () => {
             )}
           </div>
           <div>
-            {!isSuperAdmin && isFoodCommittee ? <FoodCommitee id={id} /> : ""}
+            {!isSuperAdmin && isFoodCommittee ? (
+              <FoodCommitee id={id} authBy={user.email} />
+            ) : (
+              ""
+            )}
           </div>
         </div>
       )}
