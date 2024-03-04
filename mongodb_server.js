@@ -20,7 +20,19 @@ const timestamp = new Date().toLocaleString("en-IN", {
 app.post("/api/register", async (req, res) => {
   const { name, department, year, college, number, email } = req.body;
 
-  await sheet([[name, department, year, college, number, email, timestamp]]);
+  await sheet({
+    values: [[name, department, year, college, number, email, timestamp]],
+  });
+  res.status(200).json({ message: "Form submitted successfully!" });
+});
+
+app.post("/api/postRegister", async (req, res) => {
+  const { name, department, year, college, number, email } = req.body;
+
+  await sheet({
+    values: [[name, department, year, college, number, email, timestamp]],
+    postRegister: true,
+  });
   res.status(200).json({ message: "Form submitted successfully!" });
 });
 

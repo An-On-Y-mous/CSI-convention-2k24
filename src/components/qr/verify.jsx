@@ -13,6 +13,7 @@ import Denied from "./status/denied";
 import FoodCommitee from "./levels/foodCommitee";
 import EventHead from "./levels/eventHead";
 import SuperAdmin from "./levels/superAdmin";
+import Register from "../register-form/register";
 
 const verify = () => {
   let { id } = useParams();
@@ -62,7 +63,7 @@ const verify = () => {
       ) : !user ? (
         <Notallowed />
       ) : noRecord ? (
-        <Denied id={id} />
+        <Register id={id} />
       ) : (
         <div>
           <h1>Ref. ID - {id}</h1>

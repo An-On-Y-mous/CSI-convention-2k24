@@ -2,13 +2,12 @@ import React from "react";
 import "./register.css";
 import { useState, setState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import FacebookIcon from "@mui/icons-material/Facebook";
 
-const register = () => {
+const register = (props) => {
   const [buttonDisabled, setButtonDisabled] = useState(false);
+  var endpointUrl = "http://localhost:4445/api/register";
+  if (props.id) endpointUrl = "http://localhost:4445/api/postRegister";
+
   useEffect(() => {
     document.title = "Registration | CSI Convention 2024";
   });
@@ -20,7 +19,7 @@ const register = () => {
     }
     setButtonDisabled(true);
 
-    fetch("/api/register", {
+    fetch(endpointUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -102,7 +101,6 @@ const register = () => {
                     required
                     value={name}
                     onChange={(e) => handleInputchange(e)}
-                    disabled
                   />
                 </div>
                 {/* <.......Department.....> */}
@@ -115,7 +113,6 @@ const register = () => {
                     required
                     value={department}
                     onChange={(e) => handleInputchange(e)}
-                    disabled
                   />
                 </div>
 
@@ -129,7 +126,6 @@ const register = () => {
                     required
                     value={year}
                     onChange={(e) => handleInputchange(e)}
-                    disabled
                   />
                 </div>
               </div>
@@ -144,7 +140,6 @@ const register = () => {
                     required
                     value={college}
                     onChange={(e) => handleInputchange(e)}
-                    disabled
                   />
                 </div>
                 {/* <.......Mobile Number.....> */}
@@ -157,7 +152,6 @@ const register = () => {
                     required
                     value={number}
                     onChange={(e) => handleInputchange(e)}
-                    disabled
                   />
                 </div>
                 {/* <.......Email ID.....> */}
@@ -170,7 +164,6 @@ const register = () => {
                     required
                     value={email}
                     onChange={(e) => handleInputchange(e)}
-                    disabled
                   />
                 </div>
               </div>
@@ -180,16 +173,16 @@ const register = () => {
                 onClick={() => handleSubmit()}
                 className="btn-17"
                 title="Submit Form"
-                disabled
+                buttonDisabled
               >
                 <span class="text-container">
                   <span class="text">submit</span>
                 </span>
               </button>
-              <h3 className="reg-close-msg">
+              {/* <h3 className="reg-close-msg">
                 Pre-registration slots have reached full capacity. However,
                 <span> on-spot registrations are now open.</span>{" "}
-              </h3>
+              </h3> */}
             </div>
           </div>
         </div>

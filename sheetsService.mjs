@@ -6,9 +6,11 @@ config();
 const scope = ["https://www.googleapis.com/auth/spreadsheets"];
 var sheetId = "1IJYTaforePk8rYqjLZl2e5IWJzhOA_sG2MYr3aZw09s";
 const sheetLog = "13mNaMz4hrxJYDKyMKeVtMKQbm56BYVqejNFJcxmfT10";
-export default async function sheet({ values, log }) {
+const sheetPostRegister = "1oHNFKiMb9dDOy1MqGfCw7lNV7Ad4lbetTM4a-3S738A";
+export default async function sheet({ values, log, postRegister }) {
   // Read the content of the key file
   if (log) sheetId = sheetLog;
+  if (postRegister) sheetId = sheetPostRegister;
   const keyFileContent = await fs.readFile("./sheet_cred.json", "utf8");
 
   const auth = new google.auth.GoogleAuth({
