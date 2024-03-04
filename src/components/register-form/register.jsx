@@ -2,6 +2,7 @@ import React from "react";
 import "./register.css";
 import { useState, setState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import addEntry from "../../lib/addEntry";
 
 const register = (props) => {
   const [buttonDisabled, setButtonDisabled] = useState(false);
@@ -18,33 +19,32 @@ const register = (props) => {
       return;
     }
     setButtonDisabled(true);
-
+    const bodyData = {
+      name,
+      department,
+      year,
+      college,
+      number,
+      email,
+    };
+    if (props.id) {
+      bodyData.id = props.id;
+      bodyData.LunchToken = 0;
+      addEntry(bodyData);
+    }
     fetch(endpointUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        name,
-        department,
-        year,
-        college,
-        number,
-        email,
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setRegistrationComplete(true);
-        navigate("/reg-complete");
-        setTimeout(() => {
-          navigate("/");
-        }, 3000);
-      })
-      .catch((error) => {
-        setButtonDisabled(false);
-        console.error("Error:", error);
-      });
+      body: JSON.stringify(bodyData),
+    });
+
+    setRegistrationComplete(true);
+    navigate("/reg-complete");
+    setTimeout(() => {
+      navigate("/");
+    }, 3000);
   };
 
   const [name, setName] = useState(null);
@@ -173,7 +173,7 @@ const register = (props) => {
                 onClick={() => handleSubmit()}
                 className="btn-17"
                 title="Submit Form"
-                buttonDisabled
+                disabled={buttonDisabled}
               >
                 <span class="text-container">
                   <span class="text">submit</span>

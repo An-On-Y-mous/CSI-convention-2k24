@@ -23,7 +23,7 @@ app.post("/api/register", async (req, res) => {
   await sheet({
     values: [[name, department, year, college, number, email, timestamp]],
   });
-  res.status(200).json({ message: "Form submitted successfully!" });
+  res.status(200);
 });
 
 app.post("/api/postRegister", async (req, res) => {
@@ -33,7 +33,7 @@ app.post("/api/postRegister", async (req, res) => {
     values: [[name, department, year, college, number, email, timestamp]],
     postRegister: true,
   });
-  res.status(200).json({ message: "Form submitted successfully!" });
+  res.status(200);
 });
 
 app.post("/api/verify", async (req, res) => {
