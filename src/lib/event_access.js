@@ -34,7 +34,7 @@ export const Obliviate = [
   "pw2649760@gmail.com",
   "kogulmurugaiah@gmail.com",
   "tamilselvan2122004@gmail.com",
-  "suriya102004@gmail.com","killerkishore474@gmail.com",
+  "suriya102004@gmail.com",
 ];
 
 const allEmails = [
