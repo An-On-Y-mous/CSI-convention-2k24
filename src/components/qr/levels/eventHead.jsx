@@ -14,11 +14,13 @@ const eventHead = (props) => {
     setAccessibleEvents([]);
     (async () => {
       for (let x in eventAccess) {
-        if (props.superadmin)
-          setAccessibleEvents((prevEvents) => [...prevEvents, x]);
-        if (!props.superadmin) {
-          if (eventAccess[x].includes(user.email))
+        if (x !== "default") {
+          if (props.superadmin)
             setAccessibleEvents((prevEvents) => [...prevEvents, x]);
+          if (!props.superadmin) {
+            if (eventAccess[x].includes(user.email))
+              setAccessibleEvents((prevEvents) => [...prevEvents, x]);
+          }
         }
       }
     })();

@@ -42,6 +42,7 @@ const addEntry = async (options) => {
       college: val[3],
       number: val[4],
       email: val[5],
+      LunchToken: 0,
     };
     await addEntry(options);
   });

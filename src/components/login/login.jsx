@@ -6,12 +6,8 @@ import { auth } from "../../lib/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useState } from "react";
 import Notallowed from "../qr/status/notallowed";
-import {
-  super_admins,
-  event_heads,
-  food_commitee,
-} from "../../lib/login_access.js";
-
+import { super_admins, food_commitee } from "../../lib/login_access.js";
+import allEmails from "../../lib/event_access.js";
 const Login = () => {
   const [user] = useAuthState(auth);
   const google = new GoogleAuthProvider();
@@ -23,7 +19,7 @@ const Login = () => {
     const email = result.user.email;
     if (
       !super_admins.includes(email) &&
-      !event_heads.includes(email) &&
+      !allEmails.includes(email) &&
       !food_commitee.includes(email)
     ) {
       setNotVerified(true);
