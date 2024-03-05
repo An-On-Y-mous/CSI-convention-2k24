@@ -2,11 +2,7 @@ import React, { useState, useEffect } from "react";
 import { auth, db } from "../../lib/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
-import {
-  super_admins,
-  
-  food_commitee,
-} from "../../lib/login_access";
+import { super_admins, food_commitee } from "../../lib/login_access";
 import { getDocs, collection, query, where } from "firebase/firestore";
 import Notallowed from "./status/notallowed";
 import FoodCommitee from "./levels/foodCommitee";
@@ -14,7 +10,6 @@ import EventHead from "./levels/eventHead";
 import SuperAdmin from "./levels/superAdmin";
 import Register from "../register-form/register";
 import allEmails from "../../lib/event_access";
-import "./verify.css"
 
 const verify = () => {
   let { id } = useParams();
@@ -58,7 +53,7 @@ const verify = () => {
     })();
   }, [id, loading]);
   return (
-    <main className="main">
+    <main>
       {loading ? (
         <h1>Loading...</h1>
       ) : noRecord ? (
@@ -67,14 +62,12 @@ const verify = () => {
         <Notallowed />
       ) : (
         <div>
-          <h1 id="verify-welcome" className="verify-welcome">Welcome <span> {user.displayName}</span></h1>
-          <div>
-            {isSuperAdmin ? (
-              <SuperAdmin id={id} name={name} authBy={user.email} />
-            ) : (
-              ""
-            )}
-          </div>
+          {isSuperAdmin ? (
+            <SuperAdmin id={id} name={name} authBy={user.email} />
+          ) : (
+            ""
+          )}
+
           <div>
             {!isSuperAdmin && isEventHead ? (
               <EventHead id={id} name={name} />
