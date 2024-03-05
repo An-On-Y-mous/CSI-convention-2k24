@@ -2,14 +2,18 @@ import React, { useState, useEffect } from "react";
 import { auth, db } from "../../lib/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
-import { super_admins, food_commitee } from "../../lib/login_access";
+import {
+  super_admins,
+  event_heads,
+  food_commitee,
+} from "../../lib/login_access";
 import { getDocs, collection, query, where } from "firebase/firestore";
 import Notallowed from "./status/notallowed";
+import Denied from "./status/denied";
 import FoodCommitee from "./levels/foodCommitee";
 import EventHead from "./levels/eventHead";
 import SuperAdmin from "./levels/superAdmin";
 import Register from "../register-form/register";
-import allEmails from "../../lib/event_access";
 import "./verify.css"
 
 const verify = () => {
@@ -42,7 +46,7 @@ const verify = () => {
   };
   const checkPermission = async (email) => {
     if (super_admins.includes(email)) setSuperAdmin(true);
-    if (allEmails.includes(email)) setEventHead(true);
+    if (event_heads.includes(email)) setEventHead(true);
     if (food_commitee.includes(email)) setFoodCommitte(true);
   };
 
