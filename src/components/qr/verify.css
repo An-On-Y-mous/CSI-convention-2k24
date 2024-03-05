@@ -1,3 +1,95 @@
+.main {
+  position: relative;
+  isolation: isolate;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    height: 100vh;
+    font-size: 6vw;  
+    font-family:'open sans';
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    background-color: black;
+  }
+  color: white;
+}
+.main::after{
+position: absolute;
+content: "";
+inset: 0;
+z-index: -1;
+background-color: black;
+opacity: 0.7;
+background-image: url('/assets/space2.jpg');
+background-size: cover;
+/* background-position: top; */
+background-repeat: no-repeat;
+}
+.main::before{
+  position: absolute;
+  content: "";
+  inset: 0;
+  z-index: -2;
+  background-color: black;
+  opacity: 1;
+  background-image: url('/assets/space.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  }
+.eventHead-div{
+width: 100%;
+text-align: center;
+
+}
+.event-ul{
+display: flex;
+flex-direction: column;
+gap: 2.5vh;
+
+}
+li {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px dotted white;
+  margin: 0vh 15vw;
+  border-radius: 5vw;
+    margin-top: 10px;
+    font-family:'open sans';
+    font-weight: 600;
+}
+
+li:hover{
+color: white;
+background-color: black;
+}
+.verify-welcome{
+  line-height:6vh;
+text-align: center;
+padding-bottom: 5vh;
+font-size: 12vw;
+
+}
+.verify-welcome span{
+  color: orangered;
+}
+.food-com {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-top: 10%;
+  font-weight: 600;
+
+}
+.food-com h1{
+  font-family:'proxon';
+  letter-spacing: 4px;
+
+}
+
 .qr-parent {
   height: 100vh;
   width: 100%;

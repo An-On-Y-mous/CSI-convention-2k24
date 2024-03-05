@@ -54,7 +54,7 @@ const foodCommitee = (props) => {
     }
   };
   return (
-    <div>
+    <div className="food-com">
       {lunchTokenCount ? (
         <Success
           id={props.id}

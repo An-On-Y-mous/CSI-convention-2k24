@@ -13,7 +13,7 @@ const register = (props) => {
     document.title = "Registration | CSI Convention 2024";
   });
   const navigate = useNavigate();
-  const [buttonDisabled, setButtonDisabled] = useState(false);
+  
   const handleSubmit = () => {
    
     setButtonDisabled(true);

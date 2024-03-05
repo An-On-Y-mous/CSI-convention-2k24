@@ -213,7 +213,12 @@
     padding-left: 5vw;
   }
 }
-
+.reg-close-msg {
+  color: white;
+}
+.reg-close-msg span {
+  color: orange;
+}
 .btn-17,
 .btn-17 *,
 .btn-17 :after,
@@ -224,12 +229,7 @@
   box-sizing: border-box;
 }
 
-.reg-close-msg {
-  color: white;
-}
-.reg-close-msg span {
-  color: orange;
-}
+
 .btn-17 {
   /* opacity: 0.1; */
   appearance: button;

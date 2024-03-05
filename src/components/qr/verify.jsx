@@ -10,6 +10,7 @@ import EventHead from "./levels/eventHead";
 import SuperAdmin from "./levels/superAdmin";
 import Register from "../register-form/register";
 import allEmails from "../../lib/event_access";
+import "./verify.css"
 
 const verify = () => {
   let { id } = useParams();
@@ -53,7 +54,7 @@ const verify = () => {
     })();
   }, [id, loading]);
   return (
-    <main>
+    <main className="main">
       {loading ? (
         <h1>Loading...</h1>
       ) : noRecord ? (
@@ -62,12 +63,14 @@ const verify = () => {
         <Notallowed />
       ) : (
         <div>
-          {isSuperAdmin ? (
-            <SuperAdmin id={id} name={name} authBy={user.email} />
-          ) : (
-            ""
-          )}
-
+          <h1 id="verify-welcome" className="verify-welcome">Welcome <span> {user.displayName}</span></h1>
+          <div>
+            {isSuperAdmin ? (
+              <SuperAdmin id={id} name={name} authBy={user.email} />
+            ) : (
+              ""
+            )}
+          </div>
           <div>
             {!isSuperAdmin && isEventHead ? (
               <EventHead id={id} name={name} />

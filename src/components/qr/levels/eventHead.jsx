@@ -27,14 +27,16 @@ const eventHead = (props) => {
   }, [loading, user]);
 
   const handleEventClick = (self) => {
+    var element = document.getElementById('verify-welcome');
+    element.classList.add('none');
     const eventName = self.target.innerHTML;
     apiCall(props.id, props.name, eventName, user.email);
     setEventIn(true);
   };
   return (
-    <div>
+    <div className="eventHead-div">
       {!eventIn && accessibleEvents !== null ? (
-        <ul>
+        <ul className="event-ul">
           {accessibleEvents.map((event, index) => (
             <li key={index} onClick={(self) => handleEventClick(self)}>
               {event}
