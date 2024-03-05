@@ -1,2 +1,9 @@
-export const super_admins = ["raghavcybe@gmail.com", "yenshree@gmail.com"];
-export const food_commitee = ["thelinuxsec@gmail.com", "raghavcybe@gmail.com"];
+export const super_admins = [
+  "raghavcybe@gmail.com",
+  "yenshree@gmail.com",
+  "killerkishore474@gmail.com",
+];
+export const food_commitee = [
+  "rishisendhu00765@gmail.com",
+  "naveensiki2003@gmail.com",
+];
