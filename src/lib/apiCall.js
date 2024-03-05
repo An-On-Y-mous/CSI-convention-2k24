@@ -13,7 +13,7 @@ const apiCall = (id, name, event, authBy) => {
     body: JSON.stringify(reqBody),
   };
 
-  fetch("http://localhost:4445/api/verify", requestOptions);
+  fetch("/api/verify", requestOptions);
 };
 
 export default apiCall;

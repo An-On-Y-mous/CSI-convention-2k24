@@ -60,10 +60,10 @@ const verify = () => {
     <main>
       {loading ? (
         <h1>Loading...</h1>
-      ) : !user ? (
-        <Notallowed />
       ) : noRecord ? (
         <Register id={id} />
+      ) : !loading && !user ? (
+        <Notallowed />
       ) : (
         <div>
           <h1>Ref. ID - {id}</h1>

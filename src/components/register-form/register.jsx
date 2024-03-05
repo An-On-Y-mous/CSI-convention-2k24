@@ -6,8 +6,8 @@ import addEntry from "../../lib/addEntry";
 
 const register = (props) => {
   const [buttonDisabled, setButtonDisabled] = useState(false);
-  var endpointUrl = "http://localhost:4445/api/register";
-  if (props.id) endpointUrl = "http://localhost:4445/api/postRegister";
+  var endpointUrl = "/api/register";
+  if (props.id) endpointUrl = "/api/postRegister";
 
   useEffect(() => {
     document.title = "Registration | CSI Convention 2024";
